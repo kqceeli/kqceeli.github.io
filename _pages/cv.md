@@ -3,8 +3,7 @@ layout: archive
 permalink: /CV/
 author_profile: true
 ---
-
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +25,7 @@ author_profile: true
         .container {
             max-width: 800px;                  /* 页面最大宽度 */
             margin: 0 auto;                    /* 居中 */
-            padding: 8px;                     /* 增加边距 */
+            padding: 20px 10px;                /* 上下内边距20px，左右内边距10px */
         }
 
         /* 主标题样式 */
@@ -34,8 +33,7 @@ author_profile: true
             font-size: 28px;                   /* 主标题字体大小 */
             color: #333333;                    /* 深灰色字体，不使用黑色 */
             text-align: center;                /* 居中对齐 */
-            margin-top: 20px;                 /* 上方留白，减少至 20px */
-            margin-bottom: 20px;              /* 下方留白，减少至 20px */
+            margin-bottom: 30px;               /* 标题下方留白 */
         }
 
         /* 二级标题样式 */
@@ -43,7 +41,7 @@ author_profile: true
             font-size: 22px;                   /* 二级标题字体稍小 */
             color: #555555;                    /* 更浅的灰色，避免太过沉重 */
             margin-top: 40px;                  /* 标题上方留白 */
-            margin-bottom: 8px;
+            margin-bottom: 15px;
             border-bottom: 1px solid #e0e0e0;  /* 增加浅灰色底边，保持分层 */
             padding-bottom: 5px;
         }
@@ -72,7 +70,7 @@ author_profile: true
         }
 
         th, td {
-            font-size: 16px; /* 设置与正文一致的字体大小 */
+            font-size: 16px;                   /* 增加表格字体大小 */
             text-align: left;                  /* 左对齐 */
             padding: 10px;                     /* 表格单元格内边距 */
             border-bottom: 1px solid #e0e0e0;  /* 添加浅灰色边框 */
