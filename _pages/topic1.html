@@ -101,6 +101,7 @@ permalink: /portfolio/topic1/
             font-weight: 500;                     /* 按钮字体加粗 */
             transition: background-color 0.3s ease, transform 0.2s ease;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加按钮阴影 */
+            z-index: 1000;                        /* 确保按钮处于最顶层 */
         }
 
         .back-link:hover {
@@ -112,7 +113,7 @@ permalink: /portfolio/topic1/
         .header-image {
             width: 100%;
             height: auto;
-            margin-top: 20px;
+            margin-top: 10px;                     /* 减少图片与内容的顶部间距 */
             border-radius: 8px;
             max-width: 100%;                      /* 保证图片不超出容器 */
         }
@@ -154,7 +155,7 @@ permalink: /portfolio/topic1/
             <p>Developed a novel method utilizing Gaussian random fields to reconstruct geomaterial microstructures, analyzing their behavior under thermal and seepage conditions. This work forms the basis for advanced uncertainty quantification in geotechnical parameters.</p>
         </div>
 
-        <!-- 图片显示在页面底部，调整图片样式 -->
+        <!-- 图片显示在页面底部，调整图片样式，减少与内容的间距 -->
         <img src="/images/topic1.gif" alt="Topic 1 Image" class="header-image">
 
         <!-- 返回链接，优化按钮样式，固定在右下角 -->
