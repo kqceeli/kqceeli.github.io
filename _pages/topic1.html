@@ -10,43 +10,89 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            background-color: #f4f4f4;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 22px;
+            color: #007BFF;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            text-align: left;
+        }
+        .highlight {
+            background-color: #f9f9f9;
+            border-left: 5px solid #007BFF;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .back-link:hover {
+            background-color: #0056b3;
         }
         .header-image {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
+            border-radius: 10px;
         }
-        .back-link {
-            margin-top: 20px;
-            display: block;
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
+        ul {
+            text-align: left;
+            padding-left: 20px;
         }
-        .back-link:hover {
-            background-color: #ddd;
+        ul li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Evaluation of Effective Properties of Geomaterials</h1>
+        <h1>Topic 1: Evaluation of Effective Properties of Geomaterials</h1>
+
         <!-- 插入图片 -->
         <img src="images/topic1.gif" alt="Topic 1 Image" class="header-image">
 
-        <!-- 介绍段落 -->
-        <p>This research focuses on evaluating the effective mechanical, thermal, and hydraulic properties of geomaterials, taking into account their heterogeneous nature and multi-phase composition.</p>
+        <!-- 挑战部分 -->
+        <div class="highlight">
+            <h2>Challenge</h2>
+            <p>Geomaterials are inherently heterogeneous, with complex internal structures that influence their macro-scale behavior. Accurately linking internal structures to effective properties remains a key challenge in geotechnical research.</p>
+        </div>
+
+        <!-- 贡献部分 -->
+        <div class="highlight">
+            <h2>Contribution</h2>
+            <p>Developed a novel method utilizing Gaussian random fields to reconstruct geomaterial microstructures, analyzing their behavior under thermal and seepage conditions. This work forms the basis for advanced uncertainty quantification in geotechnical parameters.</p>
+        </div>
 
         <!-- 返回链接 -->
-       <a href="portfolio.html" class="back-link">Back to Research Topics</a>
+        <a href="portfolio.html" class="back-link">Back to Research Topics</a>
     </div>
 </body>
 </html>
