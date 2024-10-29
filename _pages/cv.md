@@ -26,7 +26,7 @@ author_profile: true
         .container {
             max-width: 800px;                  /* 页面最大宽度 */
             margin: 0 auto;                    /* 居中 */
-            padding: 20px;                     /* 增加边距 */
+            padding: 8px;                     /* 增加边距 */
         }
 
         /* 主标题样式 */
@@ -71,6 +71,7 @@ author_profile: true
         }
 
         th, td {
+            font-size: 16px; /* 设置与正文一致的字体大小 */
             text-align: left;                  /* 左对齐 */
             padding: 10px;                     /* 表格单元格内边距 */
             border-bottom: 1px solid #e0e0e0;  /* 添加浅灰色边框 */
