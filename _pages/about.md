@@ -38,9 +38,12 @@ redirect_from:
 - <span style="color:red; font-style:italic; font-weight:bold;">Award</span>: I was awarded the **Top 10 Future Star Undergraduate** ([Link](https://sljzw.hhu.edu.cn/2019/0415/c11821a189595/page.htm)) by the China Water Resources Education Association in July 2016.
 
 
-## Visitor Map
-
-<div style="display:inline-block;width:400px;"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5tvztu8j7v1&amp;m=0c&amp;c=007eff&amp;cr1=ff0000&amp;sx=0&amp;ds=30&amp;cw=ffffff&amp;cb=97bfe8" async="async"></script></div>
+  
+<div style="text-align: center;">
+  <div style="display: inline-block; width: 400px;">
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5tvztu8j7v1&amp;m=0c&amp;c=007eff&amp;cr1=ff0000&amp;sx=0&amp;ds=30&amp;cw=ffffff&amp;cb=97bfe8" async="async"></script>
+  </div>
+</div>
 
 <!--
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=80aee0&w=500&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=fefefe&cmo=007bff&cmn=f20a1b'></script>
