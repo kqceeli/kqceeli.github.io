@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 1: Evaluation of Effective Properties of Geomaterials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .back-link {
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .back-link:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Evaluation of Effective Properties of Geomaterials</h1>
+        <!-- 插入图片 -->
+        <img src="images/topic1.gif" alt="Topic 1 Image" class="header-image">
+
+        <!-- 介绍段落 -->
+        <p>This research focuses on evaluating the effective mechanical, thermal, and hydraulic properties of geomaterials, taking into account their heterogeneous nature and multi-phase composition.</p>
+
+        <!-- 返回链接 -->
+        <a href="research.html" class="back-link">Back to Research Topics</a>
+    </div>
+</body>
+</html>
