@@ -11,10 +11,10 @@ locale                   : "en-US"
 title                    : "Geotechnical Uncertainty"
 title_separator          : "-"
 name                     : &name "Kai-Qi LI"
-description              : &description "personal description"
+description              : &description "Distinguished Postdoc Fellow, Department of Civil and Environmental Engineering, The Hong Kong Polytechnic Universityy"
 url                      : https://kqceeli.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "kqceeli/kqceeli.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -25,7 +25,7 @@ author:
   name             : "Kai-Qi LI"
   pronouns         : # example: "she/her"  
   bio              : "Postdoc Fellow"
-  location         : "The Hong Kong Polytechnic University"
+  location         : "Hong Kong SAR"
   employer         : #"The Hong Kong Polytechnic University"
   uri              : # URL
   email            : "kqcee.li@polyu.edu.hk" 
