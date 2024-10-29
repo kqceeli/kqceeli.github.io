@@ -90,18 +90,19 @@ permalink: /portfolio/topic1/
 
         /* 返回按钮样式 */
         .back-link {
-            position: absolute;                   /* 绝对定位，相对父容器 */
-            top: 100%;                             /* 设置为靠上位置，避免遮挡图片 */
-            right: 30px;                          /* 靠近容器右侧，但留有间距 */
+            position: fixed;        /* 改为 fixed，使按钮固定在浏览器窗口 */
+            top: 50%;               /* 垂直方向居中 */
+            right: 20px;            /* 离右边 20px */
+            transform: translateY(-50%);  /* 垂直方向真正居中 */
             text-decoration: none;
-            color: #ffffff;                       /* 按钮字体颜色：白色 */
-            background-color: #3a506b;            /* 按钮背景色：深蓝灰色 */
+            color: #ffffff;
+            background-color: #3a506b;
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 16px;
-            font-weight: 500;                     /* 按钮字体加粗 */
+            font-weight: 500;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加按钮阴影 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .back-link:hover {
