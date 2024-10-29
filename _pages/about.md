@@ -40,4 +40,4 @@ redirect_from:
 
 ## Visitor Map
 <div id="clustrmaps-widget"></div>
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=98bde5&w=280&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&ct=111010&cmo=007bff&cmn=ea1d1d'></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=80aee0&w=280&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=fefefe&cmo=007bff&cmn=f20a1b'></script>
