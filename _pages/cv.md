@@ -63,7 +63,7 @@ redirect_from:
 
         /* 时间段样式，使用浅灰色 */
         .timeline {
-            color: #7f8c8d;                    /* 浅灰色字体，简洁不抢眼 */
+            color: #000000;                    /* 浅灰色字体，简洁不抢眼 */
             margin-right: 5px;                 /* 与内容保持一定距离 */
         }
 
