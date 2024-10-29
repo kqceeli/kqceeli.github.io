@@ -8,66 +8,79 @@ permalink: /portfolio/topic1/
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Topic 1: Evaluation of Effective Properties of Geomaterials</title>
     <style>
+        /* 全局样式 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: box-shadow 0.3s ease;
+        }
+        .container:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
         h1 {
-            font-size: 28px;
+            font-family: 'Georgia', serif;
+            font-size: 30px;
             color: #333;
             margin-bottom: 20px;
         }
         h2 {
-            font-size: 22px;
+            font-family: 'Georgia', serif;
+            font-size: 24px;
             color: #007BFF;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             text-align: left;
         }
         p {
             font-size: 16px;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #555;
             text-align: left;
         }
         .highlight {
             background-color: #f9f9f9;
             border-left: 5px solid #007BFF;
-            padding: 10px;
-            margin-bottom: 20px;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 8px;
         }
         .back-link {
-            margin-top: 20px;
+            margin-top: 30px;
             display: inline-block;
             text-decoration: none;
             color: #fff;
             background-color: #007BFF;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 24px;
+            border-radius: 8px;
             font-size: 16px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .back-link:hover {
             background-color: #0056b3;
+            transform: translateY(-2px);
         }
         .header-image {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
             border-radius: 10px;
+            max-height: 400px;
+            object-fit: cover;
         }
         ul {
             text-align: left;
@@ -75,6 +88,23 @@ permalink: /portfolio/topic1/
         }
         ul li {
             margin-bottom: 10px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .back-link {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
