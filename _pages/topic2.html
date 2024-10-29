@@ -1,18 +1,165 @@
 ---
 layout: page
-title: "Topic 2: Uncertainty Quantification & Propagation in Geomaterials"
-permalink: /portfolio/topic2/
+title: "Topic 1: Evaluation of Effective Properties of Geomaterials"
+permalink: /portfolio/topic1/
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 1: Evaluation of Effective Properties of Geomaterials</title>
 
-<h1>Topic 2: Uncertainty Quantification & Propagation in Geomaterials</h1>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-<h2>Challenge</h2>
-<p>Geomaterials exhibit multiscale characteristics, but the propagation of uncertainties across different scales is still unclear. A comprehensive understanding of multiscale behaviors is critical for producing accurate and reliable geotechnical predictions.</p>
+    <style>
+        /* 页面全局样式 */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;             /* 背景色：柔和的浅灰色 */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
 
-<h2>Contribution</h2>
-<ul>
-    <li>Investigated how microstructural heterogeneity impacts macroscopic anisotropy and developed theoretical models to quantify effective transport properties of geomaterials at multiscale.</li>
-    <li>Introduced a practical upscaling method to accurately assess anisotropy in thermal and hydraulic properties.</li>
-</ul>
+        /* 页面主体容器样式 */
+        .container {
+            max-width: 900px;
+            margin: 60px auto 20px auto;
+            padding: 20px;
+            background-color: #ffffff;            /* 容器背景色：纯白色 */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+            position: relative;                   /* 为了让按钮相对容器定位 */
+        }
 
-<a href="/portfolio/">Back to Research Topics</a>
+        .container:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 标题样式优化 */
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 26px;
+            color: #2c3e50;                       /* 标题颜色：深蓝灰色 */
+            border-bottom: 2px solid #d1d1d1;      /* 下划线：浅灰色 */
+            padding-bottom: 10px;
+            margin-top: 40px;                     /* 增加顶部留白 */
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            color: #1a1a1a;                       /* 副标题颜色：深黑色 */
+            margin-top: 10px;                     /* 调整顶部留白 */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;                      /* 段落字体大小 */
+            line-height: 1.75;
+            color: #4a4a4a;                       /* 段落字体颜色：更加柔和的深灰色 */
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        /* Challenge 和 Contribution 部分样式 */
+        .highlight {
+            background-color: #f2f2f2;            /* 背景色：浅灰色 */
+            border-left: 4px solid #2c3e50;       /* 边框颜色：深蓝灰色 */
+            padding: 12px;                        /* 减少内边距 */
+            margin-bottom: 10px;                  /* 减少外边距 */
+            border-radius: 5px;
+        }
+
+        .highlight h2 {
+            font-size: 20px;                      /* 标题字体大小 */
+            margin-bottom: 8px;
+        }
+
+        .highlight p {
+            font-size: 17px;                      /* 调大内容字体，但仍比 h2 小 */
+            margin-bottom: 0;
+        }
+
+        .back-link {
+            position: fixed;        /* 改为 fixed，使按钮固定在浏览器窗口 */
+            top: 50%;               /* 垂直方向居中 */
+            right: 30%;            /* 离右边 20px */
+            transform: translateY(-50%);  /* 垂直方向真正居中 */
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #3a506b;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-link:hover {
+            background-color: #2c3e50;            /* 按钮悬停时颜色略深 */
+            transform: translateY(-2px);          /* 按钮悬停时轻微上移 */
+        }
+
+        /* 图片样式 */
+        .header-image {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;                     /* 减少图片与内容的顶部间距 */
+            border-radius: 8px;
+            max-width: 100%;                      /* 保证图片不超出容器 */
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .back-link {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Topic 1: Evaluation of Effective Properties of Geomaterials</h1>
+
+        <!-- 挑战部分，保持内容不变，优化样式 -->
+        <div class="highlight">
+            <h2>Challenge</h2>
+            <p>Geomaterials are inherently heterogeneous, with complex internal structures that influence their macro-scale behavior. Accurately linking internal structures to effective properties remains a key challenge in geotechnical research.</p>
+        </div>
+
+        <!-- 贡献部分，保持内容不变，优化样式 -->
+        <div class="highlight">
+            <h2>Contribution</h2>
+            <p>Developed a novel method utilizing Gaussian random fields to reconstruct geomaterial microstructures, analyzing their behavior under thermal and seepage conditions. This work forms the basis for advanced uncertainty quantification in geotechnical parameters.</p>
+        </div>
+
+        <!-- 图片显示在页面底部，调整图片样式，减少与内容的间距 -->
+        <img src="/images/topic1.gif" alt="Topic 1 Image" class="header-image">
+
+        <!-- 返回链接，放置在容器右侧，靠上位置，避免遮挡图片 -->
+        <a href="/portfolio/" class="back-link">Back</a>
+    </div>
+</body>
+</html>
