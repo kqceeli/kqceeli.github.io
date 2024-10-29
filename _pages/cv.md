@@ -8,7 +8,7 @@ redirect_from:
   - /resume
 ---
   
-<!DOCTYPE html>
+<---!DOCTYPE html--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,17 +36,17 @@ redirect_from:
         /* 主标题样式 */
         h1 {
             font-size: 28px;                   /* 主标题字体大小 */
-            color: #000000;                    /* 黑色标题，简洁正式 */
+            color: #333333;                    /* 黑色标题，简洁正式 */
             text-align: center;                /* 居中对齐 */
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         /* 二级标题样式 */
         h2 {
             font-size: 22px;                   /* 二级标题较小 */
-            color: #333333;                    /* 深灰色标题，保持层次感 */
+            color: #555555;                    /* 深灰色标题，保持层次感 */
             margin-top: 30px;                  /* 顶部留白，保持层次感 */
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             border-bottom: 1px solid #e0e0e0;  /* 添加浅灰色下划线 */
             padding-bottom: 5px;
         }
