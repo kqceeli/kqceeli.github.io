@@ -2,6 +2,7 @@
 layout: archive
 permalink: /CV/
 author_profile: true
+markdown: false  # 禁用 Markdown 解析
 ---
 <!DOCTYPE html>
 <html lang="en">
