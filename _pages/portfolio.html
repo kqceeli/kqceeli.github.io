@@ -10,63 +10,42 @@ author_profile: true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Research</title>
     <style>
-        /* 页面整体字体和背景色 */
         body {
-            font-family: 'Arial', sans-serif;  /* 简洁易读的字体 */
-            background-color: #ffffff;         /* 保持白色背景，简洁大方 */
-            color: #333333;                    /* 使用深灰色字体，保持学术感 */
-            line-height: 1.6;                  /* 行距适中，增强可读性 */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
-
-        /* 主标题样式 */
-        h1 {
-            font-size: 32px;                   /* 主标题字体大小 */
-            color: #2c3e50;                    /* 深蓝色字体，稳重且简洁 */
-            text-align: center;                /* 居中对齐 */
-            margin-top: 40px;                  /* 上方留白，保持页面简洁 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
             margin-bottom: 20px;
         }
-
-        /* 副标题样式 */
-        h2 {
-            font-size: 24px;                   /* 副标题比主标题稍小 */
-            color: #34495e;                    /* 稍浅的灰蓝色，凸显层次感 */
-            text-align: center;                /* 居中对齐 */
-            margin-bottom: 30px;               /* 与内容保持适度距离 */
+        .topics {
+            text-align: left;
+            margin-top: 20px;
         }
-
-        /* 研究主题列表样式 */
-        .research-list {
-            list-style-type: none;             /* 移除默认的项目符号 */
-            padding-left: 0;                   /* 移除左侧内边距 */
-            text-align: center;                /* 居中对齐 */
+        .topics a {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            text-decoration: none;
+            color: #333;
+            border-radius: 5px;
         }
-
-        .research-list li {
-            margin-bottom: 15px;               /* 每个研究主题之间的间距 */
+        .topics a:hover {
+            background-color: #ddd;
         }
-
-        /* 链接样式 */
-        .research-list a {
-            text-decoration: none;             /* 移除链接下划线 */
-            font-size: 18px;                   /* 链接字体大小适中 */
-            color: #2980b9;                    /* 使用简洁的蓝色 */
-            padding: 5px 10px;                 /* 适度增加内边距 */
-            border-bottom: 1px solid transparent; /* 初始无下划线，悬停时显示 */
-            transition: border-color 0.2s ease; /* 悬停时的平滑过渡 */
-        }
-
-        /* 悬停效果 */
-        .research-list a:hover {
-            border-bottom: 1px solid #2980b9;  /* 悬停时显示蓝色下划线 */
-        }
-
-        /* 响应式设计 */
+                /* 响应式设计 */
         @media (max-width: 768px) {
             h1 {
                 font-size: 28px;               /* 小屏设备上缩小主标题字体 */
@@ -83,17 +62,18 @@ author_profile: true
     </style>
 </head>
 <body>
-
-    <div class="research-topics">
-        <h1>Research</h1>
-        <h2>Research Topics</h2>
-        <ul class="research-list">
-            <li><a href="/portfolio/topic1/">Topic 1: Evaluation of Effective Properties of Geomaterials</a></li>
-            <li><a href="/portfolio/topic2/">Topic 2: Uncertainty Quantification & Propagation in Geomaterials</a></li>
-            <li><a href="/portfolio/topic3/">Topic 3: Constitutive Modelling of Frozen Soils & Multi-field Coupling in AGF</a></li>
-            <li><a href="/portfolio/topic4/">Topic 4: Machine Learning in Geotechnical Engineering</a></li>
-        </ul>
+    <div class="container">
+        <h1>Research Topics</h1>
+        <!-- 插入图片 -->
+            <img src="../images/LKQ_research0.jpg" alt="Research Image" class="header-image"> 
+        <!-- 主题列表 -->
+        <div class="topics">
+            <a href="/portfolio/topic1/">Topic 1: Evaluation of Effective Properties of Geomaterials</a>
+            <a href="/portfolio/topic2/">Topic 2: Uncertainty Quantification & Propagation in Geomaterials</a>
+            <a href="/portfolio/topic3/">Topic 3: Constitutive Modelling of Frozen Soils & Multi-field Coupling in AGF</a>
+            <a href="/portfolio/topic4/">Topic 4: Machine Learning in Geotechnical Engineering</a>
+        </div>
     </div>
-
 </body>
 </html>
+
