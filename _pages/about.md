@@ -43,10 +43,10 @@ redirect_from:
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=80aee0&w=500&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=fefefe&cmo=007bff&cmn=f20a1b'></script>
 
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NMDGTJ84"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'YOUR_TRACKING_ID');
+  gtag('config', 'GTM-NMDGTJ84');
 </script>
