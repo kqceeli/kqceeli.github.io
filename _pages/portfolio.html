@@ -1,18 +1,12 @@
----
-layout: archive
-title: "Research"
-permalink: /portfolio/
-author_profile: true
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Research</title>
     <style>
-                /* 页面整体字体和背景色 */
+        /* 页面整体字体和背景色 */
         body {
             font-family: 'Merriweather', serif; /* 使用学术感较强的字体 */
             background-color: #f7f9fc;          /* 使用柔和的背景色 */
@@ -22,7 +16,7 @@ author_profile: true
             padding: 0;
             padding-bottom: 40px;
         }
-        
+
         /* 主标题样式 */
         h1 {
             font-size: 36px;
@@ -31,7 +25,7 @@ author_profile: true
             margin-top: 40px;
             margin-bottom: 20px;
         }
-        
+
         /* 副标题样式 */
         h2 {
             font-size: 28px;
@@ -41,7 +35,7 @@ author_profile: true
             border-bottom: 2px solid #e0e0e0; /* 增加下划线分隔 */
             padding-bottom: 10px;
         }
-        
+
         /* 研究主题列表样式 */
         .research-list {
             list-style-type: none;    /* 移除默认的项目符号 */
@@ -49,11 +43,11 @@ author_profile: true
             margin: 0;
             text-align: center;
         }
-        
+
         .research-list li {
             margin-bottom: 15px;      /* 增加每个主题之间的间距 */
         }
-        
+
         /* 链接样式 */
         .research-list a {
             text-decoration: none;    /* 移除链接下划线 */
@@ -64,23 +58,23 @@ author_profile: true
             border-radius: 8px;       /* 圆角边框 */
             transition: background-color 0.3s ease, color 0.3s ease; /* 添加平滑过渡效果 */
         }
-        
+
         /* 悬停效果，当鼠标悬停在链接上时改变背景颜色和字体颜色 */
         .research-list a:hover {
             background-color: #2980b9;
             color: #fff;              /* 悬停时字体变为白色 */
         }
-        
+
         /* 响应式设计，确保在手机和小屏幕设备上有良好的显示效果 */
         @media (max-width: 768px) {
             h1 {
                 font-size: 28px;      /* 在小屏设备上缩小主标题字体 */
             }
-        
+
             h2 {
                 font-size: 24px;      /* 缩小副标题字体 */
             }
-        
+
             .research-list a {
                 font-size: 18px;      /* 缩小链接字体 */
             }
@@ -88,18 +82,17 @@ author_profile: true
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Research Topics</h1>
-        <!-- 插入图片 -->
-            <img src="../images/LKQ_research0.jpg" alt="Research Image" class="header-image"> 
-        <!-- 主题列表 -->
-        <div class="topics">
-            <a href="/portfolio/topic1/">Topic 1: Evaluation of Effective Properties of Geomaterials</a>
-            <a href="/portfolio/topic2/">Topic 2: Uncertainty Quantification & Propagation in Geomaterials</a>
-            <a href="/portfolio/topic3/">Topic 3: Constitutive Modelling of Frozen Soils & Multi-field Coupling in AGF</a>
-            <a href="/portfolio/topic4/">Topic 4: Machine Learning in Geotechnical Engineering</a>
-        </div>
+
+    <div class="research-topics">
+        <h1>Research</h1>
+        <h2>Research Topics</h2>
+        <ul class="research-list">
+            <li><a href="/portfolio/topic1/">Topic 1: Evaluation of Effective Properties of Geomaterials</a></li>
+            <li><a href="/portfolio/topic2/">Topic 2: Uncertainty Quantification & Propagation in Geomaterials</a></li>
+            <li><a href="/portfolio/topic3/">Topic 3: Constitutive Modelling of Frozen Soils & Multi-field Coupling in AGF</a></li>
+            <li><a href="/portfolio/topic4/">Topic 4: Machine Learning in Geotechnical Engineering</a></li>
+        </ul>
     </div>
+
 </body>
 </html>
-
