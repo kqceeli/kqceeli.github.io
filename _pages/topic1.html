@@ -45,7 +45,7 @@ permalink: /portfolio/topic1/
         h1 {
             font-family: 'Merriweather', serif;
             font-size: 26px;
-            color: #1a1a1a;                       /* 标题颜色：深黑色 */
+            color: #2c3e50;                       /* 标题颜色：深蓝灰色，柔和且专业 */
             border-bottom: 2px solid #d1d1d1;      /* 下划线：浅灰色 */
             padding-bottom: 10px;
             margin-bottom: 20px;
@@ -53,13 +53,14 @@ permalink: /portfolio/topic1/
 
         h2 {
             font-family: 'Roboto', sans-serif;
-            font-size: 24px;
-            color: #2c3e50;                       /* 副标题颜色：深蓝灰色 */
+            font-size: 22px;
+            color: #1a1a1a;                       /* 副标题颜色：深黑色 */
+            margin-top: 10px;                     /* 调整顶部留白 */
             margin-bottom: 10px;
         }
 
         p {
-            font-size: 20px;                      /* 段落字体大小 */
+            font-size: 18px;                      /* 段落字体大小 */
             line-height: 1.75;
             color: #333333;                       /* 段落字体颜色：深灰色 */
             text-align: left;
@@ -70,8 +71,8 @@ permalink: /portfolio/topic1/
         .highlight {
             background-color: #f2f2f2;            /* 背景色：浅灰色 */
             border-left: 4px solid #2c3e50;       /* 边框颜色：深蓝灰色 */
-            padding: 15px;
-            margin-bottom: 8px;
+            padding: 12px;                        /* 减少内边距 */
+            margin-bottom: 10px;                  /* 减少外边距 */
             border-radius: 5px;
         }
 
@@ -81,14 +82,15 @@ permalink: /portfolio/topic1/
         }
 
         .highlight p {
-            font-size: 18px;                      /* 统一内容字体大小 */
+            font-size: 16px;                      /* 统一内容字体大小 */
             margin-bottom: 0;
         }
 
         /* 返回按钮样式 */
         .back-link {
-            margin-top: 30px;
-            display: inline-block;
+            position: fixed;                      /* 固定位置 */
+            bottom: 20px;                         /* 距离页面底部 20px */
+            right: 20px;                          /* 距离页面右侧 20px */
             text-decoration: none;
             color: #ffffff;                       /* 按钮字体颜色：白色 */
             background-color: #3a506b;            /* 按钮背景色：深蓝灰色 */
@@ -97,6 +99,7 @@ permalink: /portfolio/topic1/
             font-size: 16px;
             font-weight: 500;                     /* 按钮字体加粗 */
             transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加按钮阴影 */
         }
 
         .back-link:hover {
@@ -153,7 +156,7 @@ permalink: /portfolio/topic1/
         <!-- 图片显示在页面底部，调整图片样式 -->
         <img src="/images/topic1.gif" alt="Topic 1 Image" class="header-image">
 
-        <!-- 返回链接，优化按钮样式 -->
+        <!-- 返回链接，优化按钮样式，固定在右下角 -->
         <a href="/portfolio/" class="back-link">Back to Research Topics</a>
     </div>
 </body>
