@@ -91,9 +91,8 @@ permalink: /portfolio/topic1/
         /* 返回按钮样式 */
         .back-link {
             position: absolute;                   /* 绝对定位，相对父容器 */
-            top: 50%;                             /* 垂直居中 */
-            transform: translateY(-50%);          /* 确保垂直居中 */
-            right: 20px;                          /* 靠近容器右侧，但留有间距 */
+            top: 20%;                             /* 设置为靠上位置，避免遮挡图片 */
+            right: 10px;                          /* 靠近容器右侧，但留有间距 */
             text-decoration: none;
             color: #ffffff;                       /* 按钮字体颜色：白色 */
             background-color: #3a506b;            /* 按钮背景色：深蓝灰色 */
@@ -107,7 +106,7 @@ permalink: /portfolio/topic1/
 
         .back-link:hover {
             background-color: #2c3e50;            /* 按钮悬停时颜色略深 */
-            transform: translate(-50%, -2px);     /* 按钮悬停时轻微上移 */
+            transform: translateY(-2px);          /* 按钮悬停时轻微上移 */
         }
 
         /* 图片样式 */
@@ -159,7 +158,7 @@ permalink: /portfolio/topic1/
         <!-- 图片显示在页面底部，调整图片样式，减少与内容的间距 -->
         <img src="/images/topic1.gif" alt="Topic 1 Image" class="header-image">
 
-        <!-- 返回链接，放置在容器右侧，垂直居中 -->
+        <!-- 返回链接，放置在容器右侧，靠上位置，避免遮挡图片 -->
         <a href="/portfolio/" class="back-link">Back to Research Topics</a>
     </div>
 </body>
