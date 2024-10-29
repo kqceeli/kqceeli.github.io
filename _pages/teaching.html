@@ -6,40 +6,26 @@ author_profile: true
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teaching Experiences</title>
     <style>
-        /* 全局样式设置，简洁学术风格 */
-        body {
-            font-family: 'Times New Roman', serif;
-            font-size: 14px;  /* 调整为较小的字体，适合学术阅读 */
-            color: #000;
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-            background-color: #fff;
-        }
-
-        /* 页面容器 */
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 20px auto;  /* 简单的页面边距 */
-        }
-
-        /* 二级标题 */
+        /* 修改二级标题的上下间距 */
         h2 {
-            font-size: 16px;
-            margin: 15px 0 10px 0;
-            color: #000;
-            text-align: left;  /* 左对齐 */
+            margin-top: 8px;  /* 上方间距缩小 */
+            margin-bottom: 6px;  /* 下方间距缩小 */
         }
 
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            h2 {
+                margin-top: 6px;  /* 小屏幕时进一步缩小上方间距 */
+                margin-bottom: 4px;  /* 小屏幕时进一步缩小下方间距 */
+            }
+        }
     </style>
 </head>
-
 <body>
 <!-- 教学经历部分 -->
 <section>
