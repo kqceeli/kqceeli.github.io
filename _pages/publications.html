@@ -5,39 +5,71 @@ permalink: /publications/
 author_profile: true
 ---
  
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Publications</title>
     <style>
-        /* 全局样式 */
+        /* 全局基础样式 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
             color: #333;
         }
 
-        /* 增加顶部的留白 */
         h2 {
-            margin-top: 20px;  /* 调整这个值来增加 Journal Papers 顶部的留白 */
+            font-size: 1.2rem; /* 调整后的字体大小 */
+            color: #2980b9;
+            margin-top: 20px;                  /* 上方留白，减少至20px */
+            margin-bottom: 5px;               /* 下方留白，减少至20px */
         }
 
-        /* 响应式设计 */
+        h3 {
+            font-size: 1.0rem;
+            margin: 0.8rem 0;
+            color: #2c3e50;
+        }
+
+        ol {
+            margin-left: 25px;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 调整小屏幕显示 */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 20px;  /* 在小屏幕上减小字体大小 */
-                margin-top: 15px;  /* 在小屏幕上进一步减少顶部留白 */
+            h2 {
+                font-size: 1rem; /* 在小屏幕上进一步缩小 */
             }
 
-            p, li {
-                font-size: 14px;  /* 减小段落和列表项的字体大小 */
+            h3 {
+                font-size: 0.9rem;
+            }
+
+            ol {
+                margin-left: 10px;
             }
         }
     </style>
 </head>
 <body>
-
+  
 <!-- Journal Papers Section -->
 <section>
   <h2>Journal Papers</h2>
