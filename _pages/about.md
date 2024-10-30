@@ -61,3 +61,23 @@ redirect_from:
   gtag('js', new Date());
   gtag('config', 'GTM-NMDGTJ84');
 </script>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-P74PVBTW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'GTM-P74PVBTW');  // 替换为你的跟踪代码
+    </script>
+    <!-- End Google Analytics -->
+</head>
+<body>
+    {{ content }}
+</body>
+</html>
