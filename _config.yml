@@ -341,12 +341,11 @@ tag_archive:
 #     tag: /tags/:name/
 
 
+
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
-
-google_analytics: "G-M24EKRSQDC"  # 使用您的 Google Analytics 跟踪ID
+google_analytics: G-M24EKRSQDC 
