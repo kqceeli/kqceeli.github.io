@@ -349,4 +349,4 @@ compress_html:
     envs: development
 
 
-google_analytics: G-M24EKRSQDC
+google_analytics: "G-M24EKRSQDC"  # 使用您的 Google Analytics 跟踪ID
