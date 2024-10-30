@@ -52,12 +52,3 @@ redirect_from:
     
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=97b7db&w=280&t=t&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=539aff&cmn=cc3a5f&ct=000000'></script>
 
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NMDGTJ84"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'GTM-NMDGTJ84');
-</script>
