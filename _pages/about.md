@@ -47,7 +47,7 @@ redirect_from:
 </div>
 -->
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=97b7db&w=a&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=539aff&cmn=cc3a5f'></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=80aee0&w=500&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=fefefe&cmo=007bff&cmn=f20a1b'></script>
 
 
 
