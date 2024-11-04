@@ -44,11 +44,12 @@ redirect_from:
     <script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5tvztu8j7v1&amp;m=0c&amp;c=007eff&amp;cr1=ff0000&amp;sx=0&amp;ds=30&amp;cw=ffffff&amp;cb=97bfe8" async="async"></script>
     <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=80aee0&w=500&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=fefefe&cmo=007bff&cmn=f20a1b'></script>
     <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=80aee0&w=500&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=fefefe&cmo=007bff&cmn=f20a1b'></script>
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=97b7db&w=280&t=t&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=539aff&cmn=cc3a5f&ct=000000'></script>
+
   </div>
 </div>
 -->
 
-
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=80afe5&w=a&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=1a72b0&cmn=ff5353&ct=000000'></script>
     
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=97b7db&w=280&t=t&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=539aff&cmn=cc3a5f&ct=000000'></script>
 
