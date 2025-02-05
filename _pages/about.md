@@ -11,7 +11,7 @@ redirect_from:
 
 - My work is particularly recognized in the field of artificial ground freezing (AGF), where I have developed advanced thermo-hydro-mechanical (THM) models for freezing processes in complex geological environments. This research earned me the 2023 Hubei Provincial Science & Technology Progress Award.
 
-- I have published over 30 papers in leading international journals, with over 700 citations and an h-index of 15. I also serve as an Early-career Editorial Panel Member for the European Journal of Soil Science and regularly review for top-tier journals such as the Journal of Geotechnical and Geoenvironmental Engineering and Computers and Geotechnics.
+- I have published over 30 papers in leading international journals, with over 800 citations and an h-index of 18. I also serve as an Early-career Editorial Panel Member for the European Journal of Soil Science and regularly review for top-tier journals such as the Journal of Geotechnical and Geoenvironmental Engineering and Computers and Geotechnics.
 
 - **My research interests involve**:  
    1. *Multi-field coupling theory*  
