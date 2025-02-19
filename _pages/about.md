@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-- I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/cee), working under the supervision of Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). I earned my PhD from Wuhan University in 2022 under the mentorship of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN). I was also a visiting PhD at the [National University of Singapore](https://nus.edu.sg) under Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra), a fellow of the Singapore Academy of Engineering.
+- I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working under the supervision of Prof. [YIN Zhen-Yu]https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). I earned my PhD from Wuhan University in 2022 under the mentorship of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN). I was also a visiting PhD at the [National University of Singapore (NUS)](https://nus.edu.sg) under Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra), a fellow of the Singapore Academy of Engineering.
 
 - My work is particularly recognized in the field of artificial ground freezing (AGF), where I have developed advanced thermo-hydro-mechanical (THM) models for freezing processes in complex geological environments. This research earned me the 2023 Hubei Provincial Science & Technology Progress Award.
 
