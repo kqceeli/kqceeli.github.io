@@ -14,7 +14,7 @@ redirect_from:
 - I have published over 30 papers in leading international journals, with over 800 citations and an h-index of 18. I also serve as an Early-career Editorial Panel Member for the European Journal of Soil Science and regularly review for top-tier journals such as the Journal of Geotechnical and Geoenvironmental Engineering and Computers and Geotechnics.
 
 - **My research interests involve**:  
-   1. *Multi-field coupling theory*  
+   1. *Multiscale & multiphysics coupling theory* 
    2. *Constitutive modelling of soils*  
    3. *Random finite element method*  
    4. *Geotechnical risk and reliability*  
