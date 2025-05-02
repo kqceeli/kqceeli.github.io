@@ -11,7 +11,7 @@ redirect_from:
 
 - My work is particularly recognized in the field of artificial ground freezing (AGF), where I have developed advanced thermo-hydro-mechanical (THM) models for freezing processes in complex geological environments. This research earned me the 2023 Hubei Provincial Science & Technology Progress Award.
 
-- I have published over 30 papers in leading international journals, with over 900 citations and an h-index of 18. I also serve as an Early-career Editorial Panel Member for the European Journal of Soil Science and regularly review for top-tier journals such as the Journal of Geotechnical and Geoenvironmental Engineering and Computers and Geotechnics.
+- I have published over 30 papers in leading international journals, with over 1000 citations and an h-index of 19. I also serve as an Early-career Editorial Panel Member for the European Journal of Soil Science and regularly review for top-tier journals such as the Journal of Geotechnical and Geoenvironmental Engineering and Computers and Geotechnics.
 
 - **My research interests involve**:  
    1. *Multiscale & multiphysics coupling theory* 
@@ -24,8 +24,8 @@ redirect_from:
 - If you're interested in collaborating or learning more about my research, feel free to contact me!
 
 ## Recent News
-- <span style="color:green; font-style:italic; font-weight:bold;">Research</span>: My recent paper, *“Finite element-integrated neural network for inverse analysis of elastic and elastoplastic boundary value problems”* ([DOI:10.1016/j.cma.2024.11769](https://doi.org/10.1016/j.cma.2024.117695)), was published in *Computer Methods in Applied Mechanics and Engineering* (JCR Ranking 6/181, Top 3%) in March 2025.
-- <span style="color:green; font-style:italic; font-weight:bold;">Research</span>: My paper, *“Finite element-integrated neural network framework for elastic and elastoplastic solids”* ([DOI: 10.1016/j.cma.2024.117474](https://doi.org/10.1016/j.cma.2024.117474)), was published in *Computer Methods in Applied Mechanics and Engineering* (JCR Ranking 6/181, Top 3%) in January 2025.
+- <span style="color:green; font-style:italic; font-weight:bold;">Research</span>: My recent paper, *“State of the art of mechanical behaviors of frozen soils through experimental investigation”* ([DOI:10.1016/j.coldregions.2025.104497](https://doi.org/10.1016/j.coldregions.2025.104497)), was published in *Cold Regions Science and Technology* in March 2025.
+- <span style="color:green; font-style:italic; font-weight:bold;">Research</span>: My recent paper, *“Physics-informed neural networks for solving steady-state temperature field in artificial ground freezing”* ([DOI:10.1139/cgj-2024-0650](https://doi.org/10.1139/cgj-2024-0650)), was published in *Canadian Geotechnical Journal* in March 2025.
 - <span style="color:red; font-style:italic; font-weight:bold;">Award</span>: I was awarded the **PolyU Distinguished Postdoctoral Fellow** in October 2024.  
 - <span style="color:green; font-style:italic; font-weight:bold;">Research</span>: My recent paper, *“Towards an improved prediction of soil-freezing characteristic curve based on extreme gradient boosting model”* ([DOI: 10.1016/j.gsf.2024.101898](https://doi.org/10.1016/j.gsf.2024.101898)), was published in *Geoscience Frontiers* (JCR Ranking 9/254, Top 5%) in July 2024.
 - <span style="color:green; font-style:italic; font-weight:bold;">Research</span>: My paper, *“State of the art of coupled thermo–hydro-mechanical–chemical modelling for frozen soils”* ([DOI: 10.1007/s11831-024-10164-w](https://doi.org/10.1007/s11831-024-10164-w)), was published in *Archives of Computational Methods in Engineering* (JCR Ranking 3/181, Top 2%) in July 2024.
