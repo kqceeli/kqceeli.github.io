@@ -26,7 +26,6 @@ redirect_from:
 
 
 ## About Me
-
 I am an NSFC Excellent Young Scientists Fund (Overseas) Awardee and will join Wuhan University as an Incoming Professor in the School of Water Resources and Hydropower Engineering. I am currently a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), where I work with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin).
 
 My research lies at the interface of geotechnical engineering, mechanics, and computational methods, with a particular focus on frozen-ground mechanics, artificial ground freezing, constitutive modelling, multiphysics coupling, and uncertainty quantification. More recently, I have also been developing AI-enabled approaches for computational geotechnics.
@@ -35,16 +34,15 @@ I received my Ph.D. in Geotechnical Engineering from Wuhan University in 2022 un
 
 To date, I have published 40+ journal papers, received 1,500+ citations, achieved an h-index of 23, and authored 5 ESI Highly Cited Papers.
 
+Looking ahead, I aim to help shape the future of geotechnical engineering through intelligent, uncertainty-aware, and physics-informed approaches, contributing to safer infrastructure, more reliable predictions, and better risk-informed decision-making.
+
 ## Research Interests
-
-My current research interests include:
-
-- **Frozen and cold-region geotechnics**: frozen-ground mechanics and artificial ground freezing  
-- **Geomaterial modelling**: constitutive modelling of soils and frozen geomaterials  
-- **Multiphysics problems**: thermo-hydro-mechanical-chemical (THMC) coupling in geotechnical systems  
-- **Uncertainty-aware geotechnics**: uncertainty quantification, reliability, and risk analysis  
-- **Computational methods**: random finite element methods and stochastic simulation  
-- **AI for geotechnics**: physics-informed and data-driven computational modelling
+- Frozen geomaterials and artificial ground freezing  
+- Constitutive and computational geomechanics  
+- Multiscale and multiphysics modelling  
+- Uncertainty quantification in geotechnical systems  
+- Risk and reliability analysis  
+- AI for geotechnical engineering  
 
 ## Selected News
 
