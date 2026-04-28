@@ -10,10 +10,6 @@ redirect_from:
 <div class="hero-intro compact-hero">
   <h1>Kai-Qi Li, Ph.D.</h1>
 
-  <p class="hero-award">
-    NSFC Excellent Young Scientists Fund (Overseas) Awardee
-  </p>
-
   <p class="hero-meta">
     Incoming Professor, Wuhan University | Postdoc, The Hong Kong Polytechnic University
   </p>
@@ -35,6 +31,8 @@ I received my Ph.D. in Geotechnical Engineering from Wuhan University in 2022 un
 To date, I have published 40+ journal papers, received 1,500+ citations, achieved an h-index of 23, and authored 5 ESI Highly Cited Papers.
 
 Looking ahead, I aim to help shape the future of geotechnical engineering through intelligent, uncertainty-aware, and physics-informed approaches, contributing to safer infrastructure, more reliable predictions, and better risk-informed decision-making.
+
+If you're interested in collaborating or learning more about my research, feel free to contact me!
 
 ## Research Interests
 - Frozen geomaterials and artificial ground freezing  
