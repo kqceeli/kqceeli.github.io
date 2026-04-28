@@ -27,11 +27,11 @@ redirect_from:
 
 ## About Me
 
-I am an **NSFC Excellent Young Scientists Fund (Overseas) Awardee** and will join **Wuhan University** as an **Incoming Professor** in the School of Water Resources and Hydropower Engineering. I am currently a **Postdoctoral Fellow** in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), where I work with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin).
+I am an NSFC Excellent Young Scientists Fund (Overseas) Awardee and will join Wuhan University as an Incoming Professor in the School of Water Resources and Hydropower Engineering. I am currently a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), where I work with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin).
 
-My research lies at the interface of **geotechnical engineering, mechanics, and computational methods**, with a particular focus on **frozen-ground mechanics**, **artificial ground freezing**, **constitutive modelling**, **multiphysics coupling**, and **uncertainty quantification**. More recently, I have also been developing **AI-enabled approaches for computational geotechnics**.
+My research lies at the interface of geotechnical engineering, mechanics, and computational methods, with a particular focus on frozen-ground mechanics, artificial ground freezing, constitutive modelling, multiphysics coupling, and uncertainty quantification. More recently, I have also been developing AI-enabled approaches for computational geotechnics.
 
-I received my **Ph.D. in Geotechnical Engineering** from **Wuhan University** in 2022 under the supervision of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en), and was a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg), hosted by Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra).
+I received my Ph.D. in Geotechnical Engineering from Wuhan University in 2022 under the supervision of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en), and was a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg), hosted by Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra).
 
 To date, I have published **40+ journal papers**, received **1,500+ citations**, achieved an **h-index of 23**, and authored **5 ESI Highly Cited Papers**.
 
