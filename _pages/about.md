@@ -18,12 +18,15 @@ redirect_from:
     Incoming Professor, Wuhan University · Postdoctoral Fellow, The Hong Kong Polytechnic University
   </p>
 
+  <p class="hero-keywords">
+    Frozen-ground mechanics · Artificial ground freezing · AI-enabled geotechnics
+  </p>
+
   <div class="hero-buttons">
     <a href="/join-us/" class="btn-primary">Join Us</a>
     <a href="/publications/" class="btn-secondary">Publications</a>
   </div>
 </div>
-
 
 ## About Me
 
