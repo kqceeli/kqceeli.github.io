@@ -7,26 +7,74 @@ redirect_from:
   - /about.html
 ---
 
-<div class="homepage-intro-left">
-  <h1>Kai-Qi Li, Ph.D.</h1>
-  <p class="intro-highlight">NSFC Excellent Young Scientists Fund (Overseas) Awardee</p>
-  <p class="intro-meta">Incoming Professor, Wuhan University · Postdoctoral Fellow, The Hong Kong Polytechnic University</p>
+<div class="hero-intro">
+  <div class="hero-text">
+    <h1>Kai-Qi Li, Ph.D.</h1>
+    <p class="hero-award">NSFC Excellent Young Scientists Fund (Overseas) Awardee</p>
+    <p class="hero-position">Incoming Professor, Wuhan University</p>
+    <p class="hero-position">Postdoctoral Fellow, The Hong Kong Polytechnic University</p>
+    <p class="hero-keywords">Frozen-ground mechanics · Artificial ground freezing · AI-enabled geotechnics</p>
+
+    <div class="hero-buttons">
+      <a href="#join-us" class="btn-primary">Join Us</a>
+      <a href="/publications/" class="btn-secondary">Publications</a>
+    </div>
+  </div>
 </div>
+
+## About Me
 
 I am an NSFC Excellent Young Scientists Fund (Overseas) Awardee and an Incoming Professor at the School of Water Resources and Hydropower Engineering, Wuhan University. Currently, I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin).
 
 I received my Ph.D. from Wuhan University in 2022 under the supervision of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en), and was also a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg) hosted by Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra).
 
-My research focuses on frozen-ground mechanics, artificial ground freezing (AGF), constitutive modelling, multiphysics coupling, uncertainty quantification, and AI-enabled computational geotechnics.
+My research focuses on frozen-ground mechanics, artificial ground freezing, constitutive modelling, multiphysics coupling, uncertainty quantification, and AI-enabled computational geotechnics.
 
-## Highlights
+## Research Highlights
 
-- Published **40+ journal papers** in leading journals, including *JGGE*, *Computers and Geotechnics*, *Canadian Geotechnical Journal*, *Acta Geotechnica*, *CMAME*, *Acta Materialia*, and *Archives of Computational Methods in Engineering*.
-- My publications have received **1,500+ citations**, with an **h-index of 23** and **five ESI Highly Cited Papers**.
-- Developed advanced thermo-hydro-mechanical models for artificial ground freezing in complex geological environments, Recipient of the **2023 Hubei Province Science & Technology Progress Award**.
+<div class="highlight-grid">
+  <div class="highlight-card">
+    <div class="highlight-number">40+</div>
+    <div class="highlight-label">Journal papers</div>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-number">1,500+</div>
+    <div class="highlight-label">Citations</div>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-number">23</div>
+    <div class="highlight-label">h-index</div>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-number">5</div>
+    <div class="highlight-label">ESI Highly Cited Papers</div>
+  </div>
+</div>
+
+- Published in leading journals including *Journal of Geotechnical and Geoenvironmental Engineering*, *Computers and Geotechnics*, *Canadian Geotechnical Journal*, *Acta Geotechnica*, *CMAME*, *Acta Materialia*, and *Archives of Computational Methods in Engineering*.
+- Developed advanced thermo-hydro-mechanical models for artificial ground freezing in complex geological environments.
+- Recipient of the **2023 Hubei Province Science & Technology Progress Award**.
 - Serving on the **Early-Career Editorial Panel** of the *European Journal of Soil Science*.
 
-I welcome students and collaborators interested in AI-enabled geotechnics, frozen-ground engineering, uncertainty-informed analysis, and intelligent multiphysics simulation. Please feel free to contact me for potential collaboration or research opportunities.
+## <a id="join-us"></a>Join Us
+
+I am building a research group at **Wuhan University** and warmly welcome motivated students and collaborators to join us.
+
+**Open to:**
+- Ph.D. students
+- Master’s students
+- Undergraduate research assistants
+- Visiting students and research collaborators
+- Postdoctoral applicants with strong research backgrounds
+
+**Research topics include:**
+- Frozen-ground mechanics and artificial ground freezing
+- Constitutive modelling of geomaterials
+- Multiphysics coupling in geotechnical engineering
+- Geotechnical uncertainty, reliability, and risk
+- AI-enabled and data-driven computational geotechnics
+
+If you are interested, please feel free to email me with your **CV**, **transcript**, and a brief description of your research interests.
 
 ## Research Interests
 
