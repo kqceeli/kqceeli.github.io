@@ -7,16 +7,17 @@ redirect_from:
   - /about.html
 ---
 
-<div style="text-align: center; margin-top: 0.8em; margin-bottom: 1.8em; line-height: 1.5;">
-  <h1 style="margin-bottom: 0.15em; font-size: 2.2em;">Kai-Qi Li, Ph.D.</h1>
-  <p style="font-size: 1.05em; font-weight: 600; margin: 0.15em 0;">NSFC Excellent Young Scientists Fund (Overseas) Awardee</p>
-  <p style="font-size: 1.02em; margin: 0.1em 0;">Incoming Professor, Wuhan University</p>
-  <p style="font-size: 1.02em; margin: 0.1em 0;">Postdoctoral Fellow, The Hong Kong Polytechnic University</p>
+<div class="homepage-intro">
+  <h1>Kai-Qi Li, Ph.D.</h1>
+  <p class="intro-line strong">NSFC Excellent Young Scientists Fund (Overseas) Awardee</p>
+  <p class="intro-line">Incoming Professor, Wuhan University</p>
+  <p class="intro-line">Postdoctoral Fellow, The Hong Kong Polytechnic University</p>
 </div>
 
 I am an NSFC Excellent Young Scientists Fund (Overseas) Awardee and an Incoming Professor at the School of Water Resources and Hydropower Engineering, Wuhan University.
 
-Currently, I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). I received my Ph.D. from Wuhan University in 2022 under the supervision of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en), and was also a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg) hosted by Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra).
+Currently, I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). 
+I received my Ph.D. from Wuhan University in 2022 under the supervision of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en), and was also a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg) hosted by Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra).
 
 My research lies at the intersection of geotechnical engineering, frozen-ground mechanics, multiphysics coupling, uncertainty quantification, and AI-enabled computational methods. I am particularly recognized for my work on artificial ground freezing (AGF), where I have developed advanced thermo-hydro-mechanical models for freezing processes in complex geological environments. This line of research was recognized with the 2023 Hubei Province Science & Technology Progress Award.
 
