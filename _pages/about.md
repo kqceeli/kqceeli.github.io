@@ -18,10 +18,11 @@ redirect_from:
     Incoming Professor, Wuhan University · Postdoctoral Fellow, The Hong Kong Polytechnic University
   </p>
 
-  <div class="hero-buttons">
-    <a href="/join-us/" class="btn-primary">Join Us</a>
-    <a href="/publications/" class="btn-secondary">Publications</a>
-  </div>
+  <p>
+    <a href="/join-us/">Join Us</a> ·
+    <a href="/publications/">Publications</a>
+  </p>
+
 </div>
 
 
