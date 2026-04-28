@@ -7,18 +7,24 @@ redirect_from:
   - /about.html
 ---
 
-<div class="hero-intro">
-  <div class="hero-text">
-    <h1>Kai-Qi Li, Ph.D.</h1>
-    <p class="hero-award">NSFC Excellent Young Scientists Fund (Overseas) Awardee</p>
-    <p class="hero-position">Incoming Professor, Wuhan University</p>
-    <p class="hero-position">Postdoctoral Fellow, The Hong Kong Polytechnic University</p>
-    <p class="hero-keywords">Frozen-ground mechanics · Artificial ground freezing · AI-enabled geotechnics</p>
+<div class="hero-intro compact-hero">
+  <h1>Kai-Qi Li, Ph.D.</h1>
 
-    <div class="hero-buttons">
-      <a href="#join-us" class="btn-primary">Join Us</a>
-      <a href="/publications/" class="btn-secondary">Publications</a>
-    </div>
+  <p class="hero-award">
+    NSFC Excellent Young Scientists Fund (Overseas) Awardee
+  </p>
+
+  <p class="hero-meta">
+    Incoming Professor, Wuhan University · Postdoctoral Fellow, The Hong Kong Polytechnic University
+  </p>
+
+  <p class="hero-keywords">
+    Frozen-ground mechanics · Artificial ground freezing · AI-enabled geotechnics
+  </p>
+
+  <div class="hero-buttons">
+    <a href="/join-us/" class="btn-primary">Join Us</a>
+    <a href="/publications/" class="btn-secondary">Publications</a>
   </div>
 </div>
 
@@ -32,73 +38,48 @@ My research focuses on frozen-ground mechanics, artificial ground freezing, cons
 
 ## Research Highlights
 
-<div class="highlight-grid">
-  <div class="highlight-card">
-    <div class="highlight-number">40+</div>
-    <div class="highlight-label">Journal papers</div>
+<div class="highlights-simple">
+  <div class="highlight-item">
+    <span class="highlight-num">40+</span>
+    <span class="highlight-text">journal papers</span>
   </div>
-  <div class="highlight-card">
-    <div class="highlight-number">1,500+</div>
-    <div class="highlight-label">Citations</div>
+  <div class="highlight-item">
+    <span class="highlight-num">1,500+</span>
+    <span class="highlight-text">citations</span>
   </div>
-  <div class="highlight-card">
-    <div class="highlight-number">23</div>
-    <div class="highlight-label">h-index</div>
+  <div class="highlight-item">
+    <span class="highlight-num">23</span>
+    <span class="highlight-text">h-index</span>
   </div>
-  <div class="highlight-card">
-    <div class="highlight-number">5</div>
-    <div class="highlight-label">ESI Highly Cited Papers</div>
+  <div class="highlight-item">
+    <span class="highlight-num">5</span>
+    <span class="highlight-text">ESI Highly Cited Papers</span>
   </div>
 </div>
 
-- Published in leading journals including *Journal of Geotechnical and Geoenvironmental Engineering*, *Computers and Geotechnics*, *Canadian Geotechnical Journal*, *Acta Geotechnica*, *CMAME*, *Acta Materialia*, and *Archives of Computational Methods in Engineering*.
-- Developed advanced thermo-hydro-mechanical models for artificial ground freezing in complex geological environments.
-- Recipient of the **2023 Hubei Province Science & Technology Progress Award**.
-- Serving on the **Early-Career Editorial Panel** of the *European Journal of Soil Science*.
-
-## <a id="join-us"></a>Join Us
-
-I am building a research group at **Wuhan University** and warmly welcome motivated students and collaborators to join us.
-
-**Open to:**
-- Ph.D. students
-- Master’s students
-- Undergraduate research assistants
-- Visiting students and research collaborators
-- Postdoctoral applicants with strong research backgrounds
-
-**Research topics include:**
-- Frozen-ground mechanics and artificial ground freezing
-- Constitutive modelling of geomaterials
-- Multiphysics coupling in geotechnical engineering
-- Geotechnical uncertainty, reliability, and risk
-- AI-enabled and data-driven computational geotechnics
-
-If you are interested, please feel free to email me with your **CV**, **transcript**, and a brief description of your research interests.
-
 ## Research Interests
 
-- Multiphysics and multiscale modeling in geomechanics  
-- Constitutive modeling of soils and frozen geomaterials  
-- Artificial ground freezing and frozen-ground engineering  
+- Frozen-ground mechanics and artificial ground freezing  
+- Constitutive modelling of soils and frozen geomaterials  
+- Multiphysics coupling in geotechnical engineering  
 - Geotechnical uncertainty, risk, and reliability  
 - Random finite element methods and uncertainty quantification  
-- AI-enabled modeling and intelligent computation in geotechnical engineering  
+- AI-enabled computational geotechnics  
 
-## News & Updates
+## Selected News
 
 A selection of recent highlights in research, funding, awards, and academic service.
 
 ### <span style="color:#d62728;">Awards & Honors</span>
 
-- [2026] Awarded the NSFC Excellent Young Scientists Fund (Overseas) and will join Wuhan University as an incoming professor.
-- [2025] Shortlisted for the JC STEM Early Career Research Fellowship.
-- [2024] Awarded the PolyU Distinguished Postdoctoral Fellowship in October 2024.
-- [2024] Received the 2023 Hubei Province Science & Technology Progress Award for the project *Risk Prevention and Control of Artificial Ground Freezing Technique in Water-Rich Stratum* in April 2024 ([Link](https://www.hubei.gov.cn/zfwj/ezf/202407/t20240726_5280385.shtml)).
-- [2023] Received the 2023 Academic Innovation Award from Wuhan University in March 2023.
-- [2021] Received the Excellence in Teaching Award from Wuhan University in March 2021.
-- [2020] Named one of Wuhan University’s Top 10 Academic Stars in October 2020 (awarded to only 10 graduate students). See the [official announcement](https://service.whu.edu.cn/info/1005/2179.htm) or read more [here](https://risk.whu.edu.cn/info/1034/1301.htm).
-- [2016] Awarded the Top 10 Future Star Undergraduate by the China Water Resources Education Association in July 2016 ([Link](https://sljzw.hhu.edu.cn/2019/0415/c11821a189595/page.htm)).
+- [2026] Awarded the **NSFC Excellent Young Scientists Fund (Overseas)** and will join **Wuhan University** as an incoming professor.
+- [2025] Shortlisted for the **JC STEM Early Career Research Fellowship**.
+- [2024] Awarded the **PolyU Distinguished Postdoctoral Fellowship** in October 2024.
+- [2024] Received the **2023 Hubei Province Science & Technology Progress Award** for the project *Risk Prevention and Control of Artificial Ground Freezing Technique in Water-Rich Stratum* in April 2024 ([Link](https://www.hubei.gov.cn/zfwj/ezf/202407/t20240726_5280385.shtml)).
+- [2023] Received the **2023 Academic Innovation Award** from Wuhan University in March 2023.
+- [2021] Received the **Excellence in Teaching Award** from Wuhan University in March 2021.
+- [2020] Named one of **Wuhan University’s Top 10 Academic Stars** in October 2020. See the [official announcement](https://service.whu.edu.cn/info/1005/2179.htm) or read more [here](https://risk.whu.edu.cn/info/1034/1301.htm).
+- [2016] Awarded the **Top 10 Future Star Undergraduate** by the China Water Resources Education Association in July 2016 ([Link](https://sljzw.hhu.edu.cn/2019/0415/c11821a189595/page.htm)).
 
 ### <span style="color:#9467bd;">Research & Publications</span>
 
@@ -107,24 +88,20 @@ A selection of recent highlights in research, funding, awards, and academic serv
 - [2025] Published *Relative ice saturation and unified elastoplastic modeling of frozen soils* in the *Journal of Geotechnical and Geoenvironmental Engineering* ([DOI:10.1061/JGGEFK.GTENG-13437](https://doi.org/10.1061/JGGEFK.GTENG-13437)).
 - [2025] Published *Physics-informed neural networks for solving steady-state temperature field in artificial ground freezing* in the *Canadian Geotechnical Journal* ([DOI:10.1139/cgj-2024-0650](https://doi.org/10.1139/cgj-2024-0650)).
 - [2025] Published *State of the art of mechanical behaviors of frozen soils through experimental investigation* in *Cold Regions Science and Technology* ([DOI:10.1016/j.coldregions.2025.104497](https://doi.org/10.1016/j.coldregions.2025.104497)).
-- [2024] Published *Towards an improved prediction of soil-freezing characteristic curve based on extreme gradient boosting model* in *Geoscience Frontiers* ([DOI:10.1016/j.gsf.2024.101898](https://doi.org/10.1016/j.gsf.2024.101898)).
-- [2024] Published *State of the art of coupled thermo–hydro-mechanical–chemical modelling for frozen soils* in *Archives of Computational Methods in Engineering* ([DOI:10.1007/s11831-024-10164-w](https://doi.org/10.1007/s11831-024-10164-w)).
-- [2024] Published *Investigation on evolution law of frozen wall thickness in artificial ground freezing under seepage conditions* in the *Canadian Geotechnical Journal* ([DOI:10.1139/cgj-2023-0576](https://doi.org/10.1139/cgj-2023-0576)).
-- [2024] Published *State-of-the-art constitutive modelling of frozen soils* in *Archives of Computational Methods in Engineering* ([DOI:10.1007/s11831-024-10102-w](https://doi.org/10.1007/s11831-024-10102-w)).
 
 ### <span style="color:#1f77b4;">Funding</span>
 
-- [2025–2026] Awarded HK$841,040 as PI for a project on thermo-hydro-mechanical-chemical coupling in hydrate-bearing sediments using physics-informed neural networks, funded by The Hong Kong Polytechnic University.
-- [2025–2029] Participating in a HK$53.821 million Theme-based Research Scheme project on digital twins for coastal resilience under extreme storm surges in Hong Kong.
-- [2024–2026] Participating in a HK$1.133 million GRF project on physics-informed multi-fidelity neural networks for intelligent rectification of shield machine attitude in layered soils.
-- [2022] Received the Centrally Funded Postdoctoral Fellowship (HK$763,555) for a project on thermo-hydro-mechanical (THM) modelling for artificial ground freezing technique.
+- [2025–2026] Awarded **HK$841,040** as PI for a PolyU project on thermo-hydro-mechanical-chemical coupling in hydrate-bearing sediments using physics-informed neural networks.
+- [2025–2029] Participating in a **HK$53.821 million** Theme-based Research Scheme project on digital twins for coastal resilience under extreme storm surges in Hong Kong.
+- [2024–2026] Participating in a **HK$1.133 million** GRF project on physics-informed multi-fidelity neural networks for intelligent rectification of shield machine attitude in layered soils.
+- [2022] Received the **Centrally Funded Postdoctoral Fellowship (HK$763,555)** for a project on thermo-hydro-mechanical modelling for artificial ground freezing.
 
 ### <span style="color:#2ca02c;">Academic Service</span>
 
-- [2025] Serving as Co-chair of Mini-Symposium 9: Multiphysics Modeling of Geo-engineering and Geohazards at IACMAG 2025, Hong Kong.
-- [2024] Joined the Early-career Editorial Panel for the *European Journal of Soil Science* in March 2024 ([Link](https://bsssjournals.onlinelibrary.wiley.com/hub/journal/13652389/editorialboard.html)).
-- [2024] Served as Session Chair at the 12th National Conference on Engineering Geology, Shenzhen.
-- [2023] Served as Secretary of the International Symposium on Innovations in Geotechnical Engineering towards Sustainability (IGES 2023).
+- [2025] Serving as Co-chair of Mini-Symposium 9: *Multiphysics Modeling of Geo-engineering and Geohazards* at **IACMAG 2025**, Hong Kong.
+- [2024] Joined the **Early-career Editorial Panel** for the *European Journal of Soil Science* in March 2024 ([Link](https://bsssjournals.onlinelibrary.wiley.com/hub/journal/13652389/editorialboard.html)).
+- [2024] Served as Session Chair at the **12th National Conference on Engineering Geology**, Shenzhen.
+- [2023] Served as Secretary of the **International Symposium on Innovations in Geotechnical Engineering towards Sustainability (IGES 2023)**.
 
 <div class="visitor-map">
   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=80afe5&w=270&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=1a72b0&cmn=ff5353&ct=000000'></script>
