@@ -40,74 +40,50 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-
-
-/* ===== Homepage intro: desktop + mobile responsive ===== */
-.homepage-intro {
-  text-align: center;
-  margin: 0.6em 0 1.2em 0;
+/* ===== Homepage intro: cleaner and better aligned ===== */
+.homepage-intro-left {
+  text-align: left;
+  margin: 0.4em 0 1.2em 0;
   line-height: 1.35;
 }
 
-.homepage-intro h1 {
+.homepage-intro-left h1 {
   margin: 0 0 0.2em 0;
-  font-size: 2.1em;
+  font-size: 2.15em;
+  line-height: 1.15;
 }
 
-.homepage-intro .intro-line {
-  margin: 0.12em 0;
-  font-size: 1.02em;
-}
-
-.homepage-intro .strong {
+.homepage-intro-left .intro-highlight {
+  margin: 0 0 0.2em 0;
+  font-size: 1.05em;
   font-weight: 600;
+  color: #222;
 }
 
-.page__content h3 {
-  margin-top: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-.page__content ul li {
-  margin-bottom: 0.35em;
-}
-
-.visitor-map {
-  text-align: center;
-  margin-top: 1.5em;
+.homepage-intro-left .intro-meta {
+  margin: 0;
+  font-size: 0.98em;
+  color: #555;
+  line-height: 1.45;
 }
 
 @media (max-width: 768px) {
-  .homepage-intro {
-    margin: 0.4em 0 1em 0;
-    line-height: 1.3;
+  .homepage-intro-left {
+    margin: 0.2em 0 1em 0;
   }
 
-  .homepage-intro h1 {
-    font-size: 1.72em;
+  .homepage-intro-left h1 {
+    font-size: 1.8em;
     margin-bottom: 0.18em;
   }
 
-  .homepage-intro .intro-line {
-    font-size: 0.95em;
-    margin: 0.08em 0;
+  .homepage-intro-left .intro-highlight {
+    font-size: 0.98em;
+    margin-bottom: 0.15em;
   }
 
-  .page__content h2 {
-    font-size: 1.35em;
-  }
-
-  .page__content h3 {
-    font-size: 1.08em;
-    margin-top: 1em;
-    margin-bottom: 0.4em;
-  }
-
-  .page__content ul li {
-    margin-bottom: 0.28em;
-  }
-
-  .visitor-map {
-    margin-top: 1.2em;
+  .homepage-intro-left .intro-meta {
+    font-size: 0.93em;
+    line-height: 1.4;
   }
 }
