@@ -7,10 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-**Professor (incoming) at Wuhan University | Postdoctoral Research Fellow at PolyU**
+**Professor (incoming) at Wuhan University** | **Postdoctoral Research Fellow at PolyU**
 
 - I am an NSFC Excellent Young Scientists Fund (Overseas) Awardee and Incoming Professor at the School of Water Resources and Hydropower Engineering, Wuhan University.
-Currently, I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). I earned my PhD from Wuhan University in 2022 under the mentorship of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing] (https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en). I was also a visiting PhD at the [National University of Singapore (NUS)](https://nus.edu.sg) under Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra), a fellow of the Singapore Academy of Engineering.
+Currently, I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). I earned my PhD from Wuhan University in 2022 under the mentorship of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en). I was also a visiting PhD at the [National University of Singapore (NUS)](https://nus.edu.sg) under Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra), a fellow of the Singapore Academy of Engineering.
  
 - My research lies at the intersection of geotechnical engineering, computational mechanics, uncertainty quantification, and artificial intelligence. I have developed a distinctive research profile in artificial ground freezing and frozen soils, with broader interests in constitutive modelling, random finite element methods, multiscale and multiphysics modelling, and AI for geotechnical engineering. My goal is to develop predictive, interpretable, and uncertainty-aware computational tools for complex geotechnical systems under coupled physical processes and geological uncertainty.
 
