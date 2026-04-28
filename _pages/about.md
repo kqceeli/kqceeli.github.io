@@ -15,7 +15,7 @@ redirect_from:
   </p>
 
   <p class="hero-meta">
-    Incoming Professor, Wuhan University | Postdoct, The Hong Kong Polytechnic University
+    Incoming Professor, Wuhan University | Postdoc, The Hong Kong Polytechnic University
   </p>
 
   <div class="hero-buttons">
@@ -27,41 +27,26 @@ redirect_from:
 
 ## About Me
 
-I am an NSFC Excellent Young Scientists Fund (Overseas) Awardee and an Incoming Professor at the School of Water Resources and Hydropower Engineering, Wuhan University. Currently, I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin).
+## About Me
 
-I received my Ph.D. from Wuhan University in 2022 under the supervision of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en), and was also a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg) hosted by Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra).
+I am an **NSFC Excellent Young Scientists Fund (Overseas) Awardee** and will join **Wuhan University** as an **Incoming Professor** in the School of Water Resources and Hydropower Engineering. I am currently a **Postdoctoral Fellow** in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), where I work with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin).
 
-My research focuses on frozen-ground mechanics, artificial ground freezing, constitutive modelling, multiphysics coupling, uncertainty quantification, and AI-enabled computational geotechnics.
+My research lies at the interface of **geotechnical engineering, mechanics, and computational methods**, with a particular focus on **frozen-ground mechanics**, **artificial ground freezing**, **constitutive modelling**, **multiphysics coupling**, and **uncertainty quantification**. More recently, I have also been developing **AI-enabled approaches for computational geotechnics**.
 
-## Research Highlights
+I received my **Ph.D. in Geotechnical Engineering** from **Wuhan University** in 2022 under the supervision of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en), and was a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg), hosted by Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra).
 
-<div class="highlights-simple">
-  <div class="highlight-item">
-    <span class="highlight-num">40+</span>
-    <span class="highlight-text">journal papers</span>
-  </div>
-  <div class="highlight-item">
-    <span class="highlight-num">1,500+</span>
-    <span class="highlight-text">citations</span>
-  </div>
-  <div class="highlight-item">
-    <span class="highlight-num">23</span>
-    <span class="highlight-text">h-index</span>
-  </div>
-  <div class="highlight-item">
-    <span class="highlight-num">5</span>
-    <span class="highlight-text">ESI Highly Cited Papers</span>
-  </div>
-</div>
+To date, I have published **40+ journal papers**, received **1,500+ citations**, achieved an **h-index of 23**, and authored **5 ESI Highly Cited Papers**.
 
 ## Research Interests
 
-- Frozen-ground mechanics and artificial ground freezing  
-- Constitutive modelling of soils and frozen geomaterials  
-- Multiphysics coupling in geotechnical engineering  
-- Geotechnical uncertainty, risk, and reliability  
-- Random finite element methods and uncertainty quantification  
-- AI-enabled computational geotechnics  
+My current research interests include:
+
+- **Frozen and cold-region geotechnics**: frozen-ground mechanics and artificial ground freezing  
+- **Geomaterial modelling**: constitutive modelling of soils and frozen geomaterials  
+- **Multiphysics problems**: thermo-hydro-mechanical-chemical (THMC) coupling in geotechnical systems  
+- **Uncertainty-aware geotechnics**: uncertainty quantification, reliability, and risk analysis  
+- **Computational methods**: random finite element methods and stochastic simulation  
+- **AI for geotechnics**: physics-informed and data-driven computational modelling
 
 ## Selected News
 
