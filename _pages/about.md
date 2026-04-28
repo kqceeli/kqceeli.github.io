@@ -27,8 +27,6 @@ redirect_from:
 
 ## About Me
 
-## About Me
-
 I am an **NSFC Excellent Young Scientists Fund (Overseas) Awardee** and will join **Wuhan University** as an **Incoming Professor** in the School of Water Resources and Hydropower Engineering. I am currently a **Postdoctoral Fellow** in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), where I work with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin).
 
 My research lies at the interface of **geotechnical engineering, mechanics, and computational methods**, with a particular focus on **frozen-ground mechanics**, **artificial ground freezing**, **constitutive modelling**, **multiphysics coupling**, and **uncertainty quantification**. More recently, I have also been developing **AI-enabled approaches for computational geotechnics**.
