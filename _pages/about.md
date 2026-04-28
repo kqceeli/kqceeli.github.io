@@ -7,11 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-- I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working under the supervision of Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). I earned my PhD from Wuhan University in 2022 under the mentorship of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN). I was also a visiting PhD at the [National University of Singapore (NUS)](https://nus.edu.sg) under Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra), a fellow of the Singapore Academy of Engineering.
+**Professor (incoming) at Wuhan University | Postdoctoral Research Fellow at PolyU**
 
+- I am an NSFC Excellent Young Scientists Fund (Overseas) Awardee and Incoming Professor at the School of Water Resources and Hydropower Engineering, Wuhan University.
+Currently, I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). I earned my PhD from Wuhan University in 2022 under the mentorship of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing] (https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en). I was also a visiting PhD at the [National University of Singapore (NUS)](https://nus.edu.sg) under Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra), a fellow of the Singapore Academy of Engineering.
+ 
+- My research lies at the intersection of geotechnical engineering, computational mechanics, uncertainty quantification, and artificial intelligence. I have developed a distinctive research profile in artificial ground freezing and frozen soils, with broader interests in constitutive modelling, random finite element methods, multiscale and multiphysics modelling, and AI for geotechnical engineering. My goal is to develop predictive, interpretable, and uncertainty-aware computational tools for complex geotechnical systems under coupled physical processes and geological uncertainty.
+
+- I have published 30+ journal papers in leading international journals, including Journal of Geotechnical and Geoenvironmental Engineering, Computers and Geotechnics, Canadian Geotechnical Journal, Acta Geotechnica, Computer Methods in Applied Mechanics and Engineering, Acta Materialia, and Archives of Computational Methods in Engineering. My work has received 1,500+ citations, with an h-index of 23 and five ESI Highly Cited Papers. 
 - My work is particularly recognized in the field of artificial ground freezing (AGF), where I have developed advanced thermo-hydro-mechanical (THM) models for freezing processes in complex geological environments. This research earned me the 2023 Hubei Provincial Science & Technology Progress Award.
-
-- I have published over 30 papers in leading international journals, with over 1000 citations and an h-index of 21. I also serve as an Early-career Editorial Panel Member for the European Journal of Soil Science and regularly review for top-tier journals such as the Journal of Geotechnical and Geoenvironmental Engineering and Computers and Geotechnics.
+- I currently serve as an Early-Career Editorial Panel Member for the European Journal of Soil Science and am actively involved in journal reviewing, teaching, and student supervision. 
 
 - **My research interests involve**:  
    1. *Multiscale & multiphysics coupling theory* 
@@ -22,6 +27,7 @@ redirect_from:
    6. *AI in geotechnical engineering*  
         
 - If you're interested in collaborating or learning more about my research, feel free to contact me!
+- I warmly welcome students, postgraduates, and collaborators interested in AI-enabled geotechnics, frozen-ground engineering, uncertainty-informed analysis, and intelligent multiphysics simulation.
 
 ## Recent News
 - <span style="color:green; font-style:italic; font-weight:bold;">Research</span>: My recent paper, *“Relative ice saturation and unified elastoplastic modeling of frozen soils”* ([DOI:10.1061/JGGEFK.GTENG-13437](https://doi.org/10.1061/JGGEFK.GTENG-13437)), was published in *Journal of Geotechnical and Geoenvironmental Engineering* in September 2025.
