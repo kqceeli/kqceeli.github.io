@@ -15,7 +15,7 @@ redirect_from:
   </p>
 
   <p class="hero-meta">
-    Incoming Professor, Wuhan University · Postdoctoral Fellow, The Hong Kong Polytechnic University
+    Incoming Professor, Wuhan University | Postdoct, The Hong Kong Polytechnic University
   </p>
 
   <div class="hero-buttons">
