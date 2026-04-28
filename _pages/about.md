@@ -21,10 +21,9 @@ My research focuses on frozen-ground mechanics, artificial ground freezing (AGF)
 
 ## Highlights
 
-- Developed advanced thermo-hydro-mechanical models for artificial ground freezing in complex geological environments.
 - Published **40+ journal papers** in leading journals, including *JGGE*, *Computers and Geotechnics*, *Canadian Geotechnical Journal*, *Acta Geotechnica*, *CMAME*, *Acta Materialia*, and *Archives of Computational Methods in Engineering*.
 - My publications have received **1,500+ citations**, with an **h-index of 23** and **five ESI Highly Cited Papers**.
-- Recipient of the **2023 Hubei Province Science & Technology Progress Award**.
+- Developed advanced thermo-hydro-mechanical models for artificial ground freezing in complex geological environments, Recipient of the **2023 Hubei Province Science & Technology Progress Award**.
 - Serving on the **Early-Career Editorial Panel** of the *European Journal of Soil Science*.
 
 I welcome students and collaborators interested in AI-enabled geotechnics, frozen-ground engineering, uncertainty-informed analysis, and intelligent multiphysics simulation. Please feel free to contact me for potential collaboration or research opportunities.
