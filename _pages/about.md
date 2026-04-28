@@ -33,7 +33,7 @@ My research lies at the interface of geotechnical engineering, mechanics, and co
 
 I received my Ph.D. in Geotechnical Engineering from Wuhan University in 2022 under the supervision of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en), and was a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg), hosted by Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra).
 
-To date, I have published **40+ journal papers**, received **1,500+ citations**, achieved an **h-index of 23**, and authored **5 ESI Highly Cited Papers**.
+To date, I have published 40+ journal papers, received 1,500+ citations, achieved an h-index of 23, and authored 5 ESI Highly Cited Papers.
 
 ## Research Interests
 
