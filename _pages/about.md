@@ -1,3 +1,13 @@
+---
+permalink: /
+title: "About Me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+
 <div class="homepage-intro-left">
   <h1>Kai-Qi Li, Ph.D.</h1>
   <p class="intro-highlight">NSFC Excellent Young Scientists Fund (Overseas) Awardee</p>
