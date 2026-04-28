@@ -7,47 +7,39 @@ redirect_from:
   - /about.html
 ---
 
-<div style="text-align: center; margin-top: 0.5em; margin-bottom: 1.5em;">
-  <h1 style="margin-bottom: 0.2em;">Kai-Qi Li, Ph.D.</h1>
-  <p style="font-size: 1.2em; font-weight: 600; margin: 0.2em 0;">
-    NSFC Excellent Young Scientists Fund (Overseas) Awardee
-  </p>
-  <p style="font-size: 1.1em; margin: 0.2em 0;">
-    Incoming Professor, Wuhan University
-  </p>
-  <p style="font-size: 1.1em; margin: 0.2em 0;">
-    Postdoctoral Fellow, The Hong Kong Polytechnic University
-  </p>
+<div style="text-align: center; margin-top: 0.8em; margin-bottom: 1.8em; line-height: 1.5;">
+  <h1 style="margin-bottom: 0.15em; font-size: 2.2em;">Kai-Qi Li, Ph.D.</h1>
+  <p style="font-size: 1.05em; font-weight: 600; margin: 0.15em 0;">NSFC Excellent Young Scientists Fund (Overseas) Awardee</p>
+  <p style="font-size: 1.02em; margin: 0.1em 0;">Incoming Professor, Wuhan University</p>
+  <p style="font-size: 1.02em; margin: 0.1em 0;">Postdoctoral Fellow, The Hong Kong Polytechnic University</p>
 </div>
 
-I am an **NSFC Excellent Young Scientists Fund (Overseas) Awardee** and an **Incoming Professor** at the School of Water Resources and Hydropower Engineering, Wuhan University.
+I am an NSFC Excellent Young Scientists Fund (Overseas) Awardee and an Incoming Professor at the School of Water Resources and Hydropower Engineering, Wuhan University.
 
-Currently, I am a **Postdoctoral Fellow** in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). I earned my Ph.D. from Wuhan University in 2022 under the mentorship of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en). I was also a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg) under Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra), a Fellow of the Singapore Academy of Engineering.
- 
-I have published **40+ journal papers** in leading international journals, including *Journal of Geotechnical and Geoenvironmental Engineering*, *Computers and Geotechnics*, *Canadian Geotechnical Journal*, *Acta Geotechnica*, *Computer Methods in Applied Mechanics and Engineering*, *Acta Materialia*, and *Archives of Computational Methods in Engineering*. My work has received **1,500+ citations**, with an **h-index of 23** and **five ESI Highly Cited Papers**.
+Currently, I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/cee), working with Prof. [YIN Zhen-Yu](https://www.polyu.edu.hk/cee/people/academic-staff/prof-zhen-yu-yin). I received my Ph.D. from Wuhan University in 2022 under the supervision of Prof. [LIU Yong](https://scholar.google.com/citations?user=O6MLOGQAAAAJ&hl=zh-CN) and Prof. [LI Dian-Qing](https://scholar.google.com/citations?user=8mV4Gy4AAAAJ&hl=en), and was also a visiting Ph.D. student at the [National University of Singapore (NUS)](https://nus.edu.sg) hosted by Prof. [LEE Fook-Hou](https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra).
 
-My work is particularly recognized in the field of artificial ground freezing (AGF), where I have developed advanced thermo-hydro-mechanical (THM) models for freezing processes in complex geological environments. This research earned me the **2023 Hubei Provincial Science & Technology Progress Award**.
+My research lies at the intersection of geotechnical engineering, frozen-ground mechanics, multiphysics coupling, uncertainty quantification, and AI-enabled computational methods. I am particularly recognized for my work on artificial ground freezing (AGF), where I have developed advanced thermo-hydro-mechanical models for freezing processes in complex geological environments. This line of research was recognized with the 2023 Hubei Province Science & Technology Progress Award.
 
-I currently serve as an Early-Career Editorial Panel Member for the European Journal of Soil Science and am actively involved in journal reviewing, teaching, and student supervision.
+I have published 40+ journal papers in leading international journals, including *Journal of Geotechnical and Geoenvironmental Engineering*, *Computers and Geotechnics*, *Canadian Geotechnical Journal*, *Acta Geotechnica*, *Computer Methods in Applied Mechanics and Engineering*, *Acta Materialia*, and *Archives of Computational Methods in Engineering*. My publications have received 1,500+ citations, with an h-index of 23 and five ESI Highly Cited Papers.
+
+I currently serve on the Early-Career Editorial Panel of the *European Journal of Soil Science* and am actively involved in journal reviewing, teaching, and student supervision.
+
+I welcome students and collaborators interested in AI-enabled geotechnics, frozen-ground engineering, uncertainty-informed analysis, and intelligent multiphysics simulation. Please feel free to contact me for potential collaboration or research opportunities.
+
 
 ## Research Interests
 
-- Multiscale and multiphysics coupling theory
-- Constitutive modelling of soils and frozen geomaterials
-- Random finite element methods
-- Geotechnical risk and reliability
-- Uncertainty quantification and propagation
-- AI in geotechnical engineering
-
-My goal is to develop predictive, interpretable, and uncertainty-aware computational tools for complex geotechnical systems under coupled physical processes and geological uncertainty.
-
-I warmly welcome students, postgraduates, and collaborators interested in AI-enabled geotechnics, frozen-ground engineering, uncertainty-informed analysis, and intelligent multiphysics simulation.
-If you are interested in collaborating or learning more about my research, please feel free to contact me.
-
+- Multiphysics and multiscale modeling in geomechanics  
+- Constitutive modeling of soils and frozen geomaterials  
+- Artificial ground freezing and frozen-ground engineering  
+- Geotechnical uncertainty, risk, and reliability  
+- Random finite element methods and uncertainty propagation  
+- AI-enabled modeling and intelligent computation in geotechnical engineering
 
 ## News & Updates
 
 A selection of recent highlights in research, funding, awards, and academic service.
+
 
 ### <span style="color:#d62728;">Awards & Honors</span>
 - [2026] Awarded the NSFC Excellent Young Scientists Fund (Overseas) and will join Wuhan University as an incoming professor.
