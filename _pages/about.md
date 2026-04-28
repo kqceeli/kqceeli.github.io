@@ -1,8 +1,7 @@
-<div class="homepage-intro">
+<div class="homepage-intro-left">
   <h1>Kai-Qi Li, Ph.D.</h1>
-  <p class="intro-line strong">NSFC Excellent Young Scientists Fund (Overseas) Awardee</p>
-  <p class="intro-line">Incoming Professor, Wuhan University</p>
-  <p class="intro-line">Postdoctoral Fellow, The Hong Kong Polytechnic University</p>
+  <p class="intro-highlight">NSFC Excellent Young Scientists Fund (Overseas) Awardee</p>
+  <p class="intro-meta">Incoming Professor, Wuhan University · Postdoctoral Fellow, The Hong Kong Polytechnic University</p>
 </div>
 
 I am an NSFC Excellent Young Scientists Fund (Overseas) Awardee and an Incoming Professor at the School of Water Resources and Hydropower Engineering, Wuhan University.
