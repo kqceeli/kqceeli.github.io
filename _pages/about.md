@@ -107,7 +107,7 @@ redirect_from:
   align-items: center;
   padding: 0.28rem 0.72rem;
   border-radius: 999px;
-  font-size: 0.71rem;
+  font-size: 0.9rem;   /* ← 改这里，建议改为 0.85rem 或 0.9rem */
   font-weight: 720;
   letter-spacing: 0.015em;
   border: 1px solid;
@@ -129,7 +129,7 @@ redirect_from:
 .kq-hero h1 {
   margin: 0;
   color: var(--kq-ink);
-  font-size: clamp(1.95rem, 3vw, 2.62rem);
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);  /* ← li kaiqi  clamp(1.95rem, 3vw, 2.62rem);   */
   line-height: 1.1;
   font-weight: 860;
   letter-spacing: -0.04em;
