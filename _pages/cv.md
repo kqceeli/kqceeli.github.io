@@ -1,3 +1,16 @@
+下面是已修改好的完整代码。你可以直接复制替换 cv_2.md 文件中的全部内容。
+
+主要已更新：
+
+删除了错误的 file_name: cv_2.md
+保留完整 CV 内容
+给不同项目身份增加不同颜色：
+Principal Investigator：金色
+Main Participant：蓝色
+Co-Investigator：紫色
+markdown
+复制代码
+收起
 ---
 layout: archive
 title: ""
@@ -66,38 +79,6 @@ redirect_from:
   border: 1px solid #d8e7ef;
   color: #35566b;
   font-size: 0.82rem;
-  font-weight: 600;
-}
-
-.cv-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.85rem;
-  margin: 1.5rem 0 2.2rem 0;
-}
-
-.cv-stat {
-  padding: 1.1rem 0.9rem;
-  border-radius: 14px;
-  background: #ffffff;
-  border: 1px solid #e5edf1;
-  text-align: center;
-  box-shadow: 0 5px 18px rgba(38, 50, 56, 0.04);
-}
-
-.cv-stat-number {
-  display: block;
-  font-size: 1.55rem;
-  line-height: 1.1;
-  font-weight: 700;
-  color: #1f5f8b;
-}
-
-.cv-stat-label {
-  display: block;
-  margin-top: 0.35rem;
-  font-size: 0.78rem;
-  color: #607d8b;
   font-weight: 600;
 }
 
@@ -183,12 +164,6 @@ redirect_from:
   border-radius: 50%;
   background: #2b7da8;
   box-shadow: 0 0 0 4px #eef6fb;
-}
-
-.cv-two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.9rem;
 }
 
 .cv-highlight-grid {
@@ -286,12 +261,33 @@ redirect_from:
 
 .cv-role {
   display: inline-block;
-  padding: 0.18rem 0.55rem;
+  padding: 0.22rem 0.62rem;
   border-radius: 999px;
-  background: #eef6fb;
-  color: #1f5f8b;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+/* Principal Investigator */
+.cv-role.role-pi {
+  color: #8a4b00;
+  background: #fff1d6;
+  border: 1px solid #f3c56b;
+}
+
+/* Main Participant */
+.cv-role.role-main {
+  color: #155e75;
+  background: #e0f2fe;
+  border: 1px solid #8fd3f4;
+}
+
+/* Co-Investigator */
+.cv-role.role-coi {
+  color: #4c1d95;
+  background: #ede9fe;
+  border: 1px solid #c4b5fd;
 }
 
 .cv-note {
@@ -313,8 +309,6 @@ redirect_from:
     font-size: 1.65rem;
   }
 
-  .cv-stats,
-  .cv-two-col,
   .cv-highlight-grid {
     grid-template-columns: 1fr;
   }
@@ -350,13 +344,12 @@ redirect_from:
       <span class="cv-tag">Geotechnical Engineering</span>
       <span class="cv-tag">Computational Geomechanics</span>
       <span class="cv-tag">Uncertainty Quantification</span>
-      <span class="cv-tag">PIML & LLM</span>
+      <span class="cv-tag">PIML &amp; LLM</span>
       <span class="cv-tag">Frozen Soil</span>
       <span class="cv-tag">Infrastructure Resilience</span>
     </div>
   </section>
 
- 
   <section class="cv-section">
     <h2 class="cv-section-title">Academic Appointments</h2>
 
@@ -467,7 +460,7 @@ redirect_from:
     </div>
   </section>
 
-    <section class="cv-section">
+  <section class="cv-section">
     <h2 class="cv-section-title">Research Funding</h2>
 
     <div class="cv-funding-card">
@@ -488,7 +481,7 @@ redirect_from:
 
         <div class="cv-label">Role</div>
         <div class="cv-value">
-          <span class="cv-role">Principal Investigator</span>
+          <span class="cv-role role-pi">Principal Investigator</span>
         </div>
       </div>
     </div>
@@ -513,7 +506,7 @@ redirect_from:
 
         <div class="cv-label">Role</div>
         <div class="cv-value">
-          <span class="cv-role">Main Participant</span>
+          <span class="cv-role role-main">Main Participant</span>
         </div>
       </div>
     </div>
@@ -538,7 +531,7 @@ redirect_from:
 
         <div class="cv-label">Role</div>
         <div class="cv-value">
-          <span class="cv-role">Main Participant</span>
+          <span class="cv-role role-main">Main Participant</span>
         </div>
       </div>
     </div>
@@ -560,7 +553,7 @@ redirect_from:
 
         <div class="cv-label">Role</div>
         <div class="cv-value">
-          <span class="cv-role">Principal Investigator</span>
+          <span class="cv-role role-pi">Principal Investigator</span>
         </div>
       </div>
     </div>
@@ -585,7 +578,7 @@ redirect_from:
 
         <div class="cv-label">Role</div>
         <div class="cv-value">
-          <span class="cv-role">Main Participant</span>
+          <span class="cv-role role-main">Main Participant</span>
         </div>
       </div>
     </div>
@@ -608,7 +601,7 @@ redirect_from:
 
         <div class="cv-label">Role</div>
         <div class="cv-value">
-          <span class="cv-role">Co-Investigator</span>
+          <span class="cv-role role-coi">Co-Investigator</span>
         </div>
       </div>
     </div>
@@ -633,11 +626,16 @@ redirect_from:
 
         <div class="cv-label">Role</div>
         <div class="cv-value">
-          <span class="cv-role">Co-Investigator</span>
+          <span class="cv-role role-coi">Co-Investigator</span>
         </div>
       </div>
     </div>
 
   </section>
 
+  <div class="cv-note">
+    A full publication list, teaching and supervision record, and professional service activities are available on the corresponding pages of this website.
+  </div>
+
 </div>
+复制
