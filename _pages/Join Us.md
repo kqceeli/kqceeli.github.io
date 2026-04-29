@@ -26,10 +26,11 @@ permalink: /join-us/
   box-sizing: border-box;
 }
 
+/* Hero */
 .join-hero {
   display: grid;
   grid-template-columns: 1.35fr 0.65fr;
-  gap: 36px;
+  gap: 34px;
   align-items: center;
   padding: 54px 48px;
   border-radius: 28px;
@@ -65,7 +66,7 @@ permalink: /join-us/
   font-size: 46px;
   line-height: 1.08;
   letter-spacing: -0.045em;
-  color: #111827;
+  color: var(--ink);
 }
 
 .join-hero p {
@@ -114,16 +115,17 @@ permalink: /join-us/
   border-top: none;
 }
 
+/* Sections */
 .join-section {
-  margin-top: 58px;
+  margin-top: 56px;
 }
 
 .section-head {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
+  display: block;
+  max-width: 760px;
   margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
 }
 
 .section-head h2 {
@@ -135,12 +137,14 @@ permalink: /join-us/
 }
 
 .section-head p {
-  margin: 0;
-  max-width: 560px;
+  margin: 8px 0 0;
+  max-width: 680px;
   color: var(--muted);
   font-size: 16px;
+  line-height: 1.65;
 }
 
+/* Quote */
 .quote {
   padding: 28px 30px;
   border-radius: 24px;
@@ -156,34 +160,7 @@ permalink: /join-us/
   color: #a7f3d0;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.card {
-  padding: 24px;
-  border-radius: 22px;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  box-shadow: 0 12px 32px rgba(17, 24, 39, 0.045);
-}
-
-.card h3 {
-  margin: 0 0 10px;
-  color: #1f2937;
-  font-size: 18px;
-  line-height: 1.35;
-}
-
-.card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15.5px;
-  line-height: 1.65;
-}
-
+/* Research */
 .research-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -191,7 +168,7 @@ permalink: /join-us/
 }
 
 .research-item {
-  padding: 18px 20px;
+  padding: 20px 22px;
   border-radius: 18px;
   background: var(--soft);
   border: 1px solid var(--line);
@@ -202,13 +179,16 @@ permalink: /join-us/
   margin-bottom: 6px;
   color: #1f2937;
   font-size: 16px;
+  line-height: 1.45;
 }
 
 .research-item span {
   color: var(--muted);
   font-size: 15px;
+  line-height: 1.6;
 }
 
+/* Positions */
 .pill-row {
   display: flex;
   flex-wrap: wrap;
@@ -233,9 +213,10 @@ permalink: /join-us/
   color: var(--accent-dark);
 }
 
+/* Apply */
 .apply-box {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 0.78fr 1.22fr;
   gap: 0;
   overflow: hidden;
   border-radius: 26px;
@@ -245,7 +226,7 @@ permalink: /join-us/
 }
 
 .apply-left {
-  padding: 34px;
+  padding: 32px 30px;
   background:
     linear-gradient(135deg, rgba(15, 118, 110, 0.10), rgba(180, 83, 9, 0.08)),
     #fbfaf7;
@@ -254,19 +235,22 @@ permalink: /join-us/
 .apply-left h3 {
   margin: 0 0 12px;
   font-size: 25px;
+  line-height: 1.25;
   letter-spacing: -0.03em;
 }
 
 .apply-left p {
   margin: 0;
   color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.7;
 }
 
 .email-link {
   display: inline-flex;
   margin-top: 22px;
   color: var(--accent-dark);
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 900;
   text-decoration: none;
 }
@@ -276,17 +260,17 @@ permalink: /join-us/
 }
 
 .apply-right {
-  padding: 34px;
+  padding: 32px 34px;
 }
 
 .apply-right h4 {
   margin: 0 0 12px;
   font-size: 17px;
-  color: #111827;
+  color: var(--ink);
 }
 
 .apply-list {
-  margin: 0 0 24px;
+  margin: 0 0 22px;
   padding-left: 20px;
   color: var(--muted);
 }
@@ -306,6 +290,14 @@ permalink: /join-us/
   overflow-x: auto;
 }
 
+.apply-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Final */
 .final-note {
   margin-top: 54px;
   padding: 30px 34px;
@@ -320,23 +312,15 @@ permalink: /join-us/
   color: #a7f3d0;
 }
 
+/* Responsive */
 @media (max-width: 900px) {
   .join-hero,
   .apply-box {
     grid-template-columns: 1fr;
   }
 
-  .card-grid,
   .research-list {
     grid-template-columns: 1fr;
-  }
-
-  .section-head {
-    display: block;
-  }
-
-  .section-head p {
-    margin-top: 10px;
   }
 
   .join-hero h1 {
@@ -358,8 +342,17 @@ permalink: /join-us/
     font-size: 32px;
   }
 
+  .join-hero p {
+    font-size: 16.5px;
+  }
+
   .quote {
+    padding: 24px 22px;
     font-size: 19px;
+  }
+
+  .section-head h2 {
+    font-size: 26px;
   }
 
   .apply-left,
@@ -369,6 +362,11 @@ permalink: /join-us/
 
   .email-link {
     font-size: 19px;
+  }
+
+  .final-note {
+    padding: 26px 22px;
+    font-size: 16.5px;
   }
 }
 </style>
@@ -412,39 +410,51 @@ permalink: /join-us/
       <h2>Research Directions</h2>
       <p>
         Current and future projects are organized around the following themes.
-        Student-led ideas are very welcome.
+        Student-led ideas are welcome.
       </p>
     </div>
 
     <div class="research-list">
       <div class="research-item">
         <strong>Frozen-Ground and Cold-Region Geomechanics</strong>
-        <span>Frozen soils, artificial ground freezing, permafrost, freeze–thaw processes.</span>
+        <span>
+          Frozen soils, artificial ground freezing, permafrost, and freeze-thaw processes.
+        </span>
       </div>
 
       <div class="research-item">
         <strong>Multi-Physics Coupling in Geomaterials</strong>
-        <span>Thermal–hydraulic–mechanical coupling, phase change, porous media.</span>
+        <span>
+          Thermal-hydraulic-mechanical coupling, phase change, and porous media.
+        </span>
       </div>
 
       <div class="research-item">
         <strong>Multi-Scale Modelling</strong>
-        <span>Micromechanics, DEM, FEM–DEM, constitutive modelling, microstructure.</span>
+        <span>
+          Micromechanics, DEM, FEM-DEM, constitutive modelling, and microstructure.
+        </span>
       </div>
 
       <div class="research-item">
         <strong>Risk, Reliability, and Uncertainty</strong>
-        <span>Spatial variability, random fields, Bayesian updating, decision-making.</span>
+        <span>
+          Spatial variability, random fields, Bayesian updating, and decision-making.
+        </span>
       </div>
 
       <div class="research-item">
         <strong>AI-Enabled Computational Mechanics</strong>
-        <span>PINNs, neural operators, surrogate models, differentiable simulation.</span>
+        <span>
+          Physics-informed neural networks, neural operators, surrogate models, and differentiable simulation.
+        </span>
       </div>
 
       <div class="research-item">
         <strong>LLMs for Engineering Science</strong>
-        <span>AI agents, knowledge extraction, engineering reasoning, automated workflows.</span>
+        <span>
+          AI agents, knowledge extraction, engineering reasoning, and automated workflows.
+        </span>
       </div>
     </div>
   </section>
@@ -459,7 +469,7 @@ permalink: /join-us/
 
     <div class="pill-row">
       <span class="pill highlight">Ph.D. Students</span>
-      <span class="pill highlight">Master’s Students</span>
+      <span class="pill highlight">Master's Students</span>
       <span class="pill">Postdoctoral Researchers</span>
       <span class="pill">Research Assistants</span>
       <span class="pill">Visiting Students</span>
@@ -488,7 +498,7 @@ permalink: /join-us/
 
       <div class="apply-right">
         <h4>Email subject</h4>
-        <div class="subject">[Join Us] Your Name – Institution – Position</div>
+        <div class="subject">[Join Us] Your Name - Institution - Position</div>
 
         <br>
 
@@ -500,7 +510,7 @@ permalink: /join-us/
           <li>Names and contacts of referees, if available</li>
         </ul>
 
-        <p style="margin:0;color:#5b6472;font-size:15px;">
+        <p class="apply-note">
           Publications are not required for early-stage students. Strong coursework,
           coding projects, experimental experience, or original ideas are also valuable.
         </p>
