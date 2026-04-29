@@ -32,9 +32,6 @@
 
 <!-- ============================================= -->
 <!--  自定义样式:顶部导航 + 左侧侧边栏            -->
-<!-- ============================================= -->
-<!--  自定义样式:顶部导航 + 左侧侧边栏 v3          -->
-<!-- ============================================= -->
 <style>
   /* ========== 全局变量 ========== */
   :root {
@@ -44,6 +41,18 @@
     --text-dark: #1A1A1A;
     --text-muted: #6B7280;
     --border-light: #E5E7EB;
+    --masthead-height: 64px;
+  }
+
+  /* ========== 0. 修复锚点跳转被顶栏遮挡 ========== */
+  html {
+    scroll-padding-top: calc(var(--masthead-height) + 20px) !important;
+    scroll-behavior: smooth !important;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  [id] {
+    scroll-margin-top: calc(var(--masthead-height) + 20px) !important;
   }
 
   /* ========== 1. 顶部导航栏 ========== */
@@ -74,7 +83,7 @@
     color: var(--brand-hover) !important;
   }
 
-  /* —— 强制显示所有菜单 —— */
+  /* —— 强制全部菜单显示,不折叠 —— */
   .greedy-nav {
     background: transparent !important;
     flex-wrap: nowrap !important;
@@ -84,6 +93,11 @@
     display: flex !important;
     flex-wrap: nowrap !important;
     overflow: visible !important;
+    white-space: nowrap !important;
+  }
+
+  .greedy-nav .visible-links li {
+    flex-shrink: 0 !important;  /* 防止任何项被压缩隐藏 */
   }
 
   .greedy-nav__toggle,
@@ -96,6 +110,7 @@
 
   .greedy-nav .hidden-links {
     display: none !important;
+    visibility: hidden !important;
   }
 
   /* —— 普通菜单项 —— */
@@ -133,19 +148,11 @@
     width: 60%;
   }
 
-  .greedy-nav a.active,
-  .greedy-nav a[aria-current="page"] {
-    color: var(--brand) !important;
-    font-weight: 600 !important;
-  }
-
-  .greedy-nav a.active::after,
-  .greedy-nav a[aria-current="page"]::after {
-    width: 60%;
-  }
-
-  /* —— 特殊:最后一个菜单项 "Join Us" 做成行动按钮 —— */
-  .greedy-nav .visible-links li:last-child a {
+  /* —— Join Us 按钮:精确用属性选择器匹配 —— */
+  .greedy-nav a[href*="join"],
+  .greedy-nav a[href*="Join"],
+  .greedy-nav a[href*="joinus"],
+  .greedy-nav a[href*="join-us"] {
     background: var(--brand) !important;
     color: #fff !important;
     padding: 0.5em 1.1em !important;
@@ -155,23 +162,29 @@
     box-shadow: 0 2px 6px rgba(139, 26, 26, 0.25) !important;
   }
 
-  .greedy-nav .visible-links li:last-child a::after {
+  .greedy-nav a[href*="join"]::after,
+  .greedy-nav a[href*="Join"]::after,
+  .greedy-nav a[href*="joinus"]::after,
+  .greedy-nav a[href*="join-us"]::after {
     display: none !important;
   }
 
-  .greedy-nav .visible-links li:last-child a:hover {
+  .greedy-nav a[href*="join"]:hover,
+  .greedy-nav a[href*="Join"]:hover,
+  .greedy-nav a[href*="joinus"]:hover,
+  .greedy-nav a[href*="join-us"]:hover {
     background: var(--brand-hover) !important;
     color: #fff !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(139, 26, 26, 0.35) !important;
   }
 
-  /* ========== 2. 左侧侧边栏(精准对齐版) ========== */
+  /* ========== 2. 左侧侧边栏(完美对齐版) ========== */
 
   .sidebar {
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;   /* 整列居中 */
+    align-items: center !important;
     padding: 0 !important;
   }
 
@@ -179,7 +192,7 @@
     top: 5em !important;
   }
 
-  /* —— 头像 —— */
+  /* 头像 */
   .sidebar .author__avatar {
     display: flex !important;
     justify-content: center !important;
@@ -204,7 +217,7 @@
     transform: scale(1.03);
   }
 
-  /* —— 姓名+Bio 容器 —— */
+  /* 姓名+Bio */
   .sidebar .author__content {
     width: 100% !important;
     text-align: center !important;
@@ -237,17 +250,16 @@
     line-height: 1.4 !important;
   }
 
-  /* ========== 关键:链接列表精准对齐 ========== */
+  /* ========== 关键:所有列表项(包括非链接)统一对齐 ========== */
 
   .sidebar .author__urls-wrapper {
     width: 100% !important;
-    max-width: 240px !important;        /* 固定宽度让所有项对齐 */
+    max-width: 240px !important;
     padding: 0 !important;
-    margin: 0 auto !important;          /* 整块居中 */
+    margin: 0 auto !important;
     box-sizing: border-box !important;
   }
 
-  /* 顶部分隔线 */
   .sidebar .author__urls-wrapper::before {
     content: "";
     display: block;
@@ -265,45 +277,58 @@
     width: 100% !important;
   }
 
+  /* 【关键 1】li 本身就是 flex 容器,统一样式 */
   .sidebar .author__urls li {
-    padding: 0 !important;
-    margin: 0 !important;
-    border: none !important;
-    background: transparent !important;
-    list-style: none !important;
-    display: block !important;
-    width: 100% !important;
-  }
-
-  /* 【核心】用 flex + 固定图标宽度强制对齐 */
-  .sidebar .author__urls li a {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
     justify-content: flex-start !important;
-    gap: 0 !important;                        /* 用 margin 控制,不用 gap */
+    padding: 0.55em 0.8em !important;    /* 所有 li 都一样的 padding */
+    margin: 0.1em 0 !important;
+    border: none !important;
+    background: transparent !important;
+    list-style: none !important;
     width: 100% !important;
-    padding: 0.55em 0.8em !important;        /* 统一上下间距 */
-    margin: 0.1em 0 !important;              /* 项与项之间的间距统一 */
     color: var(--text-muted) !important;
     font-size: 0.92em !important;
     font-weight: 500 !important;
-    border-radius: 6px !important;
-    text-decoration: none !important;
-    transition: all 0.2s ease !important;
-    background: transparent !important;
     line-height: 1.4 !important;
     box-sizing: border-box !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease !important;
   }
 
-  /* 【关键】所有图标:统一宽度 + 居中对齐 */
-  .sidebar .author__urls li a i,
-  .sidebar .author__urls li a .fa,
-  .sidebar .author__urls li a .fab,
-  .sidebar .author__urls li a .fas,
-  .sidebar .author__urls li a .far,
-  .sidebar .author__urls li a .ai,
-  .sidebar .author__urls li a svg {
+  /* 【关键 2】li 里的 a 不再控制 padding,完全透明继承 */
+  .sidebar .author__urls li a {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    text-decoration: none !important;
+    background: transparent !important;
+    width: 100% !important;
+    line-height: inherit !important;
+  }
+
+  /* 【关键 3】所有图标(在 li 下或 li a 下) */
+  .sidebar .author__urls li > i,
+  .sidebar .author__urls li > .fa,
+  .sidebar .author__urls li > .fab,
+  .sidebar .author__urls li > .fas,
+  .sidebar .author__urls li > .far,
+  .sidebar .author__urls li > .ai,
+  .sidebar .author__urls li a > i,
+  .sidebar .author__urls li a > .fa,
+  .sidebar .author__urls li a > .fab,
+  .sidebar .author__urls li a > .fas,
+  .sidebar .author__urls li a > .far,
+  .sidebar .author__urls li a > .ai,
+  .sidebar .author__urls li a > svg,
+  .sidebar .author__urls li > svg {
     display: inline-block !important;
     width: 20px !important;
     min-width: 20px !important;
@@ -311,26 +336,37 @@
     text-align: center !important;
     color: var(--brand) !important;
     font-size: 1em !important;
-    margin: 0 12px 0 0 !important;           /* 图标右侧固定间距 */
+    margin: 0 12px 0 0 !important;
     padding: 0 !important;
     flex-shrink: 0 !important;
     line-height: 1 !important;
     transition: transform 0.2s !important;
   }
 
-  /* 悬浮 */
-  .sidebar .author__urls li a:hover {
+  /* 悬浮效果:只作用于有链接的 li */
+  .sidebar .author__urls li:has(a):hover {
     color: var(--brand) !important;
     background: var(--brand-light) !important;
     transform: translateX(4px);
   }
 
-  .sidebar .author__urls li a:hover i,
-  .sidebar .author__urls li a:hover .fa,
-  .sidebar .author__urls li a:hover .fab,
-  .sidebar .author__urls li a:hover .fas,
-  .sidebar .author__urls li a:hover .far,
-  .sidebar .author__urls li a:hover .ai {
+  /* 兼容旧浏览器的悬浮 */
+  .sidebar .author__urls li a:hover {
+    color: var(--brand) !important;
+  }
+
+  .sidebar .author__urls li:hover > i,
+  .sidebar .author__urls li:hover > .fa,
+  .sidebar .author__urls li:hover > .fab,
+  .sidebar .author__urls li:hover > .fas,
+  .sidebar .author__urls li:hover > .far,
+  .sidebar .author__urls li:hover > .ai,
+  .sidebar .author__urls li:hover a > i,
+  .sidebar .author__urls li:hover a > .fa,
+  .sidebar .author__urls li:hover a > .fab,
+  .sidebar .author__urls li:hover a > .fas,
+  .sidebar .author__urls li:hover a > .far,
+  .sidebar .author__urls li:hover a > .ai {
     transform: scale(1.15);
   }
 
@@ -353,7 +389,8 @@
       padding: 0.4em 0.5em !important;
       font-size: 0.82em !important;
     }
-    .greedy-nav .visible-links li:last-child a {
+    .greedy-nav a[href*="join"],
+    .greedy-nav a[href*="Join"] {
       padding: 0.4em 0.8em !important;
     }
     .sidebar .author__avatar img {
