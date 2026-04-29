@@ -1,5 +1,4 @@
 ---
-layout: single
 permalink: /
 title: ""
 author_profile: true
@@ -9,192 +8,187 @@ redirect_from:
 ---
 
 <style>
+/* =========================================================
+   Homepage for Kai-Qi Li
+   Scoped design for Minimal Mistakes / Jekyll
+   ========================================================= */
+
 .home-page {
-  max-width: 1040px;
+  max-width: 940px;
   margin: 0 auto;
-  color: #263238;
+  color: #1f2937;
+  font-size: 0.96rem;
   line-height: 1.72;
-  font-size: 0.98rem;
 }
+
+/* ---------- Hero ---------- */
 
 .home-hero {
   position: relative;
-  padding: 2.4rem 2.2rem 2.2rem;
-  margin: 0.3rem 0 2rem;
-  border-radius: 22px;
+  max-width: 860px;
+  margin: 0 0 2.2rem;
+  padding: 2.25rem 2.3rem 2.15rem;
+  border-radius: 24px;
   background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.10), transparent 34%),
-    radial-gradient(circle at bottom right, rgba(14, 116, 144, 0.10), transparent 34%),
-    linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.13), transparent 38%),
+    linear-gradient(135deg, #ffffff 0%, #f8fafc 52%, #eef4ff 100%);
   border: 1px solid #e2e8f0;
-  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.07);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.07);
+  overflow: hidden;
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(37, 99, 235, 0.09), transparent 42%),
+    radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.10), transparent 40%);
+  pointer-events: none;
+}
+
+.home-hero-inner {
+  position: relative;
+  z-index: 1;
 }
 
 .home-eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.34rem 0.76rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
+  padding: 0.28rem 0.72rem;
   border-radius: 999px;
-  background: #eff6ff;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.16);
   color: #1d4ed8;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.035em;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-}
-
-.home-eyebrow::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #2563eb;
 }
 
 .home-hero h1 {
   margin: 0 0 0.55rem;
-  font-size: clamp(2rem, 4vw, 3.1rem);
+  color: #0f172a;
+  font-size: clamp(2.05rem, 3.5vw, 2.85rem);
   line-height: 1.08;
   letter-spacing: -0.04em;
-  color: #0f172a;
-  font-weight: 800;
+  font-weight: 850;
 }
 
 .home-subtitle {
-  margin: 0 0 1.1rem;
+  max-width: 760px;
+  margin: 0 0 0.95rem;
   color: #334155;
-  font-size: 1.06rem;
-  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.58;
+  font-weight: 650;
+}
+
+.home-mission {
+  max-width: 790px;
+  margin: 1.05rem 0 1.05rem;
+  color: #0f172a;
+  font-size: clamp(1.05rem, 2.0vw, 1.32rem);
+  line-height: 1.5;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.home-mission span {
+  color: #2563eb;
 }
 
 .home-lead {
-  max-width: 850px;
+  max-width: 780px;
   margin: 0;
   color: #475569;
-  font-size: 1.02rem;
+  font-size: 0.95rem;
+  line-height: 1.78;
 }
 
 .home-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.55rem;
+  gap: 0.72rem;
+  margin-top: 1.45rem;
 }
 
 .home-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 42px;
-  padding: 0.65rem 1.05rem;
+  min-height: 40px;
+  padding: 0.58rem 1rem;
   border-radius: 999px;
-  font-size: 0.88rem;
-  font-weight: 700;
+  font-size: 0.82rem;
+  font-weight: 750;
   text-decoration: none !important;
   transition: all 0.18s ease;
 }
 
 .home-btn-primary {
-  background: #0f172a;
+  background: #1d4ed8;
+  border: 1px solid #1d4ed8;
   color: #ffffff !important;
-  border: 1px solid #0f172a;
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.20);
 }
 
 .home-btn-primary:hover {
+  background: #1e40af;
   transform: translateY(-1px);
-  background: #1e293b;
 }
 
 .home-btn-secondary {
   background: #ffffff;
-  color: #1e293b !important;
   border: 1px solid #cbd5e1;
+  color: #334155 !important;
 }
 
 .home-btn-secondary:hover {
-  transform: translateY(-1px);
   border-color: #94a3b8;
-  background: #f8fafc;
+  color: #0f172a !important;
+  transform: translateY(-1px);
 }
 
-.home-metrics {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.9rem;
-  margin: 1.25rem 0 2.2rem;
-}
-
-.home-metric {
-  padding: 1.05rem 1rem;
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.045);
-}
-
-.home-metric-number {
-  display: block;
-  color: #0f172a;
-  font-size: 1.55rem;
-  line-height: 1.1;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-}
-
-.home-metric-label {
-  display: block;
-  margin-top: 0.28rem;
-  color: #64748b;
-  font-size: 0.78rem;
-  font-weight: 650;
-  text-transform: uppercase;
-  letter-spacing: 0.035em;
-}
+/* ---------- Section common ---------- */
 
 .home-section {
-  margin: 2.1rem 0;
+  max-width: 860px;
+  margin: 2.45rem 0;
 }
 
 .home-section-header {
-  margin-bottom: 1rem;
+  margin-bottom: 1.05rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .home-section-kicker {
-  margin: 0 0 0.25rem;
-  color: #2563eb;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  margin: 0 0 0.32rem;
+  color: #475569;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
 }
 
 .home-section h2 {
   margin: 0;
   color: #0f172a;
-  font-size: 1.55rem;
-  letter-spacing: -0.025em;
+  font-size: 1.34rem;
+  line-height: 1.34;
+  letter-spacing: -0.026em;
+  font-weight: 850;
 }
 
-.home-section p {
-  color: #475569;
-}
-
-.home-about-card {
-  padding: 1.45rem 1.55rem;
-  border-radius: 20px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.045);
-}
-
-.home-about-card p {
-  margin: 0 0 1rem;
-}
-
-.home-about-card p:last-child {
-  margin-bottom: 0;
+.home-section-intro {
+  max-width: 800px;
+  margin: 0.85rem 0 0;
+  color: #64748b;
+  font-size: 0.94rem;
+  line-height: 1.74;
 }
 
 .home-highlight {
@@ -202,164 +196,284 @@ redirect_from:
   font-weight: 750;
 }
 
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
-}
+/* ---------- About ---------- */
 
-.research-card {
-  padding: 1.15rem 1.15rem 1.05rem;
-  border-radius: 18px;
+.home-about-card {
+  padding: 1.45rem 1.55rem;
+  border-radius: 20px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  transition: all 0.18s ease;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.045);
 }
 
-.research-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
-}
-
-.research-card h3 {
-  margin: 0 0 0.45rem;
-  color: #0f172a;
-  font-size: 1rem;
-  letter-spacing: -0.01em;
-}
-
-.research-card p {
-  margin: 0;
-  color: #64748b;
-  font-size: 0.9rem;
-}
-
-.news-wrap {
-  display: grid;
-  gap: 0.9rem;
-}
-
-.news-group {
-  padding: 1.15rem 1.2rem;
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-}
-
-.news-group-title {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  margin: 0 0 0.75rem;
-  color: #0f172a;
-  font-size: 1rem;
-  font-weight: 800;
-}
-
-.news-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  flex: 0 0 auto;
-}
-
-.dot-red { background: #dc2626; }
-.dot-blue { background: #2563eb; }
-.dot-purple { background: #7c3aed; }
-.dot-green { background: #16a34a; }
-
-.news-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.news-list li {
-  position: relative;
-  padding: 0.48rem 0 0.48rem 1.15rem;
+.home-about-card p {
+  margin: 0 0 0.95rem;
   color: #475569;
-  border-top: 1px solid #f1f5f9;
   font-size: 0.94rem;
+  line-height: 1.78;
 }
 
-.news-list li:first-child {
-  border-top: none;
+.home-about-card p:last-child {
+  margin-bottom: 0;
 }
 
-.news-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 1.05rem;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #94a3b8;
+.home-about-card a {
+  color: #1d4ed8;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.25);
 }
 
-.news-year {
+.home-about-card a:hover {
+  color: #1e40af;
+  border-bottom-color: rgba(30, 64, 175, 0.55);
+}
+
+/* ---------- Research Agenda ---------- */
+
+.agenda-manifesto {
+  margin-bottom: 1rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 20px;
+  background:
+    linear-gradient(135deg, rgba(15, 23, 42, 0.97), rgba(30, 41, 59, 0.97));
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.14);
+}
+
+.agenda-manifesto-title {
+  margin: 0 0 0.45rem;
+  color: #ffffff;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  font-weight: 850;
+  letter-spacing: -0.018em;
+}
+
+.agenda-manifesto-title span {
+  color: #93c5fd;
+}
+
+.agenda-manifesto p {
+  margin: 0;
+  color: #dbe4ef;
+  font-size: 0.92rem;
+  line-height: 1.76;
+}
+
+.agenda-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.agenda-card {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 1.15rem;
+  padding: 1.28rem 1.35rem;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.045);
+}
+
+.agenda-index {
+  display: flex;
+  flex-direction: column;
+  gap: 0.38rem;
+}
+
+.agenda-number {
+  color: #2563eb;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.agenda-theme {
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 750;
+  line-height: 1.45;
+  text-transform: uppercase;
+  letter-spacing: 0.045em;
+}
+
+.agenda-content h3 {
+  margin: 0 0 0.5rem;
+  color: #0f172a;
+  font-size: 1.04rem;
+  line-height: 1.38;
+  font-weight: 850;
+  letter-spacing: -0.018em;
+}
+
+.agenda-content p {
+  margin: 0 0 0.75rem;
+  color: #64748b;
+  font-size: 0.91rem;
+  line-height: 1.72;
+}
+
+.agenda-question {
+  margin-top: 0.7rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 0.86rem;
+  line-height: 1.62;
+}
+
+.agenda-question strong {
   color: #0f172a;
   font-weight: 800;
 }
+
+.agenda-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+  margin-top: 0.75rem;
+}
+
+.agenda-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.23rem 0.58rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  color: #1e40af;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* ---------- Vision ---------- */
 
 .vision-box {
-  padding: 1.35rem 1.45rem;
-  margin-top: 1.5rem;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  color: #e2e8f0;
-  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.16);
+  max-width: 860px;
+  margin: 2.45rem 0;
+  padding: 1.5rem 1.6rem;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.13), transparent 34%),
+    linear-gradient(135deg, #ffffff 0%, #f8fafc 60%, #eef4ff 100%);
+  border: 1px solid #dbe3ef;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.055);
 }
 
 .vision-box h2 {
-  margin: 0 0 0.55rem;
-  color: #ffffff;
-  font-size: 1.35rem;
+  margin: 0 0 0.7rem;
+  color: #0f172a;
+  font-size: 1.22rem;
+  line-height: 1.36;
+  font-weight: 850;
+  letter-spacing: -0.025em;
 }
 
 .vision-box p {
   margin: 0;
-  color: #cbd5e1;
-}
-
-.home-note {
-  margin: 1.6rem 0 1rem;
-  padding: 1rem 1.15rem;
-  border-radius: 16px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
   color: #475569;
   font-size: 0.94rem;
+  line-height: 1.78;
 }
+
+/* ---------- Highlights ---------- */
+
+.highlight-list {
+  display: grid;
+  gap: 0.72rem;
+}
+
+.highlight-item {
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.035);
+}
+
+.highlight-date {
+  margin-bottom: 0.25rem;
+  color: #2563eb;
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.highlight-item p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.91rem;
+  line-height: 1.68;
+}
+
+.highlight-item strong {
+  color: #0f172a;
+  font-weight: 800;
+}
+
+/* ---------- Collaboration ---------- */
+
+.home-note {
+  max-width: 860px;
+  margin: 2.15rem 0 1.4rem;
+  padding: 1.25rem 1.38rem;
+  border-radius: 20px;
+  background: #f8fafc;
+  border: 1px solid #dbe3ef;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.74;
+}
+
+.home-note strong {
+  color: #0f172a;
+  font-weight: 850;
+}
+
+/* ---------- Visitor map ---------- */
 
 .visitor-map {
-  margin: 1.6rem 0 0.4rem;
-  text-align: center;
-  opacity: 0.92;
+  max-width: 860px;
+  margin: 1.5rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid #e5e7eb;
+  opacity: 0.88;
 }
+
+/* ---------- Responsive ---------- */
 
 @media (max-width: 760px) {
+  .home-page {
+    max-width: 100%;
+  }
+
   .home-hero {
-    padding: 1.8rem 1.35rem;
-    border-radius: 18px;
+    padding: 1.75rem 1.35rem;
+    border-radius: 20px;
   }
 
-  .home-metrics {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .home-section,
+  .vision-box,
+  .home-note,
+  .visitor-map {
+    max-width: 100%;
   }
 
-  .research-grid {
+  .agenda-card {
     grid-template-columns: 1fr;
+    gap: 0.65rem;
   }
-}
 
-@media (max-width: 460px) {
-  .home-metrics {
-    grid-template-columns: 1fr;
+  .agenda-index {
+    gap: 0.2rem;
   }
 
   .home-actions {
-    flex-direction: column;
+    gap: 0.55rem;
   }
 
   .home-btn {
@@ -371,58 +485,45 @@ redirect_from:
 <div class="home-page">
 
   <section class="home-hero">
-    <div class="home-eyebrow">Geomechanics · Computation · AI</div>
+    <div class="home-hero-inner">
+      <div class="home-eyebrow">Geomechanics · Computation · Artificial Intelligence</div>
 
-    <h1>Kai-Qi Li, Ph.D.</h1>
+      <h1>Kai-Qi Li, Ph.D.</h1>
 
-    <p class="home-subtitle">
-      NSFC Excellent Young Scientists Fund (Overseas) Awardee · Incoming Professor at Wuhan University
-    </p>
+      <p class="home-subtitle">
+        NSFC Excellent Young Scientists Fund Overseas Awardee · Incoming Professor,
+        School of Water Resources and Hydropower Engineering, Wuhan University
+      </p>
 
-    <p class="home-lead">
-      I develop mechanics-based, uncertainty-aware, and AI-enabled methods for understanding and predicting
-      complex geotechnical systems, with applications in frozen ground, artificial ground freezing,
-      underground infrastructure, and climate-resilient geotechnical engineering.
-    </p>
+      <p class="home-mission">
+        Shaping the future of <span>geotechnics</span> through intelligence &amp; uncertainty mastery.
+      </p>
 
-    <div class="home-actions">
-      <a href="/join-us/" class="home-btn home-btn-primary">Join the Group</a>
-      <a href="/publications/" class="home-btn home-btn-secondary">Publications</a>
-      <a href="/cv/" class="home-btn home-btn-secondary">Curriculum Vitae</a>
+      <p class="home-lead">
+        My research develops mechanics-grounded, uncertainty-aware, and intelligence-enabled methods
+        for understanding, modelling, and predicting complex geotechnical systems. I am particularly
+        interested in ground systems where multiphysics, limited data, spatial variability, and engineering
+        decision-making are deeply intertwined.
+      </p>
+
+      <div class="home-actions">
+        <a href="/join-us/" class="home-btn home-btn-primary">Join the Group</a>
+        <a href="/publications/" class="home-btn home-btn-secondary">Publications</a>
+        <a href="/cv/" class="home-btn home-btn-secondary">Curriculum Vitae</a>
+      </div>
     </div>
   </section>
 
-  <section class="home-metrics">
-    <div class="home-metric">
-      <span class="home-metric-number">40+</span>
-      <span class="home-metric-label">Journal Papers</span>
-    </div>
-
-    <div class="home-metric">
-      <span class="home-metric-number">1,500+</span>
-      <span class="home-metric-label">Citations</span>
-    </div>
-
-    <div class="home-metric">
-      <span class="home-metric-number">23</span>
-      <span class="home-metric-label">h-index</span>
-    </div>
-
-    <div class="home-metric">
-      <span class="home-metric-number">5</span>
-      <span class="home-metric-label">ESI Highly Cited Papers</span>
-    </div>
-  </section>
 
   <section class="home-section">
     <div class="home-section-header">
       <p class="home-section-kicker">About</p>
-      <h2>Building predictive geotechnical science for complex ground systems</h2>
+      <h2>Advancing geotechnical science across mechanics, uncertainty, computation, and data</h2>
     </div>
 
     <div class="home-about-card">
       <p>
-        I am an <span class="home-highlight">NSFC Excellent Young Scientists Fund (Overseas) Awardee</span>
+        I am an <span class="home-highlight">NSFC Excellent Young Scientists Fund Overseas Awardee</span>
         and will join the <span class="home-highlight">School of Water Resources and Hydropower Engineering,
         Wuhan University</span> as an Incoming Professor.
       </p>
@@ -440,127 +541,231 @@ redirect_from:
       </p>
 
       <p>
-        My research integrates <span class="home-highlight">geomechanics, advanced computation, stochastic analysis,
-        and artificial intelligence</span>. A central goal is to move geotechnical engineering from empirical
-        prediction toward physically consistent, data-informed, and uncertainty-aware decision-making.
+        My work aims to build predictive tools that are not only accurate, but also physically interpretable,
+        reliable under uncertainty, and useful for engineering judgement. I seek to connect fundamental
+        geomechanics with emerging computational intelligence to address challenging problems in underground
+        construction, cold-region engineering, energy geotechnics, and infrastructure resilience.
       </p>
     </div>
   </section>
 
+
   <section class="home-section">
     <div class="home-section-header">
       <p class="home-section-kicker">Research Agenda</p>
-      <h2>Core research directions</h2>
+      <h2>From uncertain ground to intelligent and resilient geotechnical infrastructure</h2>
+      <p class="home-section-intro">
+        My research agenda is organized around a central ambition: to transform geotechnical engineering
+        from experience-driven prediction toward mechanics-informed, data-enhanced, and uncertainty-aware
+        decision-making. Rather than treating mechanics, computation, uncertainty, and artificial intelligence
+        as separate topics, my group will develop integrated frameworks that connect them into a coherent
+        scientific and engineering paradigm.
+      </p>
     </div>
 
-    <div class="research-grid">
-      <div class="research-card">
-        <h3>Frozen Geomaterials and Artificial Ground Freezing</h3>
-        <p>
-          Thermo-hydro-mechanical behaviour of frozen soils, freezing-induced processes,
-          and risk control in artificial ground freezing.
-        </p>
+    <div class="agenda-manifesto">
+      <div class="agenda-manifesto-title">
+        A long-term research program for <span>intelligent geotechnics under uncertainty</span>
+      </div>
+      <p>
+        The ground is heterogeneous, history-dependent, multiphysical, and only partially observable.
+        The next generation of geotechnical methods must therefore learn from data without abandoning
+        mechanics, quantify uncertainty rather than ignore it, and support engineering decisions rather
+        than only reproduce observations.
+      </p>
+    </div>
+
+    <div class="agenda-grid">
+
+      <div class="agenda-card">
+        <div class="agenda-index">
+          <div class="agenda-number">Agenda 01</div>
+          <div class="agenda-theme">Complex ground systems</div>
+        </div>
+
+        <div class="agenda-content">
+          <h3>Revealing the mechanics of ground in extreme and evolving environments</h3>
+          <p>
+            I study how geomaterials and ground systems behave when they are governed by coupled thermal,
+            hydraulic, mechanical, chemical, and phase-change processes. This includes frozen soils,
+            artificial ground freezing, hydrate-bearing sediments, and other multiphysical systems where
+            classical assumptions are often insufficient.
+          </p>
+
+          <div class="agenda-question">
+            <strong>Core question:</strong>
+            How can we describe, model, and predict ground behaviour when temperature, water, stress,
+            microstructure, and environmental loading evolve together?
+          </div>
+
+          <div class="agenda-tags">
+            <span>Frozen soils</span>
+            <span>Artificial ground freezing</span>
+            <span>THM/THMC coupling</span>
+            <span>Phase change</span>
+            <span>Energy geotechnics</span>
+          </div>
+        </div>
       </div>
 
-      <div class="research-card">
-        <h3>Constitutive and Computational Geomechanics</h3>
-        <p>
-          Physics-based constitutive modelling, numerical simulation, and multiscale analysis
-          for complex geomaterials and ground–structure interaction.
-        </p>
+
+      <div class="agenda-card">
+        <div class="agenda-index">
+          <div class="agenda-number">Agenda 02</div>
+          <div class="agenda-theme">Scientific intelligence</div>
+        </div>
+
+        <div class="agenda-content">
+          <h3>Building AI that understands mechanics, not merely fits data</h3>
+          <p>
+            I develop physics-informed and mechanics-guided computational methods that combine constitutive
+            modelling, numerical simulation, machine learning, neural operators, and graph-based learning.
+            The goal is to create intelligent models that remain interpretable, transferable, and trustworthy
+            when data are sparse, noisy, or biased.
+          </p>
+
+          <div class="agenda-question">
+            <strong>Core question:</strong>
+            How can artificial intelligence become a scientific engine for geomechanics by embedding physical
+            laws, boundary conditions, material behaviour, and engineering constraints?
+          </div>
+
+          <div class="agenda-tags">
+            <span>Physics-informed ML</span>
+            <span>Constitutive modelling</span>
+            <span>Graph neural networks</span>
+            <span>Neural operators</span>
+            <span>Computational geomechanics</span>
+          </div>
+        </div>
       </div>
 
-      <div class="research-card">
-        <h3>Uncertainty, Reliability, and Risk</h3>
-        <p>
-          Stochastic modelling, reliability assessment, and uncertainty quantification for
-          geotechnical systems under incomplete information.
-        </p>
+
+      <div class="agenda-card">
+        <div class="agenda-index">
+          <div class="agenda-number">Agenda 03</div>
+          <div class="agenda-theme">Uncertainty mastery</div>
+        </div>
+
+        <div class="agenda-content">
+          <h3>Turning uncertainty into actionable knowledge for engineering decisions</h3>
+          <p>
+            I work on uncertainty quantification, stochastic analysis, reliability assessment, and risk-informed
+            design for geotechnical systems. My aim is to move beyond deterministic prediction and develop
+            decision-support tools that explicitly account for spatial variability, model uncertainty, monitoring
+            data, and evolving risk.
+          </p>
+
+          <div class="agenda-question">
+            <strong>Core question:</strong>
+            How can we quantify what we do not know, update predictions as evidence accumulates, and make safer
+            decisions for infrastructure built in uncertain ground?
+          </div>
+
+          <div class="agenda-tags">
+            <span>Uncertainty quantification</span>
+            <span>Reliability and risk</span>
+            <span>Bayesian updating</span>
+            <span>Digital twins</span>
+            <span>Resilient infrastructure</span>
+          </div>
+        </div>
       </div>
 
-      <div class="research-card">
-        <h3>AI for Geotechnical Engineering</h3>
-        <p>
-          Physics-informed machine learning, neural operators, graph neural networks,
-          and intelligent computational platforms for geotechnical prediction.
-        </p>
+
+      <div class="agenda-card">
+        <div class="agenda-index">
+          <div class="agenda-number">Agenda 04</div>
+          <div class="agenda-theme">Engineering translation</div>
+        </div>
+
+        <div class="agenda-content">
+          <h3>Translating advanced models into safer underground and climate-resilient infrastructure</h3>
+          <p>
+            A major objective of my group is to connect frontier modelling with engineering practice. We aim to
+            develop computational tools, digital workflows, and risk-informed design methods for underground
+            construction, cold-region infrastructure, coastal and marine geotechnics, and large-scale civil
+            infrastructure under environmental change.
+          </p>
+
+          <div class="agenda-question">
+            <strong>Core question:</strong>
+            How can advanced geomechanics and AI be transformed into practical tools that improve safety,
+            resilience, sustainability, and engineering confidence?
+          </div>
+
+          <div class="agenda-tags">
+            <span>Underground construction</span>
+            <span>Cold-region infrastructure</span>
+            <span>Marine geotechnics</span>
+            <span>Risk-informed design</span>
+            <span>Engineering resilience</span>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
+
 
   <section class="vision-box">
     <h2>Research Vision</h2>
     <p>
-      My long-term vision is to establish a globally visible research program that advances
-      the scientific foundation of geotechnical engineering and enables safer, smarter, and more resilient
-      infrastructure systems. I am particularly interested in problems where mechanics, uncertainty,
-      computation, and data must work together.
+      My long-term vision is to help establish a new paradigm for geotechnical engineering in which
+      mechanics provides the foundation, computation provides the scale, data provides the evidence,
+      and uncertainty provides the language for decision-making. I believe the future of geotechnics
+      will be shaped by researchers who can move fluently across physical understanding, computational
+      intelligence, and real engineering impact.
     </p>
   </section>
 
+
   <section class="home-section">
     <div class="home-section-header">
-      <p class="home-section-kicker">Highlights</p>
-      <h2>Selected news</h2>
+      <p class="home-section-kicker">News & Highlights</p>
+      <h2>Recent updates</h2>
     </div>
 
-    <div class="news-wrap">
+    <div class="highlight-list">
 
-      <div class="news-group">
-        <h3 class="news-group-title"><span class="news-dot dot-red"></span>Awards & Honors</h3>
-        <ul class="news-list">
-          <li><span class="news-year">2026</span> Awarded the <strong>NSFC Excellent Young Scientists Fund (Overseas)</strong> and will join <strong>Wuhan University</strong> as an incoming professor.</li>
-          <li><span class="news-year">2025</span> Shortlisted for the <strong>JC STEM Early Career Research Fellowship</strong>.</li>
-          <li><span class="news-year">2024</span> Awarded the <strong>PolyU Distinguished Postdoctoral Fellowship</strong>.</li>
-          <li><span class="news-year">2024</span> Received the <strong>2023 Hubei Province Science & Technology Progress Award</strong> for the project <em>Risk Prevention and Control of Artificial Ground Freezing Technique in Water-Rich Stratum</em> <a href="https://www.hubei.gov.cn/zfwj/ezf/202407/t20240726_5280385.shtml">[Link]</a>.</li>
-          <li><span class="news-year">2023</span> Received the <strong>Academic Innovation Award</strong> from Wuhan University.</li>
-          <li><span class="news-year">2021</span> Received the <strong>Excellence in Teaching Award</strong> from Wuhan University.</li>
-          <li><span class="news-year">2020</span> Named one of <strong>Wuhan University’s Top 10 Academic Stars</strong> <a href="https://service.whu.edu.cn/info/1005/2179.htm">[Announcement]</a>.</li>
-          <li><span class="news-year">2016</span> Awarded <strong>Top 10 Future Star Undergraduate</strong> by the China Water Resources Education Association <a href="https://sljzw.hhu.edu.cn/2019/0415/c11821a189595/page.htm">[Link]</a>.</li>
-        </ul>
+      <div class="highlight-item">
+        <div class="highlight-date">2025</div>
+        <p>
+          Selected as an <strong>NSFC Excellent Young Scientists Fund Overseas Awardee</strong>.
+        </p>
       </div>
 
-      <div class="news-group">
-        <h3 class="news-group-title"><span class="news-dot dot-blue"></span>Research & Publications</h3>
-        <ul class="news-list">
-          <li><span class="news-year">2026</span> Published <em>AGFNN</em>, a smart platform for uncertainty-aware prediction of freezing time in artificial ground freezing, in <em>Tunnelling and Underground Space Technology</em>.</li>
-          <li><span class="news-year">2026</span> Published <em>AGF-PINN-HC</em>, a hard-constrained enhanced physics-informed neural network for multi-pipe heat transfer in artificial ground freezing, in <em>Canadian Geotechnical Journal</em>.</li>
-          <li><span class="news-year">2025</span> Published <em>Relative ice saturation and unified elastoplastic modeling of frozen soils</em> in the <em>Journal of Geotechnical and Geoenvironmental Engineering</em> <a href="https://doi.org/10.1061/JGGEFK.GTENG-13437">[DOI]</a>.</li>
-          <li><span class="news-year">2025</span> Published <em>Physics-informed neural networks for solving steady-state temperature field in artificial ground freezing</em> in the <em>Canadian Geotechnical Journal</em> <a href="https://doi.org/10.1139/cgj-2024-0650">[DOI]</a>.</li>
-          <li><span class="news-year">2025</span> Published <em>State of the art of mechanical behaviors of frozen soils through experimental investigation</em> in <em>Cold Regions Science and Technology</em> <a href="https://doi.org/10.1016/j.coldregions.2025.104497">[DOI]</a>.</li>
-        </ul>
+      <div class="highlight-item">
+        <div class="highlight-date">2025</div>
+        <p>
+          Will join the <strong>School of Water Resources and Hydropower Engineering,
+          Wuhan University</strong> as an Incoming Professor.
+        </p>
       </div>
 
-      <div class="news-group">
-        <h3 class="news-group-title"><span class="news-dot dot-purple"></span>Funding</h3>
-        <ul class="news-list">
-          <li><span class="news-year">2025–2026</span> Awarded <strong>HK$841,040</strong> as PI for a PolyU project on thermo-hydro-mechanical-chemical coupling in hydrate-bearing sediments using physics-informed neural networks.</li>
-          <li><span class="news-year">2025–2029</span> Participating in a <strong>HK$53.821 million</strong> Theme-based Research Scheme project on digital twins for coastal resilience under extreme storm surges in Hong Kong.</li>
-          <li><span class="news-year">2024–2026</span> Participating in a <strong>HK$1.133 million</strong> GRF project on physics-informed multi-fidelity neural networks for intelligent rectification of shield machine attitude in layered soils.</li>
-          <li><span class="news-year">2022</span> Received the <strong>Centrally Funded Postdoctoral Fellowship</strong> with funding of <strong>HK$763,555</strong> for thermo-hydro-mechanical modelling of artificial ground freezing.</li>
-        </ul>
-      </div>
-
-      <div class="news-group">
-        <h3 class="news-group-title"><span class="news-dot dot-green"></span>Academic Service</h3>
-        <ul class="news-list">
-          <li><span class="news-year">2025</span> Serving as Co-chair of Mini-Symposium 9: <em>Multiphysics Modeling of Geo-engineering and Geohazards</em> at <strong>IACMAG 2025</strong>, Hong Kong.</li>
-          <li><span class="news-year">2024</span> Joined the <strong>Early-career Editorial Panel</strong> for the <em>European Journal of Soil Science</em> <a href="https://bsssjournals.onlinelibrary.wiley.com/hub/journal/13652389/editorialboard.html">[Link]</a>.</li>
-          <li><span class="news-year">2024</span> Served as Session Chair at the <strong>12th National Conference on Engineering Geology</strong>, Shenzhen.</li>
-          <li><span class="news-year">2023</span> Served as Secretary of the <strong>International Symposium on Innovations in Geotechnical Engineering towards Sustainability</strong> (IGES 2023).</li>
-        </ul>
+      <div class="highlight-item">
+        <div class="highlight-date">Ongoing</div>
+        <p>
+          Building a research group at the frontier of <strong>geomechanics, uncertainty quantification,
+          computational modelling, and artificial intelligence</strong>.
+        </p>
       </div>
 
     </div>
   </section>
 
+
   <div class="home-note">
-    I welcome collaborations with researchers, students, and practitioners interested in geomechanics,
-    computational modelling, uncertainty quantification, artificial intelligence, and resilient infrastructure.
+    <strong>Collaborations and prospective students are welcome.</strong>
+    I am interested in working with researchers, students, and practitioners who are excited by challenging
+    problems at the intersection of geomechanics, computation, uncertainty, and artificial intelligence.
+    If you are motivated by rigorous science, open collaboration, and real engineering impact, please feel
+    free to get in touch.
   </div>
 
+
   <div class="visitor-map">
-    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=80afe5&w=270&t=tt&d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=1a72b0&cmn=ff5353&ct=000000'></script>
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=1a72b0&cmn=ff5353&ct=000000'></script>
   </div>
 
 </div>
