@@ -630,7 +630,7 @@ redirect_from:
     </div>
 
     <div class="kq-metric">
-      <span class="kq-metric-number">23</span>
+      <span class="kq-metric-number">24</span>
       <span class="kq-metric-label">h-index</span>
     </div>
 
