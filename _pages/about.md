@@ -30,7 +30,7 @@ I received my Ph.D. in Geotechnical Engineering from Wuhan University in 2022 un
 
 To date, I have published 40+ journal papers, received 1,500+ citations, achieved an h-index of 23, and authored 5 ESI Highly Cited Papers.
 
-Looking ahead, I aim to help shape the future of geotechnical engineering through intelligent, uncertainty-aware, and physics-informed approaches, contributing to safer infrastructure, more reliable predictions, and better risk-informed decision-making.
+My research aims to shape the future of geotechnical engineering by advancing predictive, physics-informed, and uncertainty-aware methods for complex geotechnical systems. Through the integration of mechanics, advanced modelling, stochastic analysis, and intelligent computation, I seek to enable safer infrastructure, stronger reliability assessment, and more robust risk-informed decision-making.
 
 If you're interested in collaborating or learning more about my research, feel free to contact me!
 
