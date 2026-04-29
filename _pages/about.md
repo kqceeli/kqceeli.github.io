@@ -15,31 +15,34 @@ redirect_from:
    ========================================================= */
 
 :root {
-  --kq-ink: #111111;
-  --kq-graphite: #252525;
-  --kq-text: #3f3f3f;
-  --kq-muted: #707070;
+  /* Neutral system */
+  --kq-ink: #1f2328;
+  --kq-graphite: #2f343a;
+  --kq-text: #424850;
+  --kq-muted: #747b84;
 
   --kq-paper: #ffffff;
-  --kq-bg-soft: #fafafa;
-  --kq-bg-warm: #fbfaf7;
+  --kq-bg-soft: #f7f7f5;
+  --kq-bg-warm: #faf8f3;
 
-  --kq-border: #d9d9d9;
-  --kq-border-soft: #e8e8e8;
+  --kq-border: #dedbd5;
+  --kq-border-soft: #ebe8e2;
 
-  --kq-nature-red: #a51c30;
-  --kq-nature-red-dark: #7f1424;
-  --kq-nature-red-soft: #f8eef0;
+  /* Refined academic accents */
+  --kq-nature-red: #b6424b;
+  --kq-nature-red-dark: #8f3038;
+  --kq-nature-red-soft: #fbf1f2;
 
-  --kq-science-blue: #174a7c;
-  --kq-science-blue-dark: #10365c;
-  --kq-science-blue-soft: #eef4f9;
+  --kq-science-blue: #465f7a;
+  --kq-science-blue-dark: #31465d;
+  --kq-science-blue-soft: #f0f4f7;
 
-  --kq-gold: #9a7a3f;
-  --kq-green-muted: #4f6f61;
+  /* Secondary accents */
+  --kq-gold: #a58a64;
+  --kq-green-muted: #6f7f78;
 
-  --kq-shadow: rgba(17, 17, 17, 0.05);
-  --kq-shadow-soft: rgba(17, 17, 17, 0.032);
+  --kq-shadow: rgba(31, 35, 40, 0.055);
+  --kq-shadow-soft: rgba(31, 35, 40, 0.035);
 }
 
 .kq-home {
