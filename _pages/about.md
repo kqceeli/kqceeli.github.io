@@ -7,6 +7,7 @@ redirect_from:
   - /about.html
 ---
 
+
 <style>
 /* =========================================================
    Homepage Global Style
