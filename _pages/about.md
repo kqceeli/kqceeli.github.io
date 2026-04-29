@@ -137,7 +137,7 @@ redirect_from:
 
 .kq-position {
   max-width: 860px;
-  margin:1rem 0 0;   /* ← 改这里的 0.5rem，控制与 H1 的距离 */
+  margin: 2rem 0 0;   /* ← 改这里的 0.5rem，控制与 H1 的距离 */
   color: #4d4d4d;
   font-size: 0.98rem;
   line-height: 1.55;
@@ -240,7 +240,7 @@ redirect_from:
   margin: 0.55rem 0.2rem 2.15rem;
   text-align: right;
   color: var(--kq-muted);
-  font-size: 0.6rem;   /* ← google 改这里，比如改成 0.7rem */
+  font-size: 0.5rem;   /* ← google 改这里，比如改成 0.7rem */
   font-style: italic;
   letter-spacing: 0.015em;
 }
