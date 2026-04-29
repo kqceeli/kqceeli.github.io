@@ -1,3 +1,7 @@
+
+
+
+
 ---
 permalink: /join-us/
 title: "Join Us"
@@ -6,85 +10,99 @@ author_profile: true
 
 ## Join Us
 
-I am building a research group at **Wuhan University** in the broad area of **geotechnical engineering**, with a particular focus on developing next-generation methods for safer, more reliable, and more resilient geotechnical systems.
+I am an incoming **Professor** at the **School of Water Resources and Hydropower Engineering, Wuhan University**, where I am building a new research group at the frontier of **geomechanics, computation, and artificial intelligence**.
 
-Our research combines **mechanics**, **multiscale and multiphysics modelling**, **uncertainty quantification**, **risk and reliability analysis**, and **AI-enabled computation** to address challenging problems in geotechnical engineering. We are especially interested in questions where physical understanding, computational modelling, and intelligent methods can be brought together to create meaningful advances in both theory and practice.
+We work on problems that **no single discipline can solve alone** — and we are looking for people who are excited by exactly that.
 
-I warmly welcome **motivated students and researchers** who are excited about interdisciplinary research and who would like to contribute to shaping the future of geotechnical engineering.
+---
 
-## Research Directions
+### Our Vision
 
-Current research directions include:
+Modern geotechnical and hydraulic engineering faces challenges that classical methods alone cannot answer: **deep underground construction, climate-driven permafrost degradation, offshore energy, and aging infrastructure under uncertain loads.** Meeting these challenges requires a new way of thinking — one that unites **mechanics, data, and computation**. Our group is guided by four principles:
 
-- **Frozen geomaterials and artificial ground freezing**
-- **Constitutive modelling of soils and geomaterials**
-- **Multiscale and multiphysics modelling**
-- **Geotechnical uncertainty quantification and propagation**
-- **Geotechnical risk and reliability analysis**
-- **AI for geotechnical engineering**
+🔹 **Physics first, data smart.**
+We build models that respect the laws of mechanics *and* learn from real data — so they remain reliable in the field, not just on a training set.
 
-## Interdisciplinary Opportunities
+🔹 **Uncertainty is information, not noise.**
+Soils are heterogeneous, measurements are sparse, and the climate is changing. We quantify uncertainty rigorously and turn it into **safer, smarter engineering decisions**.
 
-This research is inherently interdisciplinary and lies at the intersection of:
+🔹 **AI as a tool for discovery.**
+We use machine learning not as a black box, but as an instrument to **uncover hidden constitutive laws, multi-scale patterns, and failure mechanisms** that traditional methods cannot reach.
 
-- **Geotechnical engineering**
-- **Mechanics**
-- **Computational science**
-- **Applied mathematics and statistics**
-- **Artificial intelligence and data science**
-- **Underground and cold-region engineering**
+🔹 **Theory ↔ simulation ↔ experiment.**
+Real progress comes from closing the loop — where equations, code, and laboratory data continuously challenge and refine each other.
 
-Applicants from related backgrounds are strongly encouraged to apply. In particular, I welcome students and researchers with interests in:
+---
 
-- scientific computing and numerical methods
-- finite element modelling and computational mechanics
-- stochastic analysis and uncertainty quantification
-- data-driven modelling and AI for engineering
-- physics-informed modelling of complex materials and systems
+### Research Directions
 
-## Open Positions
+Our work spans **six interconnected thrusts**, bridging fundamental mechanics and real-world engineering:
 
-I am interested in working with:
+**① Frozen-Ground & Cold-Region Geomechanics**
+Constitutive modelling of frozen soils and ice-rich geomaterials; artificial ground freezing for deep excavations and tunnels; permafrost degradation under climate change; frost heave, thaw settlement, and cold-region infrastructure resilience.
 
-- **Ph.D. students**
-- **Master’s students**
-- **Research assistants**
-- **Postdoctoral researchers** (subject to funding and university policy)
-- **Visiting students and collaborators**
+**② Multi-Physics Coupling in Geomaterials**
+Thermo–hydro–mechanical–chemical (THMC) processes; phase change and freeze–thaw cycles; unsaturated and reactive porous media; coupled modelling for hydropower dams, energy geo-structures, and offshore foundations.
 
-## What I Am Looking For
+**③ Multi-Scale Modelling of Geomaterials**
+From grain-scale DEM and micromechanics to continuum behavior; microstructure-informed constitutive laws; FEM–DEM coupling; bridging pore-scale physics with engineering-scale predictions.
 
-Strong applicants typically have one or more of the following:
+**④ Geotechnical Risk & Reliability Engineering**
+Spatial variability and random fields; random finite element methods (RFEM); Bayesian inversion and model updating; slope, foundation, and tunnel reliability; risk-informed design of major infrastructure under geological and climatic uncertainty.
 
-- a solid background in geotechnical engineering, mechanics, applied mathematics, computer science, or related fields
-- strong analytical and quantitative skills
-- interest or experience in modelling, simulation, scientific computing, or AI
-- enthusiasm for interdisciplinary research
-- curiosity, independence, and a strong sense of responsibility
-- good academic writing and communication skills
+**⑤ AI-Enabled Computational Mechanics**
+Physics-informed neural networks (PINNs); neural operators for PDEs; data-driven constitutive discovery; differentiable simulation; high-dimensional surrogate modelling for expensive geomechanical systems.
 
-## Application Materials
+**⑥ Large Language Models for Engineering Science**
+LLM-powered scientific agents for geotechnical reasoning and design; knowledge extraction from decades of engineering literature, codes, and case histories; automated hypothesis generation and simulation workflows; the next generation of **AI copilots for engineers**.
 
-If you are interested in joining the group, please send the following materials by email:
+> New directions proposed by students are not just welcome — they are expected. The best projects in our group often begin with **your** question.
 
+---
+
+### Who I'm Looking For
+
+I am recruiting **Ph.D. students, master's students, research assistants, postdocs, and visiting scholars**.
+
+I warmly welcome applicants from **any background** — hydraulic, civil, or geotechnical engineering, mechanics, applied mathematics, statistics, physics, computer science, or machine learning. **Diversity makes a group stronger**, and applications are open regardless of gender, nationality, or institution.
+
+What I truly care about:
+
+- **Curiosity** that crosses boundaries
+- **Self-motivation** and intellectual honesty
+- **Rigor** in mathematics, mechanics, or computation
+- **Kindness** as a collaborator
+
+If you have some of these — even if you don't tick every box — please reach out.
+
+---
+
+### Our Group Culture
+
+- A **supportive, non-hierarchical** environment — students are collaborators, not labor.
+- **Genuine mentorship**: regular one-on-one discussions, hands-on guidance, and long-term career support.
+- **Freedom to explore** your own ideas, backed by the resources to test them.
+- **International exposure** through collaborations, exchanges, and top conferences.
+- A team that values **scientific ambition *and* personal well-being** — equally.
+
+---
+
+### How to Apply
+
+Send me an email with the subject line:
+
+> **[Join Us] Your Name – institution – Position (PhD / MSc / RA / Postdoc / Visiting)**
+
+Please attach:
 1. **Curriculum Vitae (CV)**
 2. **Three representative publications or research works**
 3. **Contact information for three referees**
+4. **A brief introduction** — your current institution and academic background, what excites you in research, and why our group?
 
 Please send your application to:
-
-- **kqcee.li@polyu.edu.hk**
 - **kqceeli@163.com**
 
-## Before You Email
+I read every email personally. If you are curious and ambitious, please reach out — let's see what we can build together.
 
-Please include a brief introduction covering:
 
-- your current institution and academic background
-- your research interests
-- why you would like to join the group
-- how your experience relates to the research directions above
 
-## Closing Note
-
-I hope to build an open, collaborative, and ambitious research environment where students and researchers can develop both deep expertise and a broad interdisciplinary vision. If you are interested in tackling challenging problems in geotechnical engineering through mechanics, computation, uncertainty, and intelligent methods, I would be glad to hear from you.
