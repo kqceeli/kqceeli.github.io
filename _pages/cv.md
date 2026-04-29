@@ -467,8 +467,81 @@ redirect_from:
     </div>
   </section>
 
-  <section class="cv-section">
+    <section class="cv-section">
     <h2 class="cv-section-title">Research Funding</h2>
+
+    <div class="cv-funding-card">
+      <h3 class="cv-funding-title">
+        Thermo-hydro-mechanical-chemical coupling in hydrate-bearing sediments:
+        a physics-informed neural-network-based simulator
+      </h3>
+
+      <div class="cv-funding-grid">
+        <div class="cv-label">Period</div>
+        <div class="cv-value">01/2025 – 12/2026</div>
+
+        <div class="cv-label">Amount</div>
+        <div class="cv-value">HK$ 841,040 &nbsp;(~USD$ 107,500)</div>
+
+        <div class="cv-label">Funded by</div>
+        <div class="cv-value">The Hong Kong Polytechnic University</div>
+
+        <div class="cv-label">Role</div>
+        <div class="cv-value">
+          <span class="cv-role">Principal Investigator</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-funding-card">
+      <h3 class="cv-funding-title">
+        Digital twins for coastal resilience under extreme storm surges in Hong Kong
+      </h3>
+
+      <div class="cv-funding-grid">
+        <div class="cv-label">Period</div>
+        <div class="cv-value">01/2025 – 12/2029</div>
+
+        <div class="cv-label">Amount</div>
+        <div class="cv-value">HK$ 53,821,000 &nbsp;(~USD$ 6,900,000)</div>
+
+        <div class="cv-label">Funded by</div>
+        <div class="cv-value">
+          Research Grants Council of Hong Kong, Theme-based Research Scheme,
+          Grant No. T22-607/24-N
+        </div>
+
+        <div class="cv-label">Role</div>
+        <div class="cv-value">
+          <span class="cv-role">Main Participant</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-funding-card">
+      <h3 class="cv-funding-title">
+        Physics-informed multi-fidelity neural network approach for intelligent rectification
+        of shield machine attitude in layered soils
+      </h3>
+
+      <div class="cv-funding-grid">
+        <div class="cv-label">Period</div>
+        <div class="cv-value">01/2024 – 12/2026</div>
+
+        <div class="cv-label">Amount</div>
+        <div class="cv-value">HK$ 1,132,781 &nbsp;(~USD$ 145,000)</div>
+
+        <div class="cv-label">Funded by</div>
+        <div class="cv-value">
+          Research Grants Council of Hong Kong, General Research Fund
+        </div>
+
+        <div class="cv-label">Role</div>
+        <div class="cv-value">
+          <span class="cv-role">Main Participant</span>
+        </div>
+      </div>
+    </div>
 
     <div class="cv-funding-card">
       <h3 class="cv-funding-title">
@@ -480,39 +553,22 @@ redirect_from:
         <div class="cv-value">01/2023 – 12/2024</div>
 
         <div class="cv-label">Amount</div>
-        <div class="cv-value">HK$ 763,555</div>
+        <div class="cv-value">HK$ 763,555 &nbsp;(~USD$ 97,600)</div>
 
         <div class="cv-label">Funded by</div>
         <div class="cv-value">The Hong Kong Polytechnic University</div>
 
         <div class="cv-label">Role</div>
-        <div class="cv-value"><span class="cv-role">Principal Investigator</span></div>
+        <div class="cv-value">
+          <span class="cv-role">Principal Investigator</span>
+        </div>
       </div>
     </div>
 
     <div class="cv-funding-card">
       <h3 class="cv-funding-title">
-        Physics-informed multi-fidelity neural network approach for intelligent rectification of shield machine attitude in layered soils
-      </h3>
-
-      <div class="cv-funding-grid">
-        <div class="cv-label">Period</div>
-        <div class="cv-value">01/2024 – 12/2026</div>
-
-        <div class="cv-label">Amount</div>
-        <div class="cv-value">HK$ 1,132,781</div>
-
-        <div class="cv-label">Funded by</div>
-        <div class="cv-value">Research Grants Council of Hong Kong, General Research Fund</div>
-
-        <div class="cv-label">Role</div>
-        <div class="cv-value"><span class="cv-role">Main Participant</span></div>
-      </div>
-    </div>
-
-    <div class="cv-funding-card">
-      <h3 class="cv-funding-title">
-        Multi-physics coupling mechanism of deep-sea pipeline and soft marine organic deposits interaction considering time and temperature effects
+        Multi-physics coupling mechanism of deep-sea pipeline and soft marine organic deposits
+        interaction considering time and temperature effects
       </h3>
 
       <div class="cv-funding-grid">
@@ -523,16 +579,21 @@ redirect_from:
         <div class="cv-value">HK$ 1,154,954</div>
 
         <div class="cv-label">Funded by</div>
-        <div class="cv-value">Research Grants Council of Hong Kong, NSFC/RGC Joint Research Scheme</div>
+        <div class="cv-value">
+          Research Grants Council of Hong Kong, NSFC/RGC Joint Research Scheme
+        </div>
 
         <div class="cv-label">Role</div>
-        <div class="cv-value"><span class="cv-role">Main Participant</span></div>
+        <div class="cv-value">
+          <span class="cv-role">Main Participant</span>
+        </div>
       </div>
     </div>
 
     <div class="cv-funding-card">
       <h3 class="cv-funding-title">
-        Seepage failure mechanism and risk control of earth-rockfill dams considering spatial variability of geomaterials
+        Seepage failure mechanism and risk control of earth-rockfill dams considering
+        spatial variability of geomaterials
       </h3>
 
       <div class="cv-funding-grid">
@@ -540,19 +601,22 @@ redirect_from:
         <div class="cv-value">09/2020 – 01/2022</div>
 
         <div class="cv-label">Amount</div>
-        <div class="cv-value">CNY 580,000</div>
+        <div class="cv-value">CNY 580,000 &nbsp;(~USD$ 79,500)</div>
 
         <div class="cv-label">Funded by</div>
         <div class="cv-value">National Natural Science Foundation of China</div>
 
         <div class="cv-label">Role</div>
-        <div class="cv-value"><span class="cv-role">Co-Investigator</span></div>
+        <div class="cv-value">
+          <span class="cv-role">Co-Investigator</span>
+        </div>
       </div>
     </div>
 
     <div class="cv-funding-card">
       <h3 class="cv-funding-title">
-        Risk assessment for tunnel-induced subsidence under complex geological conditions using big data analysis
+        Risk assessment for tunnel-induced subsidence under complex geological conditions
+        using big data analysis
       </h3>
 
       <div class="cv-funding-grid">
@@ -560,20 +624,20 @@ redirect_from:
         <div class="cv-value">01/2018 – 07/2021</div>
 
         <div class="cv-label">Amount</div>
-        <div class="cv-value">CNY 4,100,000</div>
+        <div class="cv-value">CNY 4,100,000 &nbsp;(~USD$ 561,700)</div>
 
         <div class="cv-label">Funded by</div>
-        <div class="cv-value">NRF-NSFC 3rd Joint Research Grant, Earth Science</div>
+        <div class="cv-value">
+          NRF-NSFC 3rd Joint Research Grant, Earth Science
+        </div>
 
         <div class="cv-label">Role</div>
-        <div class="cv-value"><span class="cv-role">Co-Investigator</span></div>
+        <div class="cv-value">
+          <span class="cv-role">Co-Investigator</span>
+        </div>
       </div>
     </div>
 
   </section>
-
-  <div class="cv-note">
-    A full publication list, teaching and supervision record, and professional service activities are available on the corresponding pages of this website.
-  </div>
 
 </div>
