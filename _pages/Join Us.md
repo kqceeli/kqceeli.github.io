@@ -506,8 +506,8 @@ permalink: /join-us/
         <ul class="apply-list">
           <li>Curriculum vitae</li>
           <li>Brief statement of research interests</li>
-          <li>Representative work, if available</li>
-          <li>Names and contacts of referees, if available</li>
+          <li>Up to three representative works, if available, in PDF format</li>
+          <li>Names and contacts of three referees, if available</li>
         </ul>
 
         <p class="apply-note">
@@ -520,8 +520,7 @@ permalink: /join-us/
 
   <div class="final-note">
     Great research requires both <strong>imagination and discipline</strong>.
-    If you want to help build a new research group from the beginning,
-    please get in touch.
+    If you are interested in pursuing meaningful and exciting research together, please get in touch.
     <br><br>
     <strong>Let us build something meaningful together.</strong>
   </div>
