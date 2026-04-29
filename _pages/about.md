@@ -11,15 +11,13 @@ redirect_from:
 /* =========================================================
    Homepage Global Style
    Nature / Science Inspired Academic Design
-   Palette: editorial white / graphite / Nature red / Science navy
    ========================================================= */
 
 :root {
-  /* Neutral system */
   --kq-ink: #1f2328;
   --kq-graphite: #2f343a;
   --kq-text: #424850;
-  --kq-muted: #747b84;
+  --kq-muted: #6a7079;
 
   --kq-paper: #ffffff;
   --kq-bg-soft: #f7f7f5;
@@ -28,7 +26,6 @@ redirect_from:
   --kq-border: #dedbd5;
   --kq-border-soft: #ebe8e2;
 
-  /* Refined academic accents */
   --kq-nature-red: #b6424b;
   --kq-nature-red-dark: #8f3038;
   --kq-nature-red-soft: #fbf1f2;
@@ -37,7 +34,6 @@ redirect_from:
   --kq-science-blue-dark: #31465d;
   --kq-science-blue-soft: #f0f4f7;
 
-  /* Secondary accents */
   --kq-gold: #a58a64;
   --kq-green-muted: #6f7f78;
 
@@ -99,6 +95,37 @@ redirect_from:
   background: linear-gradient(180deg, var(--kq-nature-red), var(--kq-science-blue));
 }
 
+.kq-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.9rem;
+}
+
+.kq-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.71rem;
+  font-weight: 720;
+  letter-spacing: 0.015em;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.kq-badge-red {
+  color: var(--kq-nature-red-dark);
+  background: var(--kq-nature-red-soft);
+  border-color: rgba(182, 66, 75, 0.28);
+}
+
+.kq-badge-blue {
+  color: var(--kq-science-blue-dark);
+  background: var(--kq-science-blue-soft);
+  border-color: rgba(70, 95, 122, 0.28);
+}
+
 .kq-hero h1 {
   margin: 0;
   color: var(--kq-ink);
@@ -129,6 +156,28 @@ redirect_from:
   font-weight: 760;
 }
 
+.kq-recruit {
+  margin-top: 1.25rem;
+  padding: 0.82rem 1.05rem;
+  border-left: 3px solid var(--kq-nature-red);
+  background: var(--kq-nature-red-soft);
+  border-radius: 0 10px 10px 0;
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: #3a3a3a;
+}
+
+.kq-recruit strong {
+  color: var(--kq-nature-red-dark);
+  font-weight: 770;
+}
+
+.kq-recruit a {
+  color: var(--kq-nature-red-dark) !important;
+  font-weight: 700;
+  border-bottom-color: rgba(143, 48, 56, 0.4) !important;
+}
+
 
 /* =========================================================
    Metrics
@@ -137,7 +186,7 @@ redirect_from:
 .kq-metrics {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin: 1.25rem 0 2.15rem;
+  margin: 1.25rem 0 0.4rem;
   border: 1px solid var(--kq-border);
   border-radius: 16px;
   background: var(--kq-paper);
@@ -147,7 +196,7 @@ redirect_from:
 
 .kq-metric {
   position: relative;
-  padding: 0.88rem 0.9rem 0.82rem;
+  padding: 1rem 0.9rem 0.9rem;
   border-right: 1px solid var(--kq-border-soft);
   background: linear-gradient(180deg, #ffffff 0%, #fcfcfc 100%);
 }
@@ -170,19 +219,30 @@ redirect_from:
 .kq-metric-number {
   display: block;
   color: var(--kq-ink);
-  font-size: 1.08rem;
-  line-height: 1.25;
+  font-size: 1.42rem;
+  line-height: 1.2;
   font-weight: 860;
-  letter-spacing: -0.018em;
+  letter-spacing: -0.025em;
+  font-variant-numeric: tabular-nums;
 }
 
 .kq-metric-label {
   display: block;
-  margin-top: 0.22rem;
+  margin-top: 0.3rem;
   color: var(--kq-muted);
-  font-size: 0.71rem;
+  font-size: 0.72rem;
   line-height: 1.42;
-  font-weight: 650;
+  font-weight: 660;
+  letter-spacing: 0.01em;
+}
+
+.kq-metrics-note {
+  margin: 0.55rem 0.2rem 2.15rem;
+  text-align: right;
+  color: var(--kq-muted);
+  font-size: 0.7rem;
+  font-style: italic;
+  letter-spacing: 0.015em;
 }
 
 
@@ -312,26 +372,32 @@ redirect_from:
 
 .agenda-index {
   min-height: 130px;
-  padding: 0.9rem 0.92rem;
+  padding: 0.95rem 0.95rem;
   border-radius: 14px;
   border: 1px solid #dedede;
   background:
     linear-gradient(180deg, #fbfaf7 0%, #f4f2ee 100%);
 }
 
+.agenda-icon {
+  font-size: 1.55rem;
+  line-height: 1;
+  margin-bottom: 0.55rem;
+}
+
 .agenda-number {
   color: var(--kq-nature-red-dark);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   line-height: 1.35;
   font-weight: 850;
-  letter-spacing: 0.115em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .agenda-theme {
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   color: var(--kq-ink);
-  font-size: 0.98rem;
+  font-size: 0.96rem;
   line-height: 1.35;
   font-weight: 830;
   letter-spacing: -0.018em;
@@ -396,8 +462,8 @@ redirect_from:
 }
 
 .kq-news-group {
-  margin-top: 1.08rem;
-  padding-top: 0.96rem;
+  margin-top: 1.15rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--kq-border-soft);
 }
 
@@ -409,9 +475,9 @@ redirect_from:
 
 .kq-news-heading {
   position: relative;
-  margin: 0 0 0.54rem;
+  margin: 0 0 0.7rem;
   padding-left: 1rem;
-  font-size: 0.92rem !important;
+  font-size: 0.94rem !important;
   line-height: 1.35;
   font-weight: 830;
   letter-spacing: -0.01em;
@@ -427,52 +493,51 @@ redirect_from:
   border-radius: 999px;
 }
 
-.kq-news-awards {
-  color: var(--kq-nature-red-dark);
-}
+.kq-news-awards { color: var(--kq-nature-red-dark); }
+.kq-news-awards::before { background: var(--kq-nature-red); }
 
-.kq-news-awards::before {
-  background: var(--kq-nature-red);
-}
+.kq-news-research { color: var(--kq-science-blue-dark); }
+.kq-news-research::before { background: var(--kq-science-blue); }
 
-.kq-news-research {
-  color: var(--kq-science-blue-dark);
-}
+.kq-news-funding { color: #5f4b22; }
+.kq-news-funding::before { background: var(--kq-gold); }
 
-.kq-news-research::before {
-  background: var(--kq-science-blue);
-}
-
-.kq-news-funding {
-  color: #5f4b22;
-}
-
-.kq-news-funding::before {
-  background: var(--kq-gold);
-}
-
-.kq-news-service {
-  color: #303030;
-}
-
-.kq-news-service::before {
-  background: #303030;
-}
+.kq-news-service { color: #303030; }
+.kq-news-service::before { background: #303030; }
 
 .kq-news-list {
+  list-style: none;
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 0;
 }
 
 .kq-news-list li {
-  margin: 0.34rem 0;
+  position: relative;
+  margin: 0.5rem 0;
+  padding: 0.12rem 0 0.12rem 4.2rem;
   color: #4c4c4c;
-  font-size: 0.79rem;
-  line-height: 1.62;
+  font-size: 0.81rem;
+  line-height: 1.66;
+  min-height: 1.4rem;
 }
 
-.kq-news-list li::marker {
-  color: #9a9a9a;
+.kq-news-year {
+  position: absolute;
+  left: 0;
+  top: 0.18rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.5rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 6px;
+  background: var(--kq-bg-soft);
+  border: 1px solid var(--kq-border-soft);
+  color: var(--kq-ink);
+  font-size: 0.7rem;
+  font-weight: 770;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
 }
 
 .kq-news-list strong {
@@ -544,6 +609,7 @@ redirect_from:
 
   .kq-hero {
     border-radius: 18px;
+    padding: 1.4rem 1.2rem;
   }
 
   .kq-metrics {
@@ -557,6 +623,10 @@ redirect_from:
 
   .kq-metric:last-child {
     border-bottom: none;
+  }
+
+  .kq-metric-number {
+    font-size: 1.3rem;
   }
 
   .kq-section-title,
@@ -590,7 +660,16 @@ redirect_from:
 
   .agenda-content p,
   .kq-news-list li {
-    font-size: 0.76rem;
+    font-size: 0.77rem;
+  }
+
+  .kq-news-list li {
+    padding-left: 3.8rem;
+  }
+
+  .kq-news-year {
+    min-width: 3.2rem;
+    font-size: 0.66rem;
   }
 }
 </style>
@@ -601,6 +680,11 @@ redirect_from:
   <!-- ================= Hero ================= -->
   <section class="kq-hero">
 
+    <div class="kq-hero-badges">
+      <span class="kq-badge kq-badge-red">NSFC Excellent Young Scientists (Overseas)</span>
+      <span class="kq-badge kq-badge-blue">Incoming Professor · Wuhan University</span>
+    </div>
+
     <h1>Kai-Qi Li, Ph.D.</h1>
 
     <p class="kq-position">
@@ -610,8 +694,18 @@ redirect_from:
     <p class="kq-hero-desc">
       I develop <strong>mechanics-grounded</strong>, <strong>data-enabled</strong>, and
       <strong>uncertainty-aware</strong> methods to reveal, predict, and manage complex
-      geotechnical systems under evolving environmental and engineering conditions.
+      geotechnical systems under evolving environmental and engineering conditions — bridging
+      classical soil mechanics with modern AI to engineer ground systems that are
+      <strong>safer, smarter, and more sustainable</strong>.
     </p>
+
+    <div class="kq-recruit">
+      <strong>🔔 Recruiting (2026–):</strong> I am looking for motivated
+      <strong>Ph.D. students, M.Sc. students, postdocs, and visiting scholars</strong>
+      interested in computational geomechanics, AI for geotechnics, frozen ground engineering,
+      and uncertainty quantification. See the
+      <a href="/joinus/">Join Us</a> page for details.
+    </div>
 
   </section>
 
@@ -621,7 +715,7 @@ redirect_from:
 
     <div class="kq-metric">
       <span class="kq-metric-number">40+</span>
-      <span class="kq-metric-label">Journal papers</span>
+      <span class="kq-metric-label">Journal Papers</span>
     </div>
 
     <div class="kq-metric">
@@ -631,15 +725,17 @@ redirect_from:
 
     <div class="kq-metric">
       <span class="kq-metric-number">23</span>
-      <span class="kq-metric-label">h-index</span>
+      <span class="kq-metric-label">H-Index</span>
     </div>
 
     <div class="kq-metric">
       <span class="kq-metric-number">5</span>
-      <span class="kq-metric-label">ESI Highly Cited Papers</span>
+      <span class="kq-metric-label">ESI Highly Cited</span>
     </div>
 
   </section>
+
+  <p class="kq-metrics-note">Source: Google Scholar · Last updated: Dec 2024</p>
 
 
   <!-- ================= About ================= -->
@@ -672,8 +768,8 @@ redirect_from:
       </p>
 
       <p>
-        My work lies at the interface of geotechnical engineering, mechanics, computational modelling,
-        stochastic analysis, and artificial intelligence, with applications in frozen ground, artificial
+        My work lies at the interface of <strong>geotechnical engineering, mechanics, computational modelling,
+        stochastic analysis, and artificial intelligence</strong>, with applications in frozen ground, artificial
         ground freezing, underground construction, hydrate-bearing sediments, and resilient infrastructure.
       </p>
 
@@ -697,8 +793,9 @@ redirect_from:
 
       <div class="agenda-card">
         <div class="agenda-index">
-          <div class="agenda-number">Agenda 01</div>
-          <div class="agenda-theme">Complex ground systems</div>
+          <div class="agenda-icon">🧊</div>
+          <div class="agenda-number">Theme 01</div>
+          <div class="agenda-theme">Complex Ground Systems</div>
         </div>
 
         <div class="agenda-content">
@@ -721,8 +818,9 @@ redirect_from:
 
       <div class="agenda-card">
         <div class="agenda-index">
-          <div class="agenda-number">Agenda 02</div>
-          <div class="agenda-theme">Scientific intelligence</div>
+          <div class="agenda-icon">🤖</div>
+          <div class="agenda-number">Theme 02</div>
+          <div class="agenda-theme">Scientific Intelligence</div>
         </div>
 
         <div class="agenda-content">
@@ -745,8 +843,9 @@ redirect_from:
 
       <div class="agenda-card">
         <div class="agenda-index">
-          <div class="agenda-number">Agenda 03</div>
-          <div class="agenda-theme">Uncertainty mastery</div>
+          <div class="agenda-icon">📊</div>
+          <div class="agenda-number">Theme 03</div>
+          <div class="agenda-theme">Uncertainty Mastery</div>
         </div>
 
         <div class="agenda-content">
@@ -769,8 +868,9 @@ redirect_from:
 
       <div class="agenda-card">
         <div class="agenda-index">
-          <div class="agenda-number">Agenda 04</div>
-          <div class="agenda-theme">Engineering translation</div>
+          <div class="agenda-icon">🏗️</div>
+          <div class="agenda-number">Theme 04</div>
+          <div class="agenda-theme">Engineering Translation</div>
         </div>
 
         <div class="agenda-content">
@@ -810,45 +910,45 @@ redirect_from:
       <div class="kq-news-group">
         <h3 class="kq-news-heading kq-news-awards">Awards &amp; Honors</h3>
         <ul class="kq-news-list">
-          <li>[2026] Awarded the <strong>NSFC Excellent Young Scientists Fund Overseas</strong> and will join <strong>Wuhan University</strong> as an incoming professor.</li>
-          <li>[2025] Shortlisted for the <strong>JC STEM Early Career Research Fellowship</strong>.</li>
-          <li>[2024] Awarded the <strong>PolyU Distinguished Postdoctoral Fellowship</strong> in October 2024.</li>
-          <li>[2024] Received the <strong>2023 Hubei Province Science &amp; Technology Progress Award</strong> for the project <em>Risk Prevention and Control of Artificial Ground Freezing Technique in Water-Rich Stratum</em>.</li>
-          <li>[2023] Received the <strong>2023 Academic Innovation Award</strong> from Wuhan University.</li>
-          <li>[2021] Received the <strong>Excellence in Teaching Award</strong> from Wuhan University.</li>
-          <li>[2020] Named one of <strong>Wuhan University’s Top 10 Academic Stars</strong>.</li>
-          <li>[2016] Awarded the <strong>Top 10 Future Star Undergraduate</strong> by the China Water Resources Education Association.</li>
+          <li><span class="kq-news-year">2026</span>Awarded the <strong>NSFC Excellent Young Scientists Fund Overseas</strong> and will join <strong>Wuhan University</strong> as an incoming professor.</li>
+          <li><span class="kq-news-year">2025</span>Shortlisted for the <strong>JC STEM Early Career Research Fellowship</strong>.</li>
+          <li><span class="kq-news-year">2024</span>Awarded the <strong>PolyU Distinguished Postdoctoral Fellowship</strong>.</li>
+          <li><span class="kq-news-year">2024</span>Received the <strong>2023 Hubei Province Science &amp; Technology Progress Award</strong> for the project <em>Risk Prevention and Control of Artificial Ground Freezing Technique in Water-Rich Stratum</em>.</li>
+          <li><span class="kq-news-year">2023</span>Received the <strong>Academic Innovation Award</strong> from Wuhan University.</li>
+          <li><span class="kq-news-year">2021</span>Received the <strong>Excellence in Teaching Award</strong> from Wuhan University.</li>
+          <li><span class="kq-news-year">2020</span>Named one of <strong>Wuhan University's Top 10 Academic Stars</strong>.</li>
+          <li><span class="kq-news-year">2016</span>Awarded the <strong>Top 10 Future Star Undergraduate</strong> by the China Water Resources Education Association.</li>
         </ul>
       </div>
 
       <div class="kq-news-group">
         <h3 class="kq-news-heading kq-news-research">Research &amp; Publications</h3>
         <ul class="kq-news-list">
-          <li>[2026] Published <em>AGFNN</em>, a smart platform for uncertainty-aware prediction of freezing time in artificial ground freezing, in <em>Tunnelling and Underground Space Technology</em>.</li>
-          <li>[2026] Published <em>AGF-PINN-HC</em>, a hard-constrained enhanced physics-informed neural network for multi-pipe heat transfer in artificial ground freezing, in <em>Canadian Geotechnical Journal</em>.</li>
-          <li>[2025] Published <em>Relative ice saturation and unified elastoplastic modeling of frozen soils</em> in the <em>Journal of Geotechnical and Geoenvironmental Engineering</em>.</li>
-          <li>[2025] Published <em>Physics-informed neural networks for solving steady-state temperature field in artificial ground freezing</em> in the <em>Canadian Geotechnical Journal</em>.</li>
-          <li>[2025] Published <em>State of the art of mechanical behaviors of frozen soils through experimental investigation</em> in <em>Cold Regions Science and Technology</em>.</li>
+          <li><span class="kq-news-year">2026</span>Published <em>AGFNN</em>, a smart platform for uncertainty-aware prediction of freezing time in artificial ground freezing, in <em>Tunnelling and Underground Space Technology</em>.</li>
+          <li><span class="kq-news-year">2026</span>Published <em>AGF-PINN-HC</em>, a hard-constrained enhanced physics-informed neural network for multi-pipe heat transfer in artificial ground freezing, in <em>Canadian Geotechnical Journal</em>.</li>
+          <li><span class="kq-news-year">2025</span>Published <em>Relative ice saturation and unified elastoplastic modeling of frozen soils</em> in the <em>Journal of Geotechnical and Geoenvironmental Engineering</em>.</li>
+          <li><span class="kq-news-year">2025</span>Published <em>Physics-informed neural networks for solving steady-state temperature field in artificial ground freezing</em> in the <em>Canadian Geotechnical Journal</em>.</li>
+          <li><span class="kq-news-year">2025</span>Published <em>State of the art of mechanical behaviors of frozen soils through experimental investigation</em> in <em>Cold Regions Science and Technology</em>.</li>
         </ul>
       </div>
 
       <div class="kq-news-group">
         <h3 class="kq-news-heading kq-news-funding">Funding</h3>
         <ul class="kq-news-list">
-          <li>[2025–2026] Awarded <strong>HK$841,040</strong> as PI for a PolyU project on thermo-hydro-mechanical-chemical coupling in hydrate-bearing sediments using physics-informed neural networks.</li>
-          <li>[2025–2029] Participating in a <strong>HK$53.821 million</strong> Theme-based Research Scheme project on digital twins for coastal resilience under extreme storm surges in Hong Kong.</li>
-          <li>[2024–2026] Participating in a <strong>HK$1.133 million</strong> GRF project on physics-informed multi-fidelity neural networks for intelligent rectification of shield machine attitude in layered soils.</li>
-          <li>[2022] Received the <strong>Centrally Funded Postdoctoral Fellowship HK$763,555</strong> for thermo-hydro-mechanical modelling of artificial ground freezing.</li>
+          <li><span class="kq-news-year">2025–26</span>Awarded <strong>HK$841,040</strong> as PI for a PolyU project on thermo-hydro-mechanical-chemical coupling in hydrate-bearing sediments using physics-informed neural networks.</li>
+          <li><span class="kq-news-year">2025–29</span>Participating in a <strong>HK$53.821 million</strong> Theme-based Research Scheme project on digital twins for coastal resilience under extreme storm surges in Hong Kong.</li>
+          <li><span class="kq-news-year">2024–26</span>Participating in a <strong>HK$1.133 million</strong> GRF project on physics-informed multi-fidelity neural networks for intelligent rectification of shield machine attitude in layered soils.</li>
+          <li><span class="kq-news-year">2022</span>Received the <strong>Centrally Funded Postdoctoral Fellowship (HK$763,555)</strong> for thermo-hydro-mechanical modelling of artificial ground freezing.</li>
         </ul>
       </div>
 
       <div class="kq-news-group">
         <h3 class="kq-news-heading kq-news-service">Academic Service</h3>
         <ul class="kq-news-list">
-          <li>[2025] Serving as Co-chair of Mini-Symposium 9: <em>Multiphysics Modeling of Geo-engineering and Geohazards</em> at <strong>IACMAG 2025</strong>, Hong Kong.</li>
-          <li>[2024] Joined the <strong>Early-career Editorial Panel</strong> for the <em>European Journal of Soil Science</em>.</li>
-          <li>[2024] Served as Session Chair at the <strong>12th National Conference on Engineering Geology</strong>, Shenzhen.</li>
-          <li>[2023] Served as Secretary of the <strong>International Symposium on Innovations in Geotechnical Engineering towards Sustainability</strong>, IGES 2023.</li>
+          <li><span class="kq-news-year">2025</span>Serving as Co-chair of Mini-Symposium 9: <em>Multiphysics Modeling of Geo-engineering and Geohazards</em> at <strong>IACMAG 2025</strong>, Hong Kong.</li>
+          <li><span class="kq-news-year">2024</span>Joined the <strong>Early-career Editorial Panel</strong> for the <em>European Journal of Soil Science</em>.</li>
+          <li><span class="kq-news-year">2024</span>Served as Session Chair at the <strong>12th National Conference on Engineering Geology</strong>, Shenzhen.</li>
+          <li><span class="kq-news-year">2023</span>Served as Secretary of the <strong>International Symposium on Innovations in Geotechnical Engineering towards Sustainability</strong>, IGES 2023.</li>
         </ul>
       </div>
 
