@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -350,33 +350,12 @@ redirect_from:
       <span class="cv-tag">Geotechnical Engineering</span>
       <span class="cv-tag">Computational Geomechanics</span>
       <span class="cv-tag">Uncertainty Quantification</span>
-      <span class="cv-tag">AI for Geo-Systems</span>
+      <span class="cv-tag">PIML & LLM for geotechnical engineering</span>
       <span class="cv-tag">Infrastructure Resilience</span>
     </div>
   </section>
 
-  <section class="cv-stats">
-    <div class="cv-stat">
-      <span class="cv-stat-number">3</span>
-      <span class="cv-stat-label">Academic Institutions</span>
-    </div>
-
-    <div class="cv-stat">
-      <span class="cv-stat-number">5</span>
-      <span class="cv-stat-label">Research Projects</span>
-    </div>
-
-    <div class="cv-stat">
-      <span class="cv-stat-number">15+</span>
-      <span class="cv-stat-label">Selected Awards</span>
-    </div>
-
-    <div class="cv-stat">
-      <span class="cv-stat-number">PI</span>
-      <span class="cv-stat-label">Independent Research Funding</span>
-    </div>
-  </section>
-
+ 
   <section class="cv-section">
     <h2 class="cv-section-title">Academic Appointments</h2>
 
