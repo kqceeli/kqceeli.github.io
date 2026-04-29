@@ -18,7 +18,10 @@ main:
     
   - title: "CV"
     url: /cv/
-        
+
+  - title: "Join Us"
+    url: /join-us/
+  
   # - title: "Blog Posts"
   #   url: /year-archive/
   
