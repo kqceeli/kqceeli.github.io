@@ -240,7 +240,7 @@ redirect_from:
   margin: 0.55rem 0.2rem 2.15rem;
   text-align: right;
   color: var(--kq-muted);
-  font-size: 0.7rem;
+  font-size: 0.6rem;   /* ← google 改这里，比如改成 0.7rem */
   font-style: italic;
   letter-spacing: 0.015em;
 }
