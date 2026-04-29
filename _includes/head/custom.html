@@ -33,6 +33,9 @@
 <!-- ============================================= -->
 <!--  自定义样式:顶部导航 + 左侧侧边栏            -->
 <!-- ============================================= -->
+<!-- ============================================= -->
+<!--  自定义样式:顶部导航 + 左侧侧边栏(修复版)   -->
+<!-- ============================================= -->
 <style>
   /* ========== 全局变量 ========== */
   :root {
@@ -47,7 +50,7 @@
   /* ========== 1. 顶部导航栏 ========== */
   .masthead {
     border-bottom: 1px solid var(--border-light) !important;
-    background: rgba(255, 255, 255, 0.95) !important;
+    background: rgba(255, 255, 255, 0.96) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: sticky !important;
@@ -57,47 +60,43 @@
   }
 
   .masthead__inner-wrap {
-    padding: 0.8em 1.5em !important;
-    display: flex !important;
-    align-items: center !important;
+    padding: 0.7em 1.5em !important;
+    max-width: 1280px !important;
   }
 
   /* —— 站点标题 —— */
   .site-title {
-    font-size: 1.15em !important;
+    font-size: 1.1em !important;
     font-weight: 700 !important;
     color: var(--brand) !important;
     letter-spacing: -0.01em !important;
-    line-height: 1.2 !important;
-    padding: 0.4em 0 !important;
   }
 
   .site-title:hover {
     color: var(--brand-hover) !important;
   }
 
-  /* —— 导航菜单 —— */
+  /* —— 关键修复:防止菜单折叠成 X 号 —— */
   .greedy-nav {
     background: transparent !important;
-    align-items: center !important;
   }
 
   .greedy-nav a {
-    position: relative !important;
-    padding: 0.6em 1em !important;
-    margin: 0 0.1em !important;
     color: var(--text-dark) !important;
-    font-size: 0.95em !important;
+    font-size: 0.92em !important;
     font-weight: 500 !important;
-    border-radius: 6px !important;
+    padding: 0.5em 0.7em !important;     /* ← 缩小 padding,避免溢出折叠 */
+    margin: 0 !important;
+    position: relative !important;
     transition: color 0.2s ease !important;
+    background: transparent !important;
   }
 
   .greedy-nav a::after {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 4px;
+    bottom: 2px;
     width: 0;
     height: 2px;
     background: var(--brand);
@@ -112,125 +111,168 @@
   }
 
   .greedy-nav a:hover::after {
-    width: 55%;
+    width: 60%;
   }
 
-  .greedy-nav a.active,
-  .greedy-nav a[aria-current="page"] {
-    color: var(--brand) !important;
-    font-weight: 600 !important;
+  /* 隐藏溢出按钮(那个 X) */
+  .greedy-nav__toggle {
+    display: none !important;
   }
 
-  .greedy-nav a.active::after,
-  .greedy-nav a[aria-current="page"]::after {
-    width: 55%;
+  /* 让所有菜单项始终可见,不要折叠 */
+  .greedy-nav .visible-links {
+    flex-wrap: nowrap !important;
+  }
+
+  .greedy-nav .hidden-links {
+    display: none !important;
   }
 
   /* ========== 2. 左侧侧边栏 ========== */
-  .sidebar.sticky {
+
+  /* —— 关键:把整个 sidebar 包成一张卡片 —— */
+  .sidebar.sticky,
+  .sidebar {
     top: 5em !important;
   }
 
-  /* —— 头像 —— */
-  .sidebar .author__avatar {
-    display: flex !important;
-    justify-content: center !important;
-    margin-bottom: 1em !important;
+  .author__avatar,
+  .author__content,
+  .author__urls-wrapper {
+    background: #ffffff;
   }
 
+  /* 用一个统一容器把头像/姓名/链接全包起来 */
+  .sidebar > .author__avatar {
+    background: #fff !important;
+    padding: 1.5em 1.2em 0.5em !important;
+    border-radius: 14px 14px 0 0 !important;
+    border: 1px solid var(--border-light) !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .sidebar > .author__content {
+    background: #fff !important;
+    padding: 0.8em 1.2em 0.5em !important;
+    border-left: 1px solid var(--border-light) !important;
+    border-right: 1px solid var(--border-light) !important;
+    text-align: center !important;
+  }
+
+  .sidebar > .author__urls-wrapper {
+    background: #fff !important;
+    padding: 0.5em 1.2em 1.4em !important;
+    border-radius: 0 0 14px 14px !important;
+    border: 1px solid var(--border-light) !important;
+    border-top: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+  }
+
+  /* —— 头像 —— */
   .sidebar .author__avatar img {
-    max-width: 170px !important;
-    width: 170px !important;
-    height: 170px !important;
+    max-width: 150px !important;
+    width: 150px !important;
+    height: 150px !important;
     border-radius: 50% !important;
     border: 4px solid #fff !important;
     box-shadow: 0 0 0 1px var(--border-light),
-                0 8px 20px rgba(0, 0, 0, 0.08) !important;
+                0 6px 18px rgba(0, 0, 0, 0.08) !important;
     object-fit: cover !important;
-    transition: transform 0.3s ease !important;
-  }
-
-  .sidebar .author__avatar img:hover {
-    transform: scale(1.03);
   }
 
   /* —— 姓名 —— */
   .sidebar .author__name {
-    text-align: center !important;
-    font-size: 1.35em !important;
+    font-size: 1.3em !important;
     font-weight: 700 !important;
     color: var(--text-dark) !important;
-    margin: 0.5em 0 0.3em !important;
-    letter-spacing: -0.01em !important;
+    margin: 0 0 0.4em 0 !important;
+    text-align: center !important;
   }
 
-  /* —— Bio 徽章(Professor) —— */
-  .sidebar .author__bio {
+  /* —— Bio 徽章 —— */
+  .author__bio {
     display: inline-block !important;
-    padding: 0.25em 0.9em !important;
+    padding: 0.2em 0.85em !important;
     background: var(--brand-light) !important;
     color: var(--brand) !important;
     border-radius: 999px !important;
-    font-size: 0.85em !important;
+    font-size: 0.82em !important;
     font-weight: 600 !important;
-    margin: 0 auto 1.2em !important;
+    margin: 0 auto !important;
     text-align: center !important;
+    border: 1px solid rgba(139, 26, 26, 0.15) !important;
   }
 
-  .sidebar .author__content {
-    text-align: center !important;
-  }
-
-  /* —— 联系链接列表 —— */
-  .sidebar .author__urls {
-    padding: 1em 0 0 !important;
+  /* —— 链接列表:去掉所有边框,改为干净列表 —— */
+  .author__urls {
+    padding: 0 !important;
     margin: 0 !important;
-    border-top: 1px solid var(--border-light) !important;
     list-style: none !important;
+    border: none !important;
+    background: transparent !important;
   }
 
-  .sidebar .author__urls li {
+  .author__urls::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: var(--border-light);
+    margin-bottom: 0.6em;
+  }
+
+  .author__urls li {
     padding: 0 !important;
     margin: 0 !important;
     border: none !important;
+    background: transparent !important;
   }
 
-  .sidebar .author__urls li a {
+  .author__urls li a {
     display: flex !important;
     align-items: center !important;
-    gap: 0.75em !important;
-    padding: 0.55em 0.6em !important;
+    gap: 0.7em !important;
+    padding: 0.45em 0.6em !important;
     color: var(--text-muted) !important;
-    font-size: 0.92em !important;
+    font-size: 0.9em !important;
     font-weight: 500 !important;
     border-radius: 6px !important;
-    transition: all 0.2s ease !important;
     text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    background: transparent !important;
   }
 
-  .sidebar .author__urls li a i,
-  .sidebar .author__urls li a .fa,
-  .sidebar .author__urls li a .fab,
-  .sidebar .author__urls li a .fas,
-  .sidebar .author__urls li a .ai {
+  .author__urls li a i,
+  .author__urls li a .fa,
+  .author__urls li a .fab,
+  .author__urls li a .fas,
+  .author__urls li a .ai {
     width: 18px !important;
     text-align: center !important;
     color: var(--brand) !important;
+    font-size: 0.95em !important;
     transition: transform 0.2s !important;
   }
 
-  .sidebar .author__urls li a:hover {
+  .author__urls li a:hover {
     color: var(--brand) !important;
     background: var(--brand-light) !important;
-    transform: translateX(3px);
   }
 
-  .sidebar .author__urls li a:hover i,
-  .sidebar .author__urls li a:hover .fa,
-  .sidebar .author__urls li a:hover .fab,
-  .sidebar .author__urls li a:hover .fas,
-  .sidebar .author__urls li a:hover .ai {
+  .author__urls li a:hover i,
+  .author__urls li a:hover .fa,
+  .author__urls li a:hover .fab,
+  .author__urls li a:hover .fas,
+  .author__urls li a:hover .ai {
     transform: scale(1.15);
+  }
+
+  /* —— 隐藏 Follow 按钮 —— */
+  .author__urls-wrapper > button,
+  .btn--inverse {
+    display: none !important;
   }
 
   /* ========== 3. 响应式 ========== */
@@ -239,16 +281,16 @@
       padding: 0.6em 1em !important;
     }
     .site-title {
-      font-size: 1em !important;
+      font-size: 0.95em !important;
     }
     .greedy-nav a {
-      padding: 0.5em 0.7em !important;
-      font-size: 0.9em !important;
+      padding: 0.4em 0.5em !important;
+      font-size: 0.85em !important;
     }
     .sidebar .author__avatar img {
-      max-width: 130px !important;
-      width: 130px !important;
-      height: 130px !important;
+      max-width: 110px !important;
+      width: 110px !important;
+      height: 110px !important;
     }
   }
 </style>
