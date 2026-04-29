@@ -105,7 +105,7 @@ redirect_from:
 .kq-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.28rem 0.72rem;
+  padding: 0.35rem 0.85rem;     /* padding: 0.28rem 0.72rem; */
   border-radius: 999px;
   font-size: 0.9rem;   /* ← 改这里，建议改为 0.85rem 或 0.9rem */
   font-weight: 720;
@@ -137,7 +137,7 @@ redirect_from:
 
 .kq-position {
   max-width: 860px;
-  margin: 0.5rem 0 0;
+  margin:1rem 0 0;   /* ← 改这里的 0.5rem，控制与 H1 的距离 */
   color: #4d4d4d;
   font-size: 0.98rem;
   line-height: 1.55;
