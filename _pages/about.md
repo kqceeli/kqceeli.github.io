@@ -11,8 +11,10 @@ redirect_from:
 /* =========================================================
    Homepage Style
    Clean Academic Homepage
+   For about_11.md
    ========================================================= */
 
+/* ---------- Theme Variables ---------- */
 :root {
   --kq-ink: #111827;
   --kq-text: #374151;
@@ -20,551 +22,708 @@ redirect_from:
 
   --kq-paper: #ffffff;
   --kq-soft: #f7f7f4;
-  --kq-warm: #fbfaf7;
+  --kq-warm: #fbfaf6;
 
-  --kq-line: #e7e5df;
-  --kq-line-soft: #f0eee8;
+  --kq-line: #e4e1d8;
+  --kq-line-soft: #efede6;
 
-  --kq-accent: #0f766e;
-  --kq-accent-dark: #115e59;
-  --kq-red: #9f2f3a;
+  --kq-accent: #0b766d;
+  --kq-accent-dark: #075f59;
+  --kq-accent-soft: rgba(11, 118, 109, 0.1);
+
+  --kq-red: #a23a42;
   --kq-gold: #a16207;
 
-  --kq-shadow: rgba(17, 24, 39, 0.06);
+  --kq-shadow: rgba(17, 24, 39, 0.075);
+}
+
+
+/* =========================================================
+   Global Page Adjustment
+   ========================================================= */
+
+.page__content {
+  font-size: 0.98rem;
+  line-height: 1.72;
+  color: var(--kq-text);
+}
+
+.page__content p {
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+}
+
+.page__content a {
+  color: var(--kq-accent-dark);
+  text-decoration: none;
+}
+
+.page__content a:hover {
+  color: var(--kq-red);
+  text-decoration: underline;
 }
 
 .kq-home {
-  max-width: 1040px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 0 0 3.5rem;
-  color: var(--kq-text);
-  line-height: 1.68;
+  padding: 0.2rem 0 3.2rem;
 }
 
-.kq-home * {
-  box-sizing: border-box;
-}
-
-.kq-home a {
-  color: var(--kq-accent-dark);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(15, 118, 110, 0.28);
-  transition: color 0.18s ease, border-color 0.18s ease;
-}
-
-.kq-home a:hover {
-  color: var(--kq-red);
-  border-bottom-color: rgba(159, 47, 58, 0.45);
-}
 
 /* =========================================================
-   Hero
+   Top Navigation Enhancement
+   ========================================================= */
+
+.masthead {
+  border-bottom: 1px solid #e8e5dc;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav .site-title {
+  color: #1f2937;
+  font-weight: 800;
+}
+
+.greedy-nav a {
+  color: #4b5563;
+  font-weight: 550;
+}
+
+.greedy-nav a:hover {
+  color: var(--kq-accent-dark);
+}
+
+.greedy-nav .visible-links a::before {
+  background: var(--kq-accent-dark);
+}
+
+
+/* =========================================================
+   Author Sidebar Enhancement
+   ========================================================= */
+
+.author__avatar img {
+  max-width: 150px;
+  border-radius: 50%;
+  border: 3px solid #f1efe8;
+  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.12);
+}
+
+.author__content {
+  margin-top: 0.75rem;
+}
+
+.author__name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.author__bio {
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+.author__urls-wrapper button {
+  border-radius: 999px;
+}
+
+
+/* =========================================================
+   Hero Section
    ========================================================= */
 
 .kq-hero {
   position: relative;
-  margin: 0.4rem 0 1.5rem;
-  padding: 2.4rem 2.45rem;
-  border-radius: 26px;
-  border: 1px solid var(--kq-line);
+  margin: 0.45rem 0 1.45rem;
+  padding: 2.15rem 2.45rem 2.2rem;
+  border-radius: 24px;
+  border: 1px solid rgba(15, 118, 110, 0.14);
   background:
-    linear-gradient(135deg, rgba(15, 118, 110, 0.075), rgba(161, 98, 7, 0.055)),
+    radial-gradient(circle at 92% 0%, rgba(15, 118, 110, 0.10), transparent 30%),
+    linear-gradient(135deg, rgba(15, 118, 110, 0.075), rgba(180, 83, 9, 0.05)),
     var(--kq-warm);
   overflow: hidden;
+  box-shadow: 0 14px 36px rgba(17, 24, 39, 0.055);
 }
 
 .kq-hero::after {
   content: "";
   position: absolute;
-  right: -80px;
-  top: -90px;
-  width: 230px;
-  height: 230px;
+  right: -55px;
+  top: -65px;
+  width: 190px;
+  height: 190px;
   border-radius: 999px;
-  background: rgba(15, 118, 110, 0.07);
+  background: rgba(15, 118, 110, 0.075);
 }
 
-.kq-hero-inner {
+.kq-hero > * {
   position: relative;
   z-index: 1;
-  max-width: 860px;
 }
 
-.kq-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-bottom: 1rem;
-  color: var(--kq-accent-dark);
-  font-size: 0.76rem;
-  font-weight: 850;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+/* 删除 GEOMECHANICS · COMPUTATION · AI 这一行 */
+.kq-eyebrow,
+.kq-hero-kicker,
+.hero-kicker,
+.hero-eyebrow {
+  display: none !important;
 }
 
-.kq-eyebrow::before {
-  content: "";
-  width: 0.44rem;
-  height: 0.44rem;
-  border-radius: 999px;
-  background: var(--kq-accent);
-}
-
+/* 姓名字号调小 */
 .kq-hero h1 {
   margin: 0;
   color: var(--kq-ink);
-  font-size: clamp(2.1rem, 4vw, 3.1rem);
-  line-height: 1.05;
-  font-weight: 880;
-  letter-spacing: -0.05em;
+  font-size: clamp(2.15rem, 4.2vw, 3.15rem);
+  line-height: 1.08;
+  font-weight: 850;
+  letter-spacing: -0.045em;
 }
 
+/* 姓名和职位之间留出间距 */
 .kq-position {
-  margin: 0.72rem 0 0;
+  margin: 0.85rem 0 0;
+  max-width: 800px;
   color: #374151;
-  font-size: 1rem;
+  font-size: 0.98rem;
   line-height: 1.55;
-  font-weight: 650;
+  font-weight: 680;
 }
 
-.kq-hero-desc {
+/* 研究简介 */
+.kq-intro {
+  margin: 1.65rem 0 0;
   max-width: 790px;
-  margin: 1.15rem 0 0;
   color: var(--kq-text);
   font-size: 1rem;
   line-height: 1.78;
 }
 
-.kq-hero-desc strong {
+.kq-intro strong {
   color: var(--kq-ink);
-  font-weight: 780;
+  font-weight: 760;
 }
+
+
+/* ---------- Hero Buttons ---------- */
 
 .kq-hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1.45rem;
+  margin-top: 1.5rem;
 }
 
 .kq-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.62rem 0.95rem;
+  min-height: 40px;
+  padding: 0.68rem 1.05rem;
   border-radius: 999px;
+  border: 1px solid transparent;
   font-size: 0.86rem;
-  font-weight: 760;
   line-height: 1;
-  border-bottom: none !important;
+  font-weight: 760;
+  letter-spacing: 0.01em;
+  text-decoration: none !important;
+  transition: all 0.18s ease;
 }
 
 .kq-button-primary {
-  background: var(--kq-accent-dark);
   color: #ffffff !important;
+  background: var(--kq-accent-dark);
+  border-color: var(--kq-accent-dark);
+  box-shadow: 0 10px 22px rgba(7, 95, 89, 0.18);
 }
 
 .kq-button-primary:hover {
-  background: #0f4f4b;
   color: #ffffff !important;
+  background: #064e49;
+  transform: translateY(-1px);
 }
 
 .kq-button-secondary {
-  background: #ffffff;
-  color: var(--kq-ink) !important;
-  border: 1px solid var(--kq-line);
+  color: var(--kq-accent-dark) !important;
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(15, 118, 110, 0.24);
 }
 
 .kq-button-secondary:hover {
-  color: var(--kq-accent-dark) !important;
-  border-color: rgba(15, 118, 110, 0.28);
+  color: #064e49 !important;
+  background: #ffffff;
+  border-color: rgba(15, 118, 110, 0.38);
+  transform: translateY(-1px);
 }
+
 
 /* =========================================================
    Metrics
+   四个数据格子
    ========================================================= */
 
 .kq-metrics {
+  width: 100%;
+  max-width: 770px;
+  margin: 1.25rem 0 1.55rem;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.82rem;
-  margin: 1.15rem 0 2.35rem;
+  gap: 0.9rem;
 }
 
 .kq-metric {
-  padding: 1rem 1.05rem;
-  border-radius: 18px;
+  position: relative;
+  height: 96px;
+  padding: 1rem 1rem 0.9rem;
+  border-radius: 16px;
   border: 1px solid var(--kq-line);
-  background: #ffffff;
-  box-shadow: 0 8px 22px var(--kq-shadow);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfaf7 100%);
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.055);
+  overflow: hidden;
+}
+
+.kq-metric::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  width: 42px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--kq-accent);
 }
 
 .kq-metric-number {
   display: block;
   color: var(--kq-ink);
-  font-size: 1.28rem;
-  line-height: 1.1;
-  font-weight: 880;
-  letter-spacing: -0.035em;
-}
-
-.kq-metric-label {
-  display: block;
-  margin-top: 0.34rem;
-  color: var(--kq-muted);
-  font-size: 0.76rem;
-  line-height: 1.4;
-  font-weight: 680;
-}
-
-/* =========================================================
-   Common Sections
-   ========================================================= */
-
-.kq-section,
-.home-section {
-  margin: 2.5rem 0;
-}
-
-.kq-section-header,
-.home-section-header {
-  max-width: 820px;
-  margin-bottom: 1.05rem;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid var(--kq-line);
-}
-
-.kq-section-title,
-.home-section-title {
-  margin: 0;
-  color: var(--kq-ink);
-  font-size: clamp(1.45rem, 2.2vw, 1.85rem) !important;
-  line-height: 1.24;
+  font-size: 1.45rem;
+  line-height: 1.05;
   font-weight: 860;
   letter-spacing: -0.04em;
 }
 
-.kq-section-subtitle,
-.home-section-subtitle {
-  max-width: 760px;
-  margin: 0.42rem 0 0;
+.kq-metric-label {
+  display: block;
+  margin-top: 0.45rem;
   color: var(--kq-muted);
-  font-size: 0.9rem;
-  line-height: 1.65;
+  font-size: 0.76rem;
+  line-height: 1.25;
+  font-weight: 750;
+  white-space: nowrap;
 }
+
 
 /* =========================================================
-   About
+   Section Common Style
+   About Me / Research Agenda / Selected News
    ========================================================= */
 
-.kq-card {
-  position: relative;
-  padding: 1.35rem 1.45rem;
-  border-radius: 20px;
+.kq-section {
+  margin-top: 1.25rem;
+  padding: 1.35rem 1.55rem;
+  border-radius: 22px;
   border: 1px solid var(--kq-line);
-  background: #ffffff;
-  box-shadow: 0 10px 28px var(--kq-shadow);
+  background: var(--kq-paper);
+  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.045);
 }
 
-.kq-card::before {
-  content: "";
-  position: absolute;
-  left: 1.45rem;
-  right: 1.45rem;
-  top: 0;
-  height: 3px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--kq-accent), rgba(161, 98, 7, 0.72));
+.kq-section-soft {
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.04), rgba(180, 83, 9, 0.03)),
+    #fffdf8;
 }
 
-.kq-card p {
-  margin: 0.72rem 0;
-  color: var(--kq-text);
-  font-size: 0.92rem;
-  line-height: 1.78;
+/* 减少标题说明和正文之间的大间隙 */
+.kq-section-head {
+  margin-bottom: 0.55rem;
 }
 
-.kq-card p:first-child {
+.kq-section-title {
+  margin: 0;
+  color: var(--kq-ink);
+  font-size: 1.18rem;
+  line-height: 1.25;
+  font-weight: 850;
+  letter-spacing: -0.025em;
+}
+
+.kq-section-subtitle {
+  margin: 0.28rem 0 0;
+  max-width: 760px;
+  color: var(--kq-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* 如果 section 里面直接用了 h2/h3/p，也统一压缩间距 */
+.kq-section h2,
+.kq-section h3 {
   margin-top: 0;
 }
 
-.kq-card p:last-child {
+.kq-section > p:first-of-type {
+  margin-top: 0;
+}
+
+.kq-section p:last-child {
   margin-bottom: 0;
 }
 
-.kq-card strong {
-  color: var(--kq-ink);
-  font-weight: 780;
-}
 
 /* =========================================================
-   Research Agenda
+   Research / Interest Cards
    ========================================================= */
 
-.agenda-grid {
+.kq-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.92rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
 }
 
-.agenda-card {
+.kq-card {
   position: relative;
-  min-height: 100%;
-  padding: 1.25rem 1.25rem 1.15rem;
-  border-radius: 20px;
-  border: 1px solid var(--kq-line);
+  padding: 1.05rem 1.1rem 1.1rem;
+  border-radius: 18px;
+  border: 1px solid var(--kq-line-soft);
   background: #ffffff;
-  box-shadow: 0 8px 22px var(--kq-shadow);
+  box-shadow: 0 7px 18px rgba(17, 24, 39, 0.04);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
-.agenda-card:hover {
+.kq-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(15, 118, 110, 0.28);
-  box-shadow: 0 14px 30px rgba(17, 24, 39, 0.075);
+  border-color: rgba(15, 118, 110, 0.22);
+  box-shadow: 0 12px 26px rgba(17, 24, 39, 0.07);
 }
 
-.agenda-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.85rem;
+.kq-card h3 {
+  margin: 0 0 0.45rem;
+  color: var(--kq-ink);
+  font-size: 0.98rem;
+  line-height: 1.35;
+  font-weight: 820;
 }
 
-.agenda-number {
+.kq-card p {
+  margin: 0;
+  color: var(--kq-text);
+  font-size: 0.89rem;
+  line-height: 1.62;
+}
+
+.kq-tag {
   display: inline-flex;
-  padding: 0.25rem 0.52rem;
+  align-items: center;
+  margin-bottom: 0.65rem;
+  padding: 0.28rem 0.55rem;
   border-radius: 999px;
-  background: rgba(15, 118, 110, 0.08);
   color: var(--kq-accent-dark);
+  background: var(--kq-accent-soft);
   font-size: 0.68rem;
-  line-height: 1.25;
-  font-weight: 850;
-  letter-spacing: 0.08em;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
 }
 
-.agenda-theme {
-  color: var(--kq-muted);
-  font-size: 0.74rem;
-  line-height: 1.35;
-  font-weight: 730;
-  text-align: right;
-}
-
-.agenda-content h3 {
-  margin: 0 0 0.5rem;
-  color: var(--kq-ink);
-  font-size: 1.02rem !important;
-  line-height: 1.38;
-  font-weight: 840;
-  letter-spacing: -0.02em;
-}
-
-.agenda-content p {
-  margin: 0 0 0.82rem;
-  color: var(--kq-text);
-  font-size: 0.84rem;
-  line-height: 1.68;
-}
-
-.agenda-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.38rem;
-}
-
-.agenda-tags span {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.2rem 0.52rem;
-  border-radius: 999px;
-  border: 1px solid var(--kq-line-soft);
-  background: var(--kq-soft);
-  color: #4b5563;
-  font-size: 0.64rem;
-  line-height: 1.35;
-  font-weight: 690;
-}
 
 /* =========================================================
-   News
+   News / Updates
    ========================================================= */
 
-.kq-news-panel {
+.kq-news-list {
   display: grid;
-  gap: 0.72rem;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.kq-news-group {
+.kq-news-item {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+  padding: 0.72rem 0;
+  border-bottom: 1px solid var(--kq-line-soft);
+}
+
+.kq-news-item:first-child {
+  padding-top: 0.25rem;
+}
+
+.kq-news-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.kq-news-date {
+  color: var(--kq-accent-dark);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  font-weight: 800;
+}
+
+.kq-news-text {
+  color: var(--kq-text);
+  font-size: 0.91rem;
+  line-height: 1.58;
+}
+
+.kq-news-text strong {
+  color: var(--kq-ink);
+}
+
+
+/* =========================================================
+   Selected Publications / Work List
+   ========================================================= */
+
+.kq-pub-list {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kq-pub-item {
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  border: 1px solid var(--kq-line-soft);
+  background: #ffffff;
+}
+
+.kq-pub-title {
+  margin: 0 0 0.3rem;
+  color: var(--kq-ink);
+  font-size: 0.96rem;
+  line-height: 1.42;
+  font-weight: 800;
+}
+
+.kq-pub-meta {
+  color: var(--kq-muted);
+  font-size: 0.83rem;
+  line-height: 1.5;
+}
+
+.kq-pub-meta em {
+  color: #4b5563;
+}
+
+
+/* =========================================================
+   Two-column Layout
+   ========================================================= */
+
+.kq-two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.kq-side-box {
+  padding: 1rem 1.1rem;
   border-radius: 18px;
+  border: 1px solid var(--kq-line-soft);
+  background: #fbfaf7;
+}
+
+.kq-side-box h3 {
+  margin: 0 0 0.5rem;
+  color: var(--kq-ink);
+  font-size: 0.96rem;
+  font-weight: 820;
+}
+
+.kq-side-box p,
+.kq-side-box li {
+  color: var(--kq-text);
+  font-size: 0.89rem;
+  line-height: 1.6;
+}
+
+.kq-side-box ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+
+/* =========================================================
+   Visitor Map / Script Section
+   ========================================================= */
+
+.kq-map {
+  margin-top: 1.25rem;
+  padding: 1.2rem;
+  border-radius: 20px;
   border: 1px solid var(--kq-line);
   background: #ffffff;
-  box-shadow: 0 8px 22px var(--kq-shadow);
-  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(17, 24, 39, 0.045);
+  text-align: center;
 }
 
-.kq-news-group summary {
-  cursor: pointer;
-  list-style: none;
-  padding: 0.96rem 1.15rem;
+.kq-map-title {
+  margin: 0 0 0.7rem;
   color: var(--kq-ink);
-  font-size: 0.94rem;
-  line-height: 1.35;
-  font-weight: 830;
-  letter-spacing: -0.015em;
-  background: linear-gradient(180deg, #ffffff 0%, #fbfbfa 100%);
+  font-size: 1rem;
+  font-weight: 800;
 }
 
-.kq-news-group summary::-webkit-details-marker {
-  display: none;
-}
 
-.kq-news-group summary::after {
-  content: "+";
-  float: right;
+/* =========================================================
+   Small Utilities
+   ========================================================= */
+
+.kq-muted {
   color: var(--kq-muted);
-  font-weight: 850;
 }
 
-.kq-news-group[open] summary::after {
-  content: "−";
-}
-
-.kq-news-list {
-  margin: 0;
-  padding: 0 1.35rem 1.05rem 2.2rem;
-}
-
-.kq-news-list li {
-  margin: 0.42rem 0;
-  color: var(--kq-text);
-  font-size: 0.8rem;
-  line-height: 1.64;
-}
-
-.kq-news-list li::marker {
-  color: #a3a3a3;
-}
-
-.kq-news-list strong {
-  color: var(--kq-ink);
+.kq-highlight {
+  color: var(--kq-accent-dark);
   font-weight: 760;
 }
 
-.kq-news-list em {
-  color: #2f343a;
+.kq-divider {
+  height: 1px;
+  margin: 1.15rem 0;
+  background: var(--kq-line-soft);
 }
 
-.news-awards summary {
-  color: var(--kq-red);
-}
-
-.news-research summary {
-  color: var(--kq-accent-dark);
-}
-
-.news-funding summary {
-  color: var(--kq-gold);
-}
-
-.news-service summary {
-  color: var(--kq-ink);
-}
-
-/* =========================================================
-   Visitors
-   ========================================================= */
-
-.kq-visitors {
-  margin: 2.2rem 0 0;
-  padding-top: 1.05rem;
-  border-top: 1px solid var(--kq-line);
-}
-
-.kq-visitors-title {
-  margin: 0 0 0.65rem;
-  color: var(--kq-muted);
-  font-size: 0.72rem;
-  line-height: 1.3;
-  font-weight: 780;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
 
 /* =========================================================
    Responsive
    ========================================================= */
 
-@media (max-width: 900px) {
-  .kq-metrics {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .agenda-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .kq-hero {
-    padding: 2rem 1.7rem;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .kq-home {
     max-width: 100%;
   }
+}
+
+@media (max-width: 900px) {
+  .kq-hero {
+    padding: 1.95rem 1.75rem 2rem;
+  }
+
+  .kq-hero h1 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+  }
+
+  .kq-metrics {
+    max-width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kq-metric {
+    height: 92px;
+  }
+
+  .kq-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kq-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .kq-home {
+    padding-bottom: 2.5rem;
+  }
 
   .kq-hero {
-    padding: 1.7rem 1.35rem;
-    border-radius: 22px;
+    margin-top: 0.2rem;
+    padding: 1.65rem 1.35rem 1.75rem;
+    border-radius: 20px;
   }
 
   .kq-hero h1 {
     font-size: 2rem;
+    line-height: 1.12;
   }
 
-  .kq-hero-desc {
+  .kq-position {
+    margin-top: 0.75rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .kq-intro {
+    margin-top: 1.35rem;
     font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .kq-hero-actions {
+    gap: 0.6rem;
+  }
+
+  .kq-button {
+    width: 100%;
   }
 
   .kq-metrics {
+    margin: 1.05rem 0 1.35rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+  }
+
+  .kq-metric {
+    height: 88px;
+    padding: 0.82rem 0.85rem 0.85rem;
+    border-radius: 15px;
+  }
+
+  .kq-metric-number {
+    font-size: 1.3rem;
+  }
+
+  .kq-metric-label {
+    font-size: 0.72rem;
+    white-space: normal;
+  }
+
+  .kq-section {
+    margin-top: 1.05rem;
+    padding: 1.15rem 1.1rem;
+    border-radius: 18px;
+  }
+
+  .kq-section-head {
+    margin-bottom: 0.45rem;
+  }
+
+  .kq-section-title {
+    font-size: 1.08rem;
+  }
+
+  .kq-section-subtitle {
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+
+  .kq-grid {
     grid-template-columns: 1fr;
   }
 
-  .kq-card {
-    padding: 1.12rem;
+  .kq-news-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 0.65rem 0;
   }
 
-  .kq-card::before {
-    left: 1.12rem;
-    right: 1.12rem;
-  }
-
-  .agenda-card {
-    padding: 1.08rem;
-  }
-
-  .agenda-top {
-    display: block;
-  }
-
-  .agenda-theme {
-    margin-top: 0.45rem;
-    text-align: left;
-  }
-
-  .kq-news-group summary {
-    padding: 0.88rem 1rem;
-  }
-
-  .kq-news-list {
-    padding: 0 1rem 0.95rem 1.85rem;
-  }
-
-  .kq-news-list li {
-    font-size: 0.76rem;
+  .kq-news-date {
+    font-size: 0.75rem;
   }
 }
 </style>
