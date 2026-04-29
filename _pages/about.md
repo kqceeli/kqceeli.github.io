@@ -10,7 +10,7 @@ redirect_from:
 <style>
 /* =========================================================
    Homepage for Kai-Qi Li
-   Scoped design for Minimal Mistakes / Jekyll
+   Minimal, senior academic style
    ========================================================= */
 
 .home-page {
@@ -18,7 +18,7 @@ redirect_from:
   margin: 0 auto;
   color: #1f2937;
   font-size: 0.96rem;
-  line-height: 1.72;
+  line-height: 1.68;
 }
 
 /* ---------- Hero ---------- */
@@ -26,74 +26,43 @@ redirect_from:
 .home-hero {
   position: relative;
   max-width: 860px;
-  margin: 0 0 2.2rem;
-  padding: 2.25rem 2.3rem 2.15rem;
+  margin: 0 0 1.5rem;
+  padding: 2.35rem 2.45rem 2.25rem;
   border-radius: 24px;
   background:
-    radial-gradient(circle at top right, rgba(37, 99, 235, 0.13), transparent 38%),
-    linear-gradient(135deg, #ffffff 0%, #f8fafc 52%, #eef4ff 100%);
-  border: 1px solid #e2e8f0;
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 38%),
+    linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #eef4ff 100%);
+  border: 1px solid #dbe5f3;
   box-shadow: 0 18px 42px rgba(15, 23, 42, 0.07);
   overflow: hidden;
 }
 
-.home-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, rgba(37, 99, 235, 0.09), transparent 42%),
-    radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.10), transparent 40%);
-  pointer-events: none;
-}
-
-.home-hero-inner {
-  position: relative;
-  z-index: 1;
-}
-
-.home-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-bottom: 0.85rem;
-  padding: 0.28rem 0.72rem;
-  border-radius: 999px;
-  background: rgba(37, 99, 235, 0.08);
-  border: 1px solid rgba(37, 99, 235, 0.16);
-  color: #1d4ed8;
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
 .home-hero h1 {
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.62rem;
   color: #0f172a;
-  font-size: clamp(2.05rem, 3.5vw, 2.85rem);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
   font-weight: 850;
 }
 
 .home-subtitle {
-  max-width: 760px;
-  margin: 0 0 0.95rem;
+  max-width: 780px;
+  margin: 0 0 1.15rem;
   color: #334155;
   font-size: 0.98rem;
   line-height: 1.58;
-  font-weight: 650;
+  font-weight: 700;
 }
 
 .home-mission {
-  max-width: 790px;
-  margin: 1.05rem 0 1.05rem;
+  max-width: 780px;
+  margin: 0 0 1rem;
   color: #0f172a;
-  font-size: clamp(1.05rem, 2.0vw, 1.32rem);
-  line-height: 1.5;
-  font-weight: 800;
-  letter-spacing: -0.025em;
+  font-size: clamp(1.04rem, 2vw, 1.25rem);
+  line-height: 1.48;
+  font-weight: 820;
+  letter-spacing: -0.02em;
 }
 
 .home-mission span {
@@ -101,18 +70,18 @@ redirect_from:
 }
 
 .home-lead {
-  max-width: 780px;
+  max-width: 770px;
   margin: 0;
-  color: #475569;
+  color: #52637a;
   font-size: 0.95rem;
-  line-height: 1.78;
+  line-height: 1.75;
 }
 
 .home-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.72rem;
-  margin-top: 1.45rem;
+  margin-top: 1.4rem;
 }
 
 .home-btn {
@@ -152,21 +121,54 @@ redirect_from:
   transform: translateY(-1px);
 }
 
-/* ---------- Section common ---------- */
+/* ---------- Profile indicators ---------- */
+
+.profile-indicators {
+  max-width: 860px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 2.3rem;
+}
+
+.indicator-card {
+  padding: 0.9rem 0.95rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.035);
+}
+
+.indicator-value {
+  margin-bottom: 0.25rem;
+  color: #0f172a;
+  font-size: 0.93rem;
+  line-height: 1.38;
+  font-weight: 820;
+}
+
+.indicator-label {
+  color: #64748b;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+/* ---------- Common section ---------- */
 
 .home-section {
   max-width: 860px;
-  margin: 2.45rem 0;
+  margin: 2.4rem 0;
 }
 
 .home-section-header {
   margin-bottom: 1.05rem;
-  padding-bottom: 0.7rem;
+  padding-bottom: 0.72rem;
   border-bottom: 1px solid #e5e7eb;
 }
 
 .home-section-kicker {
-  margin: 0 0 0.32rem;
+  margin: 0 0 0.38rem;
   color: #475569;
   font-size: 0.72rem;
   font-weight: 850;
@@ -177,8 +179,8 @@ redirect_from:
 .home-section h2 {
   margin: 0;
   color: #0f172a;
-  font-size: 1.34rem;
-  line-height: 1.34;
+  font-size: 1.35rem;
+  line-height: 1.35;
   letter-spacing: -0.026em;
   font-weight: 850;
 }
@@ -186,14 +188,14 @@ redirect_from:
 .home-section-intro {
   max-width: 800px;
   margin: 0.85rem 0 0;
-  color: #64748b;
-  font-size: 0.94rem;
-  line-height: 1.74;
+  color: #5b6f8a;
+  font-size: 0.93rem;
+  line-height: 1.7;
 }
 
 .home-highlight {
   color: #0f172a;
-  font-weight: 750;
+  font-weight: 760;
 }
 
 /* ---------- About ---------- */
@@ -208,9 +210,9 @@ redirect_from:
 
 .home-about-card p {
   margin: 0 0 0.95rem;
-  color: #475569;
+  color: #52637a;
   font-size: 0.94rem;
-  line-height: 1.78;
+  line-height: 1.75;
 }
 
 .home-about-card p:last-child {
@@ -232,7 +234,7 @@ redirect_from:
 
 .agenda-manifesto {
   margin-bottom: 1rem;
-  padding: 1.25rem 1.35rem;
+  padding: 1.18rem 1.3rem;
   border-radius: 20px;
   background:
     linear-gradient(135deg, rgba(15, 23, 42, 0.97), rgba(30, 41, 59, 0.97));
@@ -240,12 +242,12 @@ redirect_from:
 }
 
 .agenda-manifesto-title {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.42rem;
   color: #ffffff;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   line-height: 1.45;
-  font-weight: 850;
-  letter-spacing: -0.018em;
+  font-weight: 820;
+  letter-spacing: -0.012em;
 }
 
 .agenda-manifesto-title span {
@@ -255,8 +257,8 @@ redirect_from:
 .agenda-manifesto p {
   margin: 0;
   color: #dbe4ef;
-  font-size: 0.92rem;
-  line-height: 1.76;
+  font-size: 0.9rem;
+  line-height: 1.68;
 }
 
 .agenda-grid {
@@ -278,24 +280,21 @@ redirect_from:
 .agenda-index {
   display: flex;
   flex-direction: column;
-  gap: 0.38rem;
+  gap: 0.36rem;
 }
 
 .agenda-number {
   color: #2563eb;
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
 }
 
 .agenda-theme {
   color: #64748b;
-  font-size: 0.75rem;
-  font-weight: 750;
+  font-size: 0.78rem;
+  font-weight: 760;
   line-height: 1.45;
-  text-transform: uppercase;
-  letter-spacing: 0.045em;
 }
 
 .agenda-content h3 {
@@ -308,21 +307,21 @@ redirect_from:
 }
 
 .agenda-content p {
-  margin: 0 0 0.75rem;
-  color: #64748b;
+  margin: 0 0 0.72rem;
+  color: #5b6f8a;
   font-size: 0.91rem;
-  line-height: 1.72;
+  line-height: 1.7;
 }
 
 .agenda-question {
-  margin-top: 0.7rem;
-  padding: 0.75rem 0.85rem;
+  margin-top: 0.68rem;
+  padding: 0.72rem 0.82rem;
   border-radius: 14px;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   color: #334155;
   font-size: 0.86rem;
-  line-height: 1.62;
+  line-height: 1.58;
 }
 
 .agenda-question strong {
@@ -353,20 +352,20 @@ redirect_from:
 
 .vision-box {
   max-width: 860px;
-  margin: 2.45rem 0;
-  padding: 1.5rem 1.6rem;
+  margin: 2.35rem 0;
+  padding: 1.35rem 1.5rem;
   border-radius: 22px;
   background:
-    radial-gradient(circle at top right, rgba(59, 130, 246, 0.13), transparent 34%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 34%),
     linear-gradient(135deg, #ffffff 0%, #f8fafc 60%, #eef4ff 100%);
   border: 1px solid #dbe3ef;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.055);
 }
 
 .vision-box h2 {
-  margin: 0 0 0.7rem;
+  margin: 0 0 0.65rem;
   color: #0f172a;
-  font-size: 1.22rem;
+  font-size: 1.18rem;
   line-height: 1.36;
   font-weight: 850;
   letter-spacing: -0.025em;
@@ -374,20 +373,20 @@ redirect_from:
 
 .vision-box p {
   margin: 0;
-  color: #475569;
-  font-size: 0.94rem;
-  line-height: 1.78;
+  color: #52637a;
+  font-size: 0.93rem;
+  line-height: 1.7;
 }
 
-/* ---------- Highlights ---------- */
+/* ---------- News ---------- */
 
 .highlight-list {
   display: grid;
-  gap: 0.72rem;
+  gap: 0.68rem;
 }
 
 .highlight-item {
-  padding: 1rem 1.1rem;
+  padding: 0.92rem 1.05rem;
   border-radius: 16px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -395,7 +394,7 @@ redirect_from:
 }
 
 .highlight-date {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.22rem;
   color: #2563eb;
   font-size: 0.74rem;
   font-weight: 850;
@@ -405,9 +404,9 @@ redirect_from:
 
 .highlight-item p {
   margin: 0;
-  color: #475569;
-  font-size: 0.91rem;
-  line-height: 1.68;
+  color: #52637a;
+  font-size: 0.9rem;
+  line-height: 1.62;
 }
 
 .highlight-item strong {
@@ -419,14 +418,14 @@ redirect_from:
 
 .home-note {
   max-width: 860px;
-  margin: 2.15rem 0 1.4rem;
-  padding: 1.25rem 1.38rem;
-  border-radius: 20px;
+  margin: 2rem 0 1.2rem;
+  padding: 1.05rem 1.18rem;
+  border-radius: 18px;
   background: #f8fafc;
   border: 1px solid #dbe3ef;
   color: #334155;
-  font-size: 0.95rem;
-  line-height: 1.74;
+  font-size: 0.91rem;
+  line-height: 1.65;
 }
 
 .home-note strong {
@@ -434,14 +433,34 @@ redirect_from:
   font-weight: 850;
 }
 
+.home-note a {
+  color: #1d4ed8;
+  font-weight: 760;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.25);
+}
+
 /* ---------- Visitor map ---------- */
 
 .visitor-map {
   max-width: 860px;
-  margin: 1.5rem 0 0;
-  padding-top: 0.8rem;
+  margin: 1.35rem 0 0;
+  padding-top: 1rem;
   border-top: 1px solid #e5e7eb;
-  opacity: 0.88;
+  min-height: 120px;
+}
+
+.visitor-map-title {
+  margin: 0 0 0.55rem;
+  color: #64748b;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.visitor-map-inner {
+  max-width: 320px;
 }
 
 /* ---------- Responsive ---------- */
@@ -456,20 +475,13 @@ redirect_from:
     border-radius: 20px;
   }
 
-  .home-section,
-  .vision-box,
-  .home-note,
-  .visitor-map {
-    max-width: 100%;
+  .profile-indicators {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .agenda-card {
     grid-template-columns: 1fr;
     gap: 0.65rem;
-  }
-
-  .agenda-index {
-    gap: 0.2rem;
   }
 
   .home-actions {
@@ -485,40 +497,59 @@ redirect_from:
 <div class="home-page">
 
   <section class="home-hero">
-    <div class="home-hero-inner">
-      <div class="home-eyebrow">Geomechanics · Computation · Artificial Intelligence</div>
+    <h1>Kai-Qi Li, Ph.D.</h1>
 
-      <h1>Kai-Qi Li, Ph.D.</h1>
+    <p class="home-subtitle">
+      NSFC Excellent Young Scientists Fund Overseas Awardee · Incoming Professor,
+      School of Water Resources and Hydropower Engineering, Wuhan University
+    </p>
 
-      <p class="home-subtitle">
-        NSFC Excellent Young Scientists Fund Overseas Awardee · Incoming Professor,
-        School of Water Resources and Hydropower Engineering, Wuhan University
-      </p>
+    <p class="home-mission">
+      Shaping the future of <span>geotechnics</span> through intelligence and uncertainty mastery.
+    </p>
 
-      <p class="home-mission">
-        Shaping the future of <span>geotechnics</span> through intelligence &amp; uncertainty mastery.
-      </p>
+    <p class="home-lead">
+      My research develops mechanics-grounded and data-enabled methods for understanding,
+      modelling, and managing complex geotechnical systems under uncertainty.
+    </p>
 
-      <p class="home-lead">
-        My research develops mechanics-grounded, uncertainty-aware, and intelligence-enabled methods
-        for understanding, modelling, and predicting complex geotechnical systems. I am particularly
-        interested in ground systems where multiphysics, limited data, spatial variability, and engineering
-        decision-making are deeply intertwined.
-      </p>
-
-      <div class="home-actions">
-        <a href="/join-us/" class="home-btn home-btn-primary">Join the Group</a>
-        <a href="/publications/" class="home-btn home-btn-secondary">Publications</a>
-        <a href="/cv/" class="home-btn home-btn-secondary">Curriculum Vitae</a>
-      </div>
+    <div class="home-actions">
+      <a href="/join-us/" class="home-btn home-btn-primary">Join the Group</a>
+      <a href="/publications/" class="home-btn home-btn-secondary">Publications</a>
+      <a href="/cv/" class="home-btn home-btn-secondary">Curriculum Vitae</a>
     </div>
+  </section>
+
+
+  <section class="profile-indicators" aria-label="Profile highlights">
+
+    <div class="indicator-card">
+      <div class="indicator-value">NSFC EYSF Overseas</div>
+      <div class="indicator-label">National-level early-career talent award</div>
+    </div>
+
+    <div class="indicator-card">
+      <div class="indicator-value">Wuhan University</div>
+      <div class="indicator-label">Incoming Professor</div>
+    </div>
+
+    <div class="indicator-card">
+      <div class="indicator-value">PolyU · WHU · NUS</div>
+      <div class="indicator-label">International research training</div>
+    </div>
+
+    <div class="indicator-card">
+      <div class="indicator-value">Mechanics · Data · UQ · AI</div>
+      <div class="indicator-label">Core methodological focus</div>
+    </div>
+
   </section>
 
 
   <section class="home-section">
     <div class="home-section-header">
       <p class="home-section-kicker">About</p>
-      <h2>Advancing geotechnical science across mechanics, uncertainty, computation, and data</h2>
+      <h2>Towards intelligent geomechanics: bridging physics, data, and uncertainty</h2>
     </div>
 
     <div class="home-about-card">
@@ -539,13 +570,6 @@ redirect_from:
         <a href="https://nus.edu.sg">National University of Singapore</a>, hosted by
         Prof. <a href="https://scholar.google.com/citations?user=hEHH6sYAAAAJ&hl=zh-CN&oi=sra">Fook-Hou Lee</a>.
       </p>
-
-      <p>
-        My work aims to build predictive tools that are not only accurate, but also physically interpretable,
-        reliable under uncertainty, and useful for engineering judgement. I seek to connect fundamental
-        geomechanics with emerging computational intelligence to address challenging problems in underground
-        construction, cold-region engineering, energy geotechnics, and infrastructure resilience.
-      </p>
     </div>
   </section>
 
@@ -553,25 +577,21 @@ redirect_from:
   <section class="home-section">
     <div class="home-section-header">
       <p class="home-section-kicker">Research Agenda</p>
-      <h2>From uncertain ground to intelligent and resilient geotechnical infrastructure</h2>
+      <h2>Intelligent geotechnics for uncertain, evolving, and high-consequence ground systems</h2>
       <p class="home-section-intro">
-        My research agenda is organized around a central ambition: to transform geotechnical engineering
-        from experience-driven prediction toward mechanics-informed, data-enhanced, and uncertainty-aware
-        decision-making. Rather than treating mechanics, computation, uncertainty, and artificial intelligence
-        as separate topics, my group will develop integrated frameworks that connect them into a coherent
-        scientific and engineering paradigm.
+        My group aims to develop the next generation of geotechnical methods that integrate
+        physical modelling, computational intelligence, uncertainty quantification, and engineering judgement.
       </p>
     </div>
 
     <div class="agenda-manifesto">
       <div class="agenda-manifesto-title">
-        A long-term research program for <span>intelligent geotechnics under uncertainty</span>
+        A research program for <span>mechanics-informed intelligence under uncertainty</span>
       </div>
       <p>
         The ground is heterogeneous, history-dependent, multiphysical, and only partially observable.
-        The next generation of geotechnical methods must therefore learn from data without abandoning
-        mechanics, quantify uncertainty rather than ignore it, and support engineering decisions rather
-        than only reproduce observations.
+        Our goal is to build models that learn from data, respect mechanics, quantify uncertainty,
+        and support safer infrastructure decisions.
       </p>
     </div>
 
@@ -580,22 +600,21 @@ redirect_from:
       <div class="agenda-card">
         <div class="agenda-index">
           <div class="agenda-number">Agenda 01</div>
-          <div class="agenda-theme">Complex ground systems</div>
+          <div class="agenda-theme">Complex Ground Systems</div>
         </div>
 
         <div class="agenda-content">
-          <h3>Revealing the mechanics of ground in extreme and evolving environments</h3>
+          <h3>Mechanics of ground in extreme and evolving environments</h3>
           <p>
-            I study how geomaterials and ground systems behave when they are governed by coupled thermal,
-            hydraulic, mechanical, chemical, and phase-change processes. This includes frozen soils,
-            artificial ground freezing, hydrate-bearing sediments, and other multiphysical systems where
-            classical assumptions are often insufficient.
+            We study geomaterials and ground systems governed by coupled thermal, hydraulic,
+            mechanical, chemical, and phase-change processes, including frozen soils, artificial
+            ground freezing, and hydrate-bearing sediments.
           </p>
 
           <div class="agenda-question">
             <strong>Core question:</strong>
-            How can we describe, model, and predict ground behaviour when temperature, water, stress,
-            microstructure, and environmental loading evolve together?
+            How can we predict ground behaviour when temperature, water, stress, microstructure,
+            and environmental loading evolve together?
           </div>
 
           <div class="agenda-tags">
@@ -612,22 +631,20 @@ redirect_from:
       <div class="agenda-card">
         <div class="agenda-index">
           <div class="agenda-number">Agenda 02</div>
-          <div class="agenda-theme">Scientific intelligence</div>
+          <div class="agenda-theme">Scientific Intelligence</div>
         </div>
 
         <div class="agenda-content">
-          <h3>Building AI that understands mechanics, not merely fits data</h3>
+          <h3>AI models that understand mechanics, not merely fit data</h3>
           <p>
-            I develop physics-informed and mechanics-guided computational methods that combine constitutive
+            We develop physics-informed and mechanics-guided methods that combine constitutive
             modelling, numerical simulation, machine learning, neural operators, and graph-based learning.
-            The goal is to create intelligent models that remain interpretable, transferable, and trustworthy
-            when data are sparse, noisy, or biased.
           </p>
 
           <div class="agenda-question">
             <strong>Core question:</strong>
-            How can artificial intelligence become a scientific engine for geomechanics by embedding physical
-            laws, boundary conditions, material behaviour, and engineering constraints?
+            How can artificial intelligence become a scientific engine for geomechanics while
+            remaining interpretable, transferable, and reliable?
           </div>
 
           <div class="agenda-tags">
@@ -644,22 +661,20 @@ redirect_from:
       <div class="agenda-card">
         <div class="agenda-index">
           <div class="agenda-number">Agenda 03</div>
-          <div class="agenda-theme">Uncertainty mastery</div>
+          <div class="agenda-theme">Uncertainty Mastery</div>
         </div>
 
         <div class="agenda-content">
-          <h3>Turning uncertainty into actionable knowledge for engineering decisions</h3>
+          <h3>From uncertain data to reliable engineering decisions</h3>
           <p>
-            I work on uncertainty quantification, stochastic analysis, reliability assessment, and risk-informed
-            design for geotechnical systems. My aim is to move beyond deterministic prediction and develop
-            decision-support tools that explicitly account for spatial variability, model uncertainty, monitoring
-            data, and evolving risk.
+            We work on uncertainty quantification, stochastic analysis, reliability assessment,
+            Bayesian updating, and risk-informed design for geotechnical systems with limited and evolving data.
           </p>
 
           <div class="agenda-question">
             <strong>Core question:</strong>
-            How can we quantify what we do not know, update predictions as evidence accumulates, and make safer
-            decisions for infrastructure built in uncertain ground?
+            How can we quantify what we do not know, update predictions as evidence accumulates,
+            and make safer decisions in uncertain ground?
           </div>
 
           <div class="agenda-tags">
@@ -676,22 +691,20 @@ redirect_from:
       <div class="agenda-card">
         <div class="agenda-index">
           <div class="agenda-number">Agenda 04</div>
-          <div class="agenda-theme">Engineering translation</div>
+          <div class="agenda-theme">Engineering Translation</div>
         </div>
 
         <div class="agenda-content">
-          <h3>Translating advanced models into safer underground and climate-resilient infrastructure</h3>
+          <h3>Computational tools for safer and more resilient infrastructure</h3>
           <p>
-            A major objective of my group is to connect frontier modelling with engineering practice. We aim to
-            develop computational tools, digital workflows, and risk-informed design methods for underground
-            construction, cold-region infrastructure, coastal and marine geotechnics, and large-scale civil
-            infrastructure under environmental change.
+            We translate advanced models into practical workflows for underground construction,
+            cold-region infrastructure, coastal and marine geotechnics, and large-scale civil infrastructure.
           </p>
 
           <div class="agenda-question">
             <strong>Core question:</strong>
-            How can advanced geomechanics and AI be transformed into practical tools that improve safety,
-            resilience, sustainability, and engineering confidence?
+            How can frontier geomechanics and AI improve safety, resilience, sustainability,
+            and confidence in engineering practice?
           </div>
 
           <div class="agenda-tags">
@@ -711,11 +724,10 @@ redirect_from:
   <section class="vision-box">
     <h2>Research Vision</h2>
     <p>
-      My long-term vision is to help establish a new paradigm for geotechnical engineering in which
-      mechanics provides the foundation, computation provides the scale, data provides the evidence,
-      and uncertainty provides the language for decision-making. I believe the future of geotechnics
-      will be shaped by researchers who can move fluently across physical understanding, computational
-      intelligence, and real engineering impact.
+      I envision a new generation of geotechnical engineering in which physical insight,
+      computational intelligence, and uncertainty reasoning are developed as a unified framework.
+      The goal is not only to predict ground behaviour more accurately, but also to explain predictions,
+      evaluate confidence, and support decisions that matter for infrastructure safety and resilience.
     </p>
   </section>
 
@@ -757,15 +769,19 @@ redirect_from:
 
   <div class="home-note">
     <strong>Collaborations and prospective students are welcome.</strong>
-    I am interested in working with researchers, students, and practitioners who are excited by challenging
-    problems at the intersection of geomechanics, computation, uncertainty, and artificial intelligence.
-    If you are motivated by rigorous science, open collaboration, and real engineering impact, please feel
-    free to get in touch.
+    I am interested in working with motivated students, researchers, and practitioners on problems
+    at the interface of geomechanics, computation, uncertainty, and artificial intelligence.
+    Please see <a href="/join-us/">Join Us</a> for opportunities.
   </div>
 
 
   <div class="visitor-map">
-    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=1a72b0&cmn=ff5353&ct=000000'></script>
+    <div class="visitor-map-title">Visitors</div>
+    <div class="visitor-map-inner">
+      <script type="text/javascript" id="clustrmaps"
+        src="https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=1a72b0&cmn=ff5353&ct=000000">
+      </script>
+    </div>
   </div>
 
 </div>
