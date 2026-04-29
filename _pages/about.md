@@ -13,6 +13,7 @@ redirect_from:
    Clean Academic Homepage
    ========================================================= */
 
+  
 :root {
   --kq-ink: #111827;
   --kq-text: #374151;
@@ -400,12 +401,25 @@ redirect_from:
   gap: 0.72rem;
 }
 
-.kq-news-group {
+.kq-metric {
+  position: relative;
+  padding: 1.05rem 1.1rem;
   border-radius: 18px;
   border: 1px solid var(--kq-line);
-  background: #ffffff;
-  box-shadow: 0 8px 22px var(--kq-shadow);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfaf7 100%);
+  box-shadow: 0 10px 26px rgba(17, 24, 39, 0.07);
   overflow: hidden;
+}
+
+.kq-metric::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  width: 42px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--kq-accent);
 }
 
 .kq-news-group summary {
