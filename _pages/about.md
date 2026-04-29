@@ -600,101 +600,88 @@ redirect_from:
 </style>
 
 
-<div class="kq-home">
-
-  <!-- ================= Hero ================= -->
+ <!-- ================= Hero ================= -->
   <section class="kq-hero">
-
-    <div class="kq-hero-kicker">Geomechanics · Computation · Artificial Intelligence</div>
-
     <h1>Kai-Qi Li, Ph.D.</h1>
 
-    <p class="kq-hero-position">
+    <p class="kq-position">
       Incoming Professor, School of Water Resources and Hydropower Engineering, Wuhan University
     </p>
 
-    <p class="kq-hero-tagline">
-      Shaping the future of geotechnics through
-      <span class="kq-blue-text">intelligence</span> and
-      <span class="kq-blue-text">uncertainty</span> mastery.
+    <p class="kq-tagline">
+      Shaping the future of <span>geotechnics</span> through intelligence and uncertainty mastery.
     </p>
 
-    <p class="kq-hero-summary">
-      My research develops mechanics-based, data-enabled, and uncertainty-aware methods
-      for complex geomaterials and geotechnical infrastructure, with particular interests
-      in frozen soils, artificial ground freezing, hydrate-bearing sediments, multiphysics
-      modelling, physics-informed learning, and risk-informed engineering decisions.
+    <p class="kq-hero-desc">
+      My research develops mechanics-grounded, data-enabled, and uncertainty-aware methods for
+      understanding, modelling, and managing complex geotechnical systems.
     </p>
 
-    <div class="kq-hero-actions">
-      <a class="kq-btn kq-btn-primary" href="/publications/">Publications</a>
-      <a class="kq-btn" href="/cv/">CV</a>
-      <a class="kq-btn" href="/join-us/">Join Us</a>
-      <a class="kq-btn" href="mailto:kqcee.li@polyu.edu.hk">Email</a>
-      <a class="kq-btn" href="mailto:kqceeli@163.com">Future Group Contact</a>
+    <div class="kq-actions">
+      <a class="kq-btn kq-btn-primary" href="/join-us/">Join the Group</a>
+      <a class="kq-btn kq-btn-secondary" href="/publications/">Publications</a>
+      <a class="kq-btn kq-btn-secondary" href="/cv/">Curriculum Vitae</a>
     </div>
-
   </section>
 
 
   <!-- ================= Metrics ================= -->
-  <section class="kq-metrics">
-
-    <div class="kq-metric-card">
-      <div class="kq-metric-number">2026</div>
-      <div class="kq-metric-label">NSFC Excellent Young Scientists Fund Overseas</div>
+  <section class="kq-metrics" aria-label="Research metrics">
+    <div class="kq-metric">
+      <span class="kq-metric-number">40+</span>
+      <span class="kq-metric-label">Journal papers</span>
     </div>
 
-    <div class="kq-metric-card">
-      <div class="kq-metric-number">PI</div>
-      <div class="kq-metric-label">Physics-informed modelling of hydrate-bearing sediments</div>
+    <div class="kq-metric">
+      <span class="kq-metric-number">1,500+</span>
+      <span class="kq-metric-label">Citations</span>
     </div>
 
-    <div class="kq-metric-card">
-      <div class="kq-metric-number">HK$55M+</div>
-      <div class="kq-metric-label">Research funding portfolio as PI / key participant / Co-I</div>
+    <div class="kq-metric">
+      <span class="kq-metric-number">23</span>
+      <span class="kq-metric-label">h-index</span>
     </div>
 
-    <div class="kq-metric-card">
-      <div class="kq-metric-number">2024</div>
-      <div class="kq-metric-label">PolyU Distinguished Postdoctoral Fellowship</div>
+    <div class="kq-metric">
+      <span class="kq-metric-number">5</span>
+      <span class="kq-metric-label">ESI Highly Cited Papers</span>
     </div>
-
   </section>
 
 
   <!-- ================= About ================= -->
-  <section class="kq-section" id="about">
-
-    <div class="kq-section-head">
-      <div class="kq-kicker">About</div>
-      <h2 class="kq-section-title">Mechanics, data, and uncertainty for safer ground infrastructure</h2>
+  <section class="kq-section">
+    <div class="kq-section-header">
+      <h2 class="kq-section-title">About Me</h2>
     </div>
 
-    <div class="kq-about-panel">
+    <div class="kq-card">
       <p>
-        I am an incoming Professor at the School of Water Resources and Hydropower Engineering,
-        Wuhan University. I am building a new research group at the interface of geomechanics,
-        computational modelling, and artificial intelligence.
+        I am an <strong>NSFC Excellent Young Scientists Fund Overseas Awardee</strong> and will join the
+        <strong>School of Water Resources and Hydropower Engineering, Wuhan University</strong> as an
+        Incoming Professor.
       </p>
 
       <p>
-        My work focuses on complex geotechnical systems where geomaterial behaviour,
-        environmental loading, sparse observations, and model uncertainty interact.
-        I am particularly interested in developing computational tools that are not only
-        accurate, but also physically interpretable, uncertainty-aware, and useful for
-        engineering decision-making.
+        I am currently a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at
+        <a href="https://www.polyu.edu.hk/" target="_blank" rel="noopener">The Hong Kong Polytechnic University</a>,
+        working with Prof.
+        <a href="https://www.polyu.edu.hk/cee/people/academic-staff/prof-yin-zhenyu/" target="_blank" rel="noopener">Zhen-Yu Yin</a>.
+        I received my Ph.D. in Geotechnical Engineering from Wuhan University under the supervision of
+        Prof. Yong Liu and Prof. Dian-Qing Li, and was a visiting Ph.D. student at the
+        <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener">National University of Singapore</a>,
+        hosted by Prof.
+        <a href="https://cde.nus.edu.sg/cee/staff/fook-hou-lee/" target="_blank" rel="noopener">Fook-Hou Lee</a>.
       </p>
 
       <p>
-        Current research themes include artificial ground freezing, frozen soil mechanics,
-        hydrate-bearing sediments, thermo-hydro-mechanical-chemical coupling,
-        physics-informed neural networks, multi-fidelity modelling, Bayesian updating,
-        random fields, reliability analysis, and digital twins for geotechnical infrastructure.
+        My work lies at the interface of geotechnical engineering, mechanics, computational modelling,
+        stochastic analysis, and artificial intelligence, with applications in frozen ground, artificial
+        ground freezing, underground construction, hydrate-bearing sediments, and resilient infrastructure.
       </p>
     </div>
-
   </section>
+
 
 
   <!-- ================= Research Agenda ================= -->
