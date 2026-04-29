@@ -681,7 +681,6 @@ redirect_from:
   <section class="kq-hero">
 
     <div class="kq-hero-badges">
-      <span class="kq-badge kq-badge-red">NSFC Excellent Young Scientists (Overseas)</span>
       <span class="kq-badge kq-badge-blue">Incoming Professor · Wuhan University</span>
     </div>
 
@@ -719,7 +718,7 @@ redirect_from:
     </div>
 
     <div class="kq-metric">
-      <span class="kq-metric-number">1,500+</span>
+      <span class="kq-metric-number">1,600+</span>
       <span class="kq-metric-label">Citations</span>
     </div>
 
@@ -735,7 +734,7 @@ redirect_from:
 
   </section>
 
-  <p class="kq-metrics-note">Source: Google Scholar · Last updated: Dec 2024</p>
+  <p class="kq-metrics-note">Source: Google Scholar · Last updated: April 2024</p>
 
 
   <!-- ================= About ================= -->
