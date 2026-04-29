@@ -46,7 +46,7 @@ permalink: /join-us/
   gap: 8px;
   margin-bottom: 18px;
   color: var(--accent-dark);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -71,7 +71,7 @@ permalink: /join-us/
 
 .join-hero p {
   margin: 0;
-  max-width: 760px;
+  max-width: 500px;
   color: var(--muted);
   font-size: 18px;
   line-height: 1.75;
