@@ -1,9 +1,3 @@
-下面是一份更适合“国际化、高水平课题组”定位的完整 join-us.md 文件内容。
-整体风格更简洁、有层次，也更像国际一流 PI / research group 的招聘页面。你可以直接复制为 join-us.md 使用。
-
-md
-复制代码
-收起
 ---
 title: "Join Us"
 layout: page
@@ -433,4 +427,3 @@ Great research requires both imagination and discipline.
 If you want to work at the intersection of **geomechanics, computation, uncertainty, and AI**, and if you are eager to help build a world-class research group from the beginning, please get in touch.
 
 **Let us build something meaningful together.**
-复制
