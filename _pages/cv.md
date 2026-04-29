@@ -1,16 +1,3 @@
-下面是已修改好的完整代码。你可以直接复制替换 cv_2.md 文件中的全部内容。
-
-主要已更新：
-
-删除了错误的 file_name: cv_2.md
-保留完整 CV 内容
-给不同项目身份增加不同颜色：
-Principal Investigator：金色
-Main Participant：蓝色
-Co-Investigator：紫色
-markdown
-复制代码
-收起
 ---
 layout: archive
 title: ""
@@ -638,4 +625,4 @@ redirect_from:
   </div>
 
 </div>
-复制
+
