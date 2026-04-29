@@ -42,8 +42,8 @@ author_profile: true
 
 .teaching-stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.9rem;
   margin-top: 1.4rem;
 }
 
@@ -65,8 +65,9 @@ author_profile: true
 .teaching-stat-label {
   display: block;
   margin-top: 0.25rem;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: #687589;
+  line-height: 1.35;
 }
 
 .teaching-section {
@@ -94,13 +95,15 @@ author_profile: true
   line-height: 1.6;
 }
 
-.teaching-list {
+.teaching-list,
+.student-grid {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.teaching-card {
+.teaching-card,
+.student-card {
   position: relative;
   padding: 1.15rem 1.25rem;
   border-radius: 14px;
@@ -110,13 +113,15 @@ author_profile: true
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.teaching-card:hover {
+.teaching-card:hover,
+.student-card:hover {
   border-color: #d4e1ef;
   box-shadow: 0 6px 16px rgba(25, 40, 65, 0.06);
   transform: translateY(-1px);
 }
 
-.teaching-card-top {
+.teaching-card-top,
+.student-header {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -124,7 +129,8 @@ author_profile: true
   margin-bottom: 0.55rem;
 }
 
-.teaching-card h3 {
+.teaching-card h3,
+.student-name {
   margin: 0;
   font-size: 1.06rem;
   font-weight: 650;
@@ -151,9 +157,17 @@ author_profile: true
   border-color: #e6ebf1;
 }
 
-.teaching-meta {
+.student-period {
+  font-size: 0.86rem;
+  color: #718096;
+  white-space: nowrap;
+  padding-top: 0.08rem;
+}
+
+.teaching-meta,
+.student-info {
   display: grid;
-  grid-template-columns: 92px 1fr;
+  grid-template-columns: 96px 1fr;
   row-gap: 0.25rem;
   column-gap: 0.8rem;
   margin-top: 0.65rem;
@@ -161,12 +175,14 @@ author_profile: true
   line-height: 1.55;
 }
 
-.teaching-label {
+.teaching-label,
+.student-label {
   color: #7a8798;
   font-weight: 520;
 }
 
-.teaching-value {
+.teaching-value,
+.student-value {
   color: #4c596b;
 }
 
@@ -175,67 +191,6 @@ author_profile: true
   font-size: 0.94rem;
   line-height: 1.7;
   color: #5f6c7d;
-}
-
-.student-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.student-card {
-  padding: 1.15rem 1.25rem;
-  border-radius: 14px;
-  background: #ffffff;
-  border: 1px solid #e7edf4;
-  box-shadow: 0 2px 8px rgba(25, 40, 65, 0.035);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.student-card:hover {
-  border-color: #d4e1ef;
-  box-shadow: 0 6px 16px rgba(25, 40, 65, 0.06);
-  transform: translateY(-1px);
-}
-
-.student-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: flex-start;
-  margin-bottom: 0.55rem;
-}
-
-.student-name {
-  margin: 0;
-  font-size: 1.04rem;
-  font-weight: 680;
-  color: #263244;
-}
-
-.student-period {
-  font-size: 0.86rem;
-  color: #718096;
-  white-space: nowrap;
-  padding-top: 0.08rem;
-}
-
-.student-info {
-  display: grid;
-  grid-template-columns: 92px 1fr;
-  row-gap: 0.25rem;
-  column-gap: 0.8rem;
-  font-size: 0.92rem;
-  line-height: 1.55;
-}
-
-.student-label {
-  color: #7a8798;
-  font-weight: 520;
-}
-
-.student-value {
-  color: #4c596b;
 }
 
 .student-topic {
@@ -252,6 +207,22 @@ author_profile: true
   font-weight: 620;
 }
 
+.student-outcome {
+  margin-top: 0.55rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  background: #f7fbff;
+  border: 1px solid #e4effa;
+  font-size: 0.91rem;
+  line-height: 1.55;
+  color: #526176;
+}
+
+.student-outcome strong {
+  color: #315b85;
+  font-weight: 620;
+}
+
 .note-box {
   margin-top: 1.5rem;
   padding: 1rem 1.15rem;
@@ -261,6 +232,12 @@ author_profile: true
   color: #647184;
   font-size: 0.94rem;
   line-height: 1.7;
+}
+
+@media screen and (max-width: 900px) {
+  .teaching-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -314,13 +291,20 @@ author_profile: true
         <span class="teaching-stat-number">4</span>
         <span class="teaching-stat-label">Teaching roles and courses</span>
       </div>
+
       <div class="teaching-stat">
         <span class="teaching-stat-number">11</span>
         <span class="teaching-stat-label">Students co-supervised</span>
       </div>
+
       <div class="teaching-stat">
-        <span class="teaching-stat-number">5</span>
+        <span class="teaching-stat-number">3</span>
         <span class="teaching-stat-label">Current doctoral students</span>
+      </div>
+
+      <div class="teaching-stat">
+        <span class="teaching-stat-number">3</span>
+        <span class="teaching-stat-label">Former doctoral students</span>
       </div>
     </div>
   </section>
@@ -354,7 +338,7 @@ author_profile: true
 
         <p>
           Delivered lectures on engineering data analysis, machine learning, and their applications in
-          geotechnical engineering, including data-driven modeling, uncertainty-aware prediction, and
+          geotechnical engineering, including data-driven modelling, uncertainty-aware prediction, and
           physics-informed learning concepts.
         </p>
       </div>
@@ -435,7 +419,7 @@ author_profile: true
     <div class="teaching-section-header">
       <h2>Current Doctoral Students</h2>
       <p>
-        Current Ph.D. students co-supervised at The Hong Kong Polytechnic University and Wuhan University.
+        Current Ph.D. students co-supervised at The Hong Kong Polytechnic University.
       </p>
     </div>
 
@@ -459,7 +443,7 @@ author_profile: true
         </div>
 
         <div class="student-topic">
-          <strong>Topic:</strong> Physics-informed graph neural networks for efficient simulation of coupled geotechnical systems.
+          <strong>Topic:</strong> Physics-informed graph neural networks for geometry-aware and mesh-based simulation of geotechnical systems.
         </div>
       </div>
 
@@ -481,7 +465,7 @@ author_profile: true
         </div>
 
         <div class="student-topic">
-          <strong>Topic:</strong> Physics-informed machine learning for coupled multiphysics problems in geotechnical engineering.
+          <strong>Topic:</strong> Physics-informed machine learning for coupled hydro-thermal-mechanical processes and inverse analysis in geotechnical engineering.
         </div>
       </div>
 
@@ -507,10 +491,23 @@ author_profile: true
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <section class="teaching-section">
+    <div class="teaching-section-header">
+      <h2>Former Doctoral Students</h2>
+      <p>
+        Former Ph.D. students co-supervised at The Hong Kong Polytechnic University and Wuhan University.
+      </p>
+    </div>
+
+    <div class="student-grid">
+
       <div class="student-card">
         <div class="student-header">
           <h3 class="student-name">LIU Hong-Chi</h3>
-          <div class="student-period">September 2023 – Present</div>
+          <div class="student-period">September 2023 – December 2025</div>
         </div>
 
         <div class="student-info">
@@ -521,7 +518,7 @@ author_profile: true
           <div class="student-value">The Hong Kong Polytechnic University</div>
 
           <div class="student-label">Role</div>
-          <div class="student-value">Co-supervisor</div>
+          <div class="student-value">Former co-supervisor</div>
         </div>
 
         <div class="student-topic">
@@ -532,7 +529,7 @@ author_profile: true
       <div class="student-card">
         <div class="student-header">
           <h3 class="student-name">LIU Man-Man</h3>
-          <div class="student-period">January 2023 – Present</div>
+          <div class="student-period">January 2023 – December 2025</div>
         </div>
 
         <div class="student-info">
@@ -543,7 +540,7 @@ author_profile: true
           <div class="student-value">Wuhan University</div>
 
           <div class="student-label">Role</div>
-          <div class="student-value">Co-supervisor</div>
+          <div class="student-value">Former co-supervisor</div>
         </div>
 
         <div class="student-topic">
@@ -554,7 +551,7 @@ author_profile: true
       <div class="student-card">
         <div class="student-header">
           <h3 class="student-name">KANG Qing</h3>
-          <div class="student-period">October 2021 – Present</div>
+          <div class="student-period">October 2021 – December 2024</div>
         </div>
 
         <div class="student-info">
@@ -565,7 +562,7 @@ author_profile: true
           <div class="student-value">Wuhan University</div>
 
           <div class="student-label">Role</div>
-          <div class="student-value">Co-supervisor</div>
+          <div class="student-value">Former co-supervisor</div>
         </div>
 
         <div class="student-topic">
@@ -580,7 +577,7 @@ author_profile: true
     <div class="teaching-section-header">
       <h2>Former Master and Undergraduate Students</h2>
       <p>
-        Former students co-supervised at Wuhan University.
+        Former master and undergraduate students co-supervised at Wuhan University.
       </p>
     </div>
 
@@ -672,6 +669,10 @@ author_profile: true
         <div class="student-topic">
           <strong>Topic:</strong> Stability of riverbank tunnel excavation based on big data analysis.
         </div>
+
+        <div class="student-outcome">
+          <strong>Subsequent position:</strong> Ph.D. student at Tsinghua University.
+        </div>
       </div>
 
       <div class="student-card">
@@ -693,6 +694,10 @@ author_profile: true
 
         <div class="student-topic">
           <strong>Topic:</strong> Mesoscale investigation of heat transfer in multiphase geomaterials.
+        </div>
+
+        <div class="student-outcome">
+          <strong>Subsequent position:</strong> Master's student at Tsinghua University.
         </div>
       </div>
 
