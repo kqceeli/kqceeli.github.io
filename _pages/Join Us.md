@@ -92,7 +92,7 @@ permalink: /join-us/
 .hero-card-title {
   margin: 0 0 14px;
   color: var(--accent-dark);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: 0.04em;
   text-transform: uppercase;
