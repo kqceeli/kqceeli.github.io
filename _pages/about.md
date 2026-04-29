@@ -625,29 +625,28 @@ redirect_from:
   </section>
 
 
-    <!-- ================= Metrics ================= -->
-  <section class="kq-metrics">
 
-    <div class="kq-metric-card">
-      <div class="kq-metric-number">2026</div>
-      <div class="kq-metric-label">NSFC Excellent Young Scientists Fund Overseas</div>
+  <!-- ================= Metrics ================= -->
+  <section class="kq-metrics" aria-label="Research metrics">
+    <div class="kq-metric">
+      <span class="kq-metric-number">40+</span>
+      <span class="kq-metric-label">Journal papers</span>
     </div>
 
-    <div class="kq-metric-card">
-      <div class="kq-metric-number">PI</div>
-      <div class="kq-metric-label">Physics-informed modelling of hydrate-bearing sediments</div>
+    <div class="kq-metric">
+      <span class="kq-metric-number">1,500+</span>
+      <span class="kq-metric-label">Citations</span>
     </div>
 
-    <div class="kq-metric-card">
-      <div class="kq-metric-number">HK$55M+</div>
-      <div class="kq-metric-label">Research funding portfolio as PI / key participant / Co-I</div>
+    <div class="kq-metric">
+      <span class="kq-metric-number">23</span>
+      <span class="kq-metric-label">h-index</span>
     </div>
 
-    <div class="kq-metric-card">
-      <div class="kq-metric-number">2024</div>
-      <div class="kq-metric-label">PolyU Distinguished Postdoctoral Fellowship</div>
+    <div class="kq-metric">
+      <span class="kq-metric-number">5</span>
+      <span class="kq-metric-label">ESI Highly Cited Papers</span>
     </div>
-
   </section>
 
 
