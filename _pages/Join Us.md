@@ -1,7 +1,3 @@
-
-
-
-
 ---
 permalink: /join-us/
 title: "Join Us"
