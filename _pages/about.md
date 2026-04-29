@@ -179,18 +179,21 @@ redirect_from:
    Common Section
    ========================================================= */
 
-.kq-section {
+.kq-section,
+.home-section {
   margin: 2.15rem 0;
 }
 
-.kq-section-head {
+.kq-section-head,
+.home-section-header {
   margin-bottom: 0.95rem;
   padding-bottom: 0.65rem;
   border-bottom: 1px solid var(--kq-border-soft);
 }
 
-.kq-kicker {
-  margin-bottom: 0.38rem;
+.kq-kicker,
+.home-section-kicker {
+  margin: 0 0 0.38rem;
   color: var(--kq-blue);
   font-size: 0.7rem;
   line-height: 1.2;
@@ -199,7 +202,8 @@ redirect_from:
   text-transform: uppercase;
 }
 
-.kq-section-title {
+.kq-section-title,
+.home-section-header h2 {
   margin: 0;
   color: var(--kq-navy);
   font-size: clamp(1.08rem, 1.7vw, 1.34rem) !important;
@@ -208,8 +212,9 @@ redirect_from:
   letter-spacing: -0.02em;
 }
 
-.kq-section-subtitle {
-  max-width: 760px;
+.kq-section-subtitle,
+.home-section-intro {
+  max-width: 820px;
   margin: 0.45rem 0 0;
   color: var(--kq-muted);
   font-size: 0.82rem;
@@ -244,79 +249,124 @@ redirect_from:
 }
 
 /* =========================================================
-   Research Agenda
+   Research Agenda - Original Content, Refined Style
    ========================================================= */
 
-.kq-agenda-panel {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.85rem;
-  padding: 1rem;
-  border: 1px solid var(--kq-border);
+.agenda-manifesto {
+  margin: 1.05rem 0 1rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid #cfe0f5;
   border-radius: 18px;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  background:
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.08), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
   box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
 }
 
-.kq-agenda-card {
-  position: relative;
-  padding: 1rem 1rem 0.95rem;
-  border: 1px solid #d9e4f2;
-  border-radius: 15px;
-  background: #ffffff;
-}
-
-.kq-agenda-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.9rem;
-  bottom: 0.9rem;
-  width: 3px;
-  border-radius: 999px;
-  background: var(--kq-blue);
-}
-
-.kq-agenda-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.55rem;
-  height: 1.55rem;
-  margin-bottom: 0.55rem;
-  border-radius: 999px;
-  background: var(--kq-blue-soft);
-  color: var(--kq-blue);
-  font-size: 0.65rem;
-  font-weight: 820;
-}
-
-.kq-agenda-card h3 {
-  margin: 0 0 0.45rem;
+.agenda-manifesto-title {
+  margin: 0 0 0.5rem;
   color: var(--kq-navy);
-  font-size: 0.9rem !important;
+  font-size: 0.96rem;
+  line-height: 1.45;
+  font-weight: 820;
+  letter-spacing: -0.015em;
+}
+
+.agenda-manifesto-title span {
+  color: var(--kq-blue);
+}
+
+.agenda-manifesto p {
+  margin: 0;
+  color: #4f6178;
+  font-size: 0.81rem;
+  line-height: 1.72;
+}
+
+.agenda-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.agenda-card {
+  display: grid;
+  grid-template-columns: 185px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.05rem;
+  border: 1px solid var(--kq-border);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.035);
+}
+
+.agenda-index {
+  padding: 0.85rem 0.85rem;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #f8fbff 0%, #eff6ff 100%);
+  border: 1px solid #dbeafe;
+}
+
+.agenda-number {
+  color: var(--kq-blue);
+  font-size: 0.67rem;
+  line-height: 1.3;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.agenda-theme {
+  margin-top: 0.42rem;
+  color: var(--kq-navy);
+  font-size: 0.88rem;
   line-height: 1.35;
   font-weight: 820;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
 }
 
-.kq-agenda-card p {
-  margin: 0 0 0.72rem;
-  color: var(--kq-muted);
-  font-size: 0.77rem;
+.agenda-content h3 {
+  margin: 0 0 0.45rem;
+  color: var(--kq-navy);
+  font-size: 0.95rem !important;
+  line-height: 1.38;
+  font-weight: 820;
+  letter-spacing: -0.015em;
+}
+
+.agenda-content p {
+  margin: 0 0 0.65rem;
+  color: #4f6178;
+  font-size: 0.8rem;
+  line-height: 1.68;
+}
+
+.agenda-question {
+  margin: 0.7rem 0 0.75rem;
+  padding: 0.7rem 0.85rem;
+  border-left: 3px solid var(--kq-blue);
+  border-radius: 10px;
+  background: #f8fbff;
+  color: #43546b;
+  font-size: 0.76rem;
   line-height: 1.62;
 }
 
-.kq-agenda-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
+.agenda-question strong {
+  color: var(--kq-navy);
+  font-weight: 800;
 }
 
-.kq-agenda-tags span {
+.agenda-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem;
+}
+
+.agenda-tags span {
   display: inline-flex;
   align-items: center;
-  padding: 0.16rem 0.42rem;
+  padding: 0.17rem 0.45rem;
   border-radius: 999px;
   background: #f1f5f9;
   color: #52627a;
@@ -493,7 +543,7 @@ redirect_from:
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .kq-agenda-panel {
+  .agenda-card {
     grid-template-columns: 1fr;
   }
 
@@ -515,26 +565,34 @@ redirect_from:
     grid-template-columns: 1fr;
   }
 
-  .kq-section-title {
+  .kq-section-title,
+  .home-section-header h2 {
     font-size: 1.06rem !important;
   }
 
-  .kq-section-subtitle {
+  .kq-section-subtitle,
+  .home-section-intro {
     font-size: 0.8rem;
   }
 
   .kq-news-panel,
   .kq-about-panel,
-  .kq-join-panel {
+  .kq-join-panel,
+  .agenda-manifesto {
     padding: 1rem;
   }
 
-  .kq-agenda-card h3,
+  .agenda-card {
+    padding: 0.95rem;
+  }
+
+  .agenda-content h3,
   .kq-news-heading {
     font-size: 0.86rem !important;
   }
 
-  .kq-agenda-card p,
+  .agenda-content p,
+  .agenda-question,
   .kq-news-list li {
     font-size: 0.75rem;
   }
@@ -640,63 +698,160 @@ redirect_from:
 
 
   <!-- ================= Research Agenda ================= -->
-  <section class="kq-section" id="research-agenda">
+  <section class="home-section" id="research-agenda">
 
-    <div class="kq-section-head">
-      <div class="kq-kicker">Research Agenda</div>
-      <h2 class="kq-section-title">Intelligent geomechanics for resilient ground infrastructure</h2>
-      <p class="kq-section-subtitle">
-        My group aims to create the next generation of geotechnical models that combine
-        mechanics, computation, data, and uncertainty quantification.
+    <div class="home-section-header">
+      <p class="home-section-kicker">Research Agenda</p>
+      <h2>From uncertain ground to intelligent and resilient geotechnical infrastructure</h2>
+      <p class="home-section-intro">
+        My research agenda is organized around a central ambition: to transform geotechnical engineering
+        from experience-driven prediction toward mechanics-informed, data-enhanced, and uncertainty-aware
+        decision-making. Rather than treating mechanics, computation, uncertainty, and artificial intelligence
+        as separate topics, my group will develop integrated frameworks that connect them into a coherent
+        scientific and engineering paradigm.
       </p>
     </div>
 
-    <div class="kq-agenda-panel">
+    <div class="agenda-manifesto">
+      <div class="agenda-manifesto-title">
+        A long-term research program for <span>intelligent geotechnics under uncertainty</span>
+      </div>
+      <p>
+        The ground is heterogeneous, history-dependent, multiphysical, and only partially observable.
+        The next generation of geotechnical methods must therefore learn from data without abandoning
+        mechanics, quantify uncertainty rather than ignore it, and support engineering decisions rather
+        than only reproduce observations.
+      </p>
+    </div>
 
-      <article class="kq-agenda-card">
-        <div class="kq-agenda-number">01</div>
-        <h3>Coupled geomaterial behaviour</h3>
-        <p>
-          Understanding and modelling soils and geomaterials under coupled thermal,
-          hydraulic, mechanical, chemical, and phase-change processes.
-        </p>
-        <div class="kq-agenda-tags">
-          <span>Frozen soil</span>
-          <span>Artificial ground freezing</span>
-          <span>Hydrate sediments</span>
-          <span>THM / THMC coupling</span>
-        </div>
-      </article>
+    <div class="agenda-grid">
 
-      <article class="kq-agenda-card">
-        <div class="kq-agenda-number">02</div>
-        <h3>Physics-guided computational intelligence</h3>
-        <p>
-          Embedding conservation laws, constitutive knowledge, and engineering constraints
-          into learning-based models for prediction, inversion, and control.
-        </p>
-        <div class="kq-agenda-tags">
-          <span>Physics-informed learning</span>
-          <span>Surrogate modelling</span>
-          <span>Inverse analysis</span>
-          <span>Digital twins</span>
+      <div class="agenda-card">
+        <div class="agenda-index">
+          <div class="agenda-number">Agenda 01</div>
+          <div class="agenda-theme">Complex ground systems</div>
         </div>
-      </article>
 
-      <article class="kq-agenda-card">
-        <div class="kq-agenda-number">03</div>
-        <h3>Uncertainty-aware engineering decisions</h3>
-        <p>
-          Quantifying spatial variability, sparse observations, model bias, and changing
-          environments for robust design and geotechnical risk assessment.
-        </p>
-        <div class="kq-agenda-tags">
-          <span>Random fields</span>
-          <span>Bayesian updating</span>
-          <span>Reliability analysis</span>
-          <span>Risk-informed design</span>
+        <div class="agenda-content">
+          <h3>Revealing the mechanics of ground in extreme and evolving environments</h3>
+          <p>
+            I study how geomaterials and ground systems behave when they are governed by coupled thermal,
+            hydraulic, mechanical, chemical, and phase-change processes. This includes frozen soils,
+            artificial ground freezing, hydrate-bearing sediments, and other multiphysical systems where
+            classical assumptions are often insufficient.
+          </p>
+
+          <div class="agenda-question">
+            <strong>Core question:</strong>
+            How can we describe, model, and predict ground behaviour when temperature, water, stress,
+            microstructure, and environmental loading evolve together?
+          </div>
+
+          <div class="agenda-tags">
+            <span>Frozen soils</span>
+            <span>Artificial ground freezing</span>
+            <span>THM/THMC coupling</span>
+            <span>Phase change</span>
+            <span>Energy geotechnics</span>
+          </div>
         </div>
-      </article>
+      </div>
+
+
+      <div class="agenda-card">
+        <div class="agenda-index">
+          <div class="agenda-number">Agenda 02</div>
+          <div class="agenda-theme">Scientific intelligence</div>
+        </div>
+
+        <div class="agenda-content">
+          <h3>Building AI that understands mechanics, not merely fits data</h3>
+          <p>
+            I develop physics-informed and mechanics-guided computational methods that combine constitutive
+            modelling, numerical simulation, machine learning, neural operators, and graph-based learning.
+            The goal is to create intelligent models that remain interpretable, transferable, and trustworthy
+            when data are sparse, noisy, or biased.
+          </p>
+
+          <div class="agenda-question">
+            <strong>Core question:</strong>
+            How can artificial intelligence become a scientific engine for geomechanics by embedding physical
+            laws, boundary conditions, material behaviour, and engineering constraints?
+          </div>
+
+          <div class="agenda-tags">
+            <span>Physics-informed ML</span>
+            <span>Constitutive modelling</span>
+            <span>Graph neural networks</span>
+            <span>Neural operators</span>
+            <span>Computational geomechanics</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="agenda-card">
+        <div class="agenda-index">
+          <div class="agenda-number">Agenda 03</div>
+          <div class="agenda-theme">Uncertainty mastery</div>
+        </div>
+
+        <div class="agenda-content">
+          <h3>Turning uncertainty into actionable knowledge for engineering decisions</h3>
+          <p>
+            I work on uncertainty quantification, stochastic analysis, reliability assessment, and risk-informed
+            design for geotechnical systems. My aim is to move beyond deterministic prediction and develop
+            decision-support tools that explicitly account for spatial variability, model uncertainty, monitoring
+            data, and evolving risk.
+          </p>
+
+          <div class="agenda-question">
+            <strong>Core question:</strong>
+            How can we quantify what we do not know, update predictions as evidence accumulates, and make safer
+            decisions for infrastructure built in uncertain ground?
+          </div>
+
+          <div class="agenda-tags">
+            <span>Uncertainty quantification</span>
+            <span>Reliability and risk</span>
+            <span>Bayesian updating</span>
+            <span>Digital twins</span>
+            <span>Resilient infrastructure</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="agenda-card">
+        <div class="agenda-index">
+          <div class="agenda-number">Agenda 04</div>
+          <div class="agenda-theme">Engineering translation</div>
+        </div>
+
+        <div class="agenda-content">
+          <h3>Translating advanced models into safer underground and climate-resilient infrastructure</h3>
+          <p>
+            A major objective of my group is to connect frontier modelling with engineering practice. We aim to
+            develop computational tools, digital workflows, and risk-informed design methods for underground
+            construction, cold-region infrastructure, coastal and marine geotechnics, and large-scale civil
+            infrastructure under environmental change.
+          </p>
+
+          <div class="agenda-question">
+            <strong>Core question:</strong>
+            How can advanced geomechanics and AI be transformed into practical tools that improve safety,
+            resilience, sustainability, and engineering confidence?
+          </div>
+
+          <div class="agenda-tags">
+            <span>Underground construction</span>
+            <span>Cold-region infrastructure</span>
+            <span>Marine geotechnics</span>
+            <span>Risk-informed design</span>
+            <span>Engineering resilience</span>
+          </div>
+        </div>
+      </div>
 
     </div>
 
