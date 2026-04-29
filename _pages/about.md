@@ -127,7 +127,7 @@ redirect_from:
 }
 
 .kq-hero h1 {
-  margin: 0;
+  margin: 0 0 0.4rem 0;  /* ← 改这里的  下边距 */
   color: var(--kq-ink);
   font-size: clamp(1.6rem, 2.4vw, 2.1rem);  /* ← li kaiqi  clamp(1.95rem, 3vw, 2.62rem);   */
   line-height: 1.1;
@@ -230,7 +230,7 @@ redirect_from:
   display: block;
   margin-top: 0.3rem;
   color: var(--kq-muted);
-  font-size: 0.72rem;
+  font-size: 0.9rem;     /* ← 改这里  小方框 字体*/
   line-height: 1.42;
   font-weight: 660;
   letter-spacing: 0.01em;
