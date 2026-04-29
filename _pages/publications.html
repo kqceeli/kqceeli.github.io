@@ -592,55 +592,261 @@ author_profile: true
     </ul>
   </section>
 
-   <style>
+    <style>
+  /* ================================
+     Conference Papers and Presentations
+     ================================ */
+  
   .conference-section {
-    margin-top: 2.5rem;
+    margin-top: 2.8rem;
+    margin-bottom: 2.5rem;
   }
   
   .conference-section h2 {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
     font-weight: 650;
-    color: #263142;
-    margin-bottom: 0.9rem;
-    padding-bottom: 0.45rem;
-    border-bottom: 1px solid #e6eaf0;
+    color: #2b3545;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid #e5eaf0;
+    letter-spacing: -0.01em;
   }
   
   .conference-list {
-    display: grid;
-    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
   }
   
   .conference-item {
     background: #ffffff;
     border: 1px solid #e8edf3;
-    border-radius: 10px;
-    padding: 0.95rem 1.1rem;
-    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.035);
-    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    border-radius: 12px;
+    padding: 1.05rem 1.2rem;
+    box-shadow: 0 2px 8px rgba(30, 42, 60, 0.035);
+    transition: all 0.2s ease;
   }
   
   .conference-item:hover {
-    border-color: #d5e3f5;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    border-color: #d7e3f2;
+    box-shadow: 0 5px 16px rgba(30, 42, 60, 0.06);
     transform: translateY(-1px);
   }
   
   .conference-title {
-    font-size: 0.98rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 620;
     line-height: 1.55;
-    color: #2f3a4a;
-    margin-bottom: 0.25rem;
+    color: #263244;
+    margin-bottom: 0.65rem;
   }
   
-  .conference-meta {
+  .conference-info {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    row-gap: 0.28rem;
+    column-gap: 0.75rem;
     font-size: 0.92rem;
     line-height: 1.55;
-    color: #697789;
+  }
+  
+  .conference-label {
+    color: #7a8797;
+    font-weight: 500;
+  }
+  
+  .conference-value {
+    color: #4b586a;
+  }
+  
+  .conference-note {
+    margin-top: 0.55rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #e1e7ef;
+    font-size: 0.9rem;
+    color: #6a7788;
+  }
+  
+  .conference-note strong {
+    color: #455468;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .conference-section h2 {
+      font-size: 1.3rem;
+    }
+  
+    .conference-item {
+      padding: 0.95rem 1rem;
+    }
+  
+    .conference-info {
+      grid-template-columns: 1fr;
+      row-gap: 0.12rem;
+    }
+  
+    .conference-label {
+      margin-top: 0.35rem;
+    }
   }
   </style>
+  
+  <section class="conference-section">
+    <h2>Conference Papers and Presentations</h2>
+  
+    <div class="conference-list">
+  
+      <div class="conference-item">
+        <div class="conference-title">
+          Constitutive modeling of frozen soil and prediction of temperature field for artificial ground freezing technique based on physics-informed neural networks.
+        </div>
+        <div class="conference-info">
+          <div class="conference-label">Conference</div>
+          <div class="conference-value">5th National Conference on Permafrost Engineering and Cold Region Environments</div>
+  
+          <div class="conference-label">Location</div>
+          <div class="conference-value">Beijing, China</div>
+  
+          <div class="conference-label">Date</div>
+          <div class="conference-value">May 2025</div>
+        </div>
+      </div>
+  
+      <div class="conference-item">
+        <div class="conference-title">
+          A PINN-based modelling approach for hydromechanical behaviour of unsaturated expansive soils.
+        </div>
+        <div class="conference-info">
+          <div class="conference-label">Conference</div>
+          <div class="conference-value">8th Asia-Pacific Conference on Unsaturated Soils</div>
+  
+          <div class="conference-label">Location</div>
+          <div class="conference-value">Melbourne, Australia</div>
+  
+          <div class="conference-label">Date</div>
+          <div class="conference-value">December 2024</div>
+        </div>
+      </div>
+  
+      <div class="conference-item">
+        <div class="conference-title">
+          A physics-informed deep learning-FEM coupling framework for small-strain boundary value problems.
+        </div>
+        <div class="conference-info">
+          <div class="conference-label">Conference</div>
+          <div class="conference-value">17th International Conference on Computational Plasticity</div>
+  
+          <div class="conference-label">Location</div>
+          <div class="conference-value">Barcelona, Spain</div>
+  
+          <div class="conference-label">Date</div>
+          <div class="conference-value">September 2023</div>
+        </div>
+      </div>
+  
+      <div class="conference-item">
+        <div class="conference-title">
+          Coupled thermal-hydraulic modelling of artificial ground freezing with uncertainties in pipe inclination and thermal conductivity.
+        </div>
+        <div class="conference-info">
+          <div class="conference-label">Conference</div>
+          <div class="conference-value">14th National Conference on Soil Mechanics and Geotechnical Engineering</div>
+  
+          <div class="conference-label">Location</div>
+          <div class="conference-value">Wuhan, China</div>
+  
+          <div class="conference-label">Date</div>
+          <div class="conference-value">April 2022</div>
+        </div>
+      </div>
+  
+      <div class="conference-item">
+        <div class="conference-title">
+          Numerical investigations on anisotropy of apparent elastic modulus of porous media.
+        </div>
+        <div class="conference-info">
+          <div class="conference-label">Conference</div>
+          <div class="conference-value">13th International Conference on Structural Safety and Reliability</div>
+  
+          <div class="conference-label">Location</div>
+          <div class="conference-value">Shanghai, China</div>
+  
+          <div class="conference-label">Date</div>
+          <div class="conference-value">July 2022</div>
+        </div>
+      </div>
 
+      <div class="conference-item">
+        <div class="conference-title">
+          Preliminary investigation on overall permeability of granular mixed materials.
+        </div>
+        <div class="conference-info">
+          <div class="conference-label">Conference</div>
+          <div class="conference-value">Civil Infrastructures Confronting Severe Weathers and Climate Changes Conference</div>
+  
+          <div class="conference-label">Location</div>
+          <div class="conference-value">Nanchang, China</div>
+  
+          <div class="conference-label">Date</div>
+          <div class="conference-value">October 2021</div>
+        </div>
+      </div>
+  
+      <div class="conference-item">
+        <div class="conference-title">
+          Estimating water tightness of overlapping jet-grout columns with geometric imperfections.
+        </div>
+        <div class="conference-info">
+          <div class="conference-label">Conference</div>
+          <div class="conference-value">7th International Symposium on Reliability Engineering and Risk Management</div>
+  
+          <div class="conference-label">Location</div>
+          <div class="conference-value">Beijing, China</div>
+  
+          <div class="conference-label">Date</div>
+          <div class="conference-value">October 2020</div>
+        </div>
+      </div>
+  
+      <div class="conference-item">
+        <div class="conference-title">
+          Artificial ground freezing technique in tunnel construction considering uncertain drilling inaccuracy of freeze pipes.
+        </div>
+        <div class="conference-info">
+          <div class="conference-label">Conference</div>
+          <div class="conference-value">29th European Safety and Reliability Conference</div>
+  
+          <div class="conference-label">Location</div>
+          <div class="conference-value">Hannover, Germany</div>
+  
+          <div class="conference-label">Date</div>
+          <div class="conference-value">September 2019</div>
+        </div>
+        <div class="conference-note">
+          <strong>Note:</strong> Recipient of Overseas Exchange Award.
+        </div>
+      </div>
+  
+      <div class="conference-item">
+        <div class="conference-title">
+          Wavelet and Fourier transform in health monitoring of embedded structures.
+        </div>
+        <div class="conference-info">
+          <div class="conference-label">Conference</div>
+          <div class="conference-value">13th International Conference on Applications of Statistics and Probability in Civil Engineering</div>
+  
+          <div class="conference-label">Location</div>
+          <div class="conference-value">Seoul, South Korea</div>
+  
+          <div class="conference-label">Date</div>
+          <div class="conference-value">May 2019</div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+    
   <section class="pub-section">
     <h2>Invention Patents</h2>
     <ul class="simple-list">
