@@ -8,27 +8,28 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Geotechnical Uncertainty"
+title                    : "Kai-Qi Li Research Group"
 title_separator          : "-"
-name                     : &name "Kai-Qi LI"
-description              : &description "Distinguished Postdoc Fellow, Department of Civil and Environmental Engineering, The Hong Kong Polytechnic Universityy"
-url                      : https://kqceeli.github.io
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+name                     : &name "Kai-Qi Li"
+description              : &description "Professor at Wuhan University | Geomechanics, Computational Mechanics, Uncertainty Quantification, and Artificial Intelligence"
+url                      : "https://kqceeli.github.io"
+baseurl                  : ""
 repository               : "kqceeli/kqceeli.github.io"
 
+author:
+  avatar           : "kq_photo3.jpg"
+  name             : "Kai-Qi Li"
+  pronouns         :
+  bio              : "Professor"
+  location         : "Wuhan, China"
+  employer         : "Wuhan University"
+  uri              :
+  email            : "kqceeli@163.com"
+  
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
-author:
-  # Biographic information
-  avatar           : "kq_photo3.jpg"
-  name             : "Kai-Qi LI"
-  pronouns         : # example: "she/her"  
-  bio              : "Postdoc Fellow"
-  location         : "Hong Kong SAR"
-  employer         : #"The Hong Kong Polytechnic University"
-  uri              : # URL
-  email            : "kqcee.li@polyu.edu.hk" 
+
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
