@@ -860,8 +860,9 @@ redirect_from:
   <!-- ================= Visitors ================= -->
   <section class="kq-visitors">
     <div class="kq-visitors-title">Visitors</div>
+
     <script type="text/javascript" id="clustrmaps"
-      src="//clustrmaps.com/map_v2.js?d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=4b5563&cmn=a51c30&ct=222222">
+    src="//clustrmaps.com/map_v2.js?d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=faf9f6&cmo=465f7a&cmn=b6424b&ct=1f2328">
     </script>
   </section>
 
