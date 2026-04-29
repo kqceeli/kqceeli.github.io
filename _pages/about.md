@@ -9,171 +9,165 @@ redirect_from:
 
 <style>
 /* =========================================================
-   Homepage Global Style
+   Homepage Style
+   Minimal Premium Academic
+   Palette: ivory / charcoal / warm grey / deep wine / muted brass
    ========================================================= */
 
 :root {
-  --kq-navy: #0f172a;
-  --kq-blue: #2563eb;
-  --kq-blue-dark: #1d4ed8;
-  --kq-blue-soft: #eff6ff;
-  --kq-text: #263238;
-  --kq-muted: #5f6f85;
-  --kq-light: #f8fbff;
-  --kq-border: #dbe5f2;
-  --kq-border-soft: #e7eef8;
-  --kq-red: #dc2626;
-  --kq-purple: #7e57c2;
-  --kq-green: #16a34a;
-  --kq-amber: #d97706;
+  --kq-ink: #171615;
+  --kq-text: #3f3c38;
+  --kq-muted: #7a746c;
+
+  --kq-bg: #faf9f6;
+  --kq-paper: #ffffff;
+  --kq-soft: #f3f1ec;
+
+  --kq-line: #e4dfd7;
+  --kq-line-soft: #eee9e2;
+
+  --kq-accent: #7a2636;
+  --kq-accent-dark: #4f1722;
+  --kq-brass: #9b8465;
+  --kq-brass-soft: #eee6da;
+
+  --kq-shadow: rgba(23, 22, 21, 0.055);
+  --kq-shadow-soft: rgba(23, 22, 21, 0.032);
 }
 
 .kq-home {
-  max-width: 980px;
+  max-width: 940px;
   margin: 0 auto;
   color: var(--kq-text);
-  line-height: 1.65;
+  font-size: 0.92rem;
+  line-height: 1.72;
+}
+
+.kq-home * {
+  box-sizing: border-box;
 }
 
 .kq-home a {
-  color: var(--kq-blue-dark);
+  color: var(--kq-accent-dark);
   text-decoration: none;
+  border-bottom: 1px solid rgba(122, 38, 54, 0.22);
+  transition: color 0.18s ease, border-color 0.18s ease;
 }
 
 .kq-home a:hover {
-  text-decoration: underline;
+  color: var(--kq-ink);
+  border-bottom-color: var(--kq-ink);
 }
 
-.kq-blue-text {
-  color: var(--kq-blue);
-}
 
 /* =========================================================
    Hero
    ========================================================= */
 
 .kq-hero {
-  margin: 0.3rem 0 2rem;
-  padding: 2rem 2.1rem 1.8rem;
-  border: 1px solid var(--kq-border);
-  border-radius: 22px;
-  background:
-    radial-gradient(circle at top right, rgba(37, 99, 235, 0.10), transparent 32%),
-    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.055);
+  position: relative;
+  margin: 0.2rem 0 1.55rem;
+  padding: 2.35rem 0 1.55rem;
+  border-bottom: 1px solid var(--kq-line);
 }
 
-.kq-hero-kicker {
-  margin-bottom: 0.55rem;
-  color: var(--kq-blue);
-  font-size: 0.72rem;
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+.kq-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.28rem;
+  width: 54px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--kq-accent), var(--kq-brass));
+}
+
+.kq-hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1.7rem;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(155, 132, 101, 0.13), rgba(155, 132, 101, 0.03) 58%, transparent 72%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .kq-hero h1 {
   margin: 0;
-  color: var(--kq-navy);
-  font-size: clamp(1.75rem, 3vw, 2.35rem);
-  line-height: 1.15;
-  font-weight: 850;
-  letter-spacing: -0.035em;
+  padding-top: 0.72rem;
+  color: var(--kq-ink);
+  font-size: clamp(2.12rem, 3.35vw, 2.9rem);
+  line-height: 1.06;
+  font-weight: 860;
+  letter-spacing: -0.045em;
 }
 
-.kq-hero-position {
-  margin: 0.55rem 0 0;
-  color: #475569;
-  font-size: 0.93rem;
-  line-height: 1.55;
-}
-
-.kq-hero-tagline {
-  max-width: 790px;
-  margin: 1.05rem 0 0;
-  color: var(--kq-navy);
-  font-size: clamp(1.05rem, 1.8vw, 1.32rem);
-  line-height: 1.45;
-  font-weight: 780;
-  letter-spacing: -0.025em;
-}
-
-.kq-hero-summary {
-  max-width: 820px;
-  margin: 0.75rem 0 0;
+.kq-position {
+  max-width: 830px;
+  margin: 0.72rem 0 0;
   color: var(--kq-muted);
-  font-size: 0.88rem;
-  line-height: 1.75;
+  font-size: 0.95rem;
+  line-height: 1.58;
 }
 
-.kq-hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-top: 1.2rem;
+.kq-hero-desc {
+  max-width: 820px;
+  margin: 1.08rem 0 0;
+  color: var(--kq-text);
+  font-size: 0.96rem;
+  line-height: 1.82;
 }
 
-.kq-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.48rem 0.78rem;
-  border-radius: 999px;
-  font-size: 0.74rem;
-  line-height: 1.2;
+.kq-hero-desc strong {
+  color: var(--kq-ink);
   font-weight: 760;
-  border: 1px solid var(--kq-border);
-  background: #ffffff;
-  color: var(--kq-navy) !important;
-  text-decoration: none !important;
 }
 
-.kq-btn-primary {
-  border-color: var(--kq-blue);
-  background: var(--kq-blue);
-  color: #ffffff !important;
-}
-
-.kq-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 7px 18px rgba(15, 23, 42, 0.08);
-}
 
 /* =========================================================
-   Highlight Metrics
+   Metrics
    ========================================================= */
 
 .kq-metrics {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.75rem;
-  margin: 1.2rem 0 2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 1.35rem 0 2.45rem;
+  border-top: 1px solid var(--kq-line);
+  border-bottom: 1px solid var(--kq-line);
+  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(250,249,246,0.88));
 }
 
-.kq-metric-card {
-  padding: 0.95rem 0.95rem 0.9rem;
-  border: 1px solid var(--kq-border);
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 7px 20px rgba(15, 23, 42, 0.035);
+.kq-metric {
+  padding: 0.96rem 0.95rem 0.85rem;
+  border-right: 1px solid var(--kq-line-soft);
+}
+
+.kq-metric:last-child {
+  border-right: none;
 }
 
 .kq-metric-number {
-  color: var(--kq-blue);
-  font-size: 1.05rem;
-  line-height: 1.25;
-  font-weight: 850;
-  letter-spacing: -0.02em;
+  display: block;
+  color: var(--kq-accent-dark);
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 860;
+  letter-spacing: -0.025em;
 }
 
 .kq-metric-label {
-  margin-top: 0.28rem;
+  display: block;
+  margin-top: 0.24rem;
   color: var(--kq-muted);
-  font-size: 0.72rem;
-  line-height: 1.45;
-  font-weight: 650;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  font-weight: 660;
+  letter-spacing: 0.025em;
 }
+
 
 /* =========================================================
    Common Section
@@ -181,274 +175,232 @@ redirect_from:
 
 .kq-section,
 .home-section {
-  margin: 2.15rem 0;
+  margin: 2.55rem 0;
 }
 
-.kq-section-head,
+.kq-section-header,
 .home-section-header {
-  margin-bottom: 0.95rem;
-  padding-bottom: 0.65rem;
-  border-bottom: 1px solid var(--kq-border-soft);
-}
-
-.kq-kicker,
-.home-section-kicker {
-  margin: 0 0 0.38rem;
-  color: var(--kq-blue);
-  font-size: 0.7rem;
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  margin-bottom: 1.05rem;
 }
 
 .kq-section-title,
-.home-section-header h2 {
+.home-section-title {
+  position: relative;
   margin: 0;
-  color: var(--kq-navy);
-  font-size: clamp(1.08rem, 1.7vw, 1.34rem) !important;
-  line-height: 1.35;
-  font-weight: 820;
-  letter-spacing: -0.02em;
+  padding-left: 0.82rem;
+  color: var(--kq-ink);
+  font-size: clamp(1.26rem, 2vw, 1.55rem) !important;
+  line-height: 1.3;
+  font-weight: 840;
+  letter-spacing: -0.03em;
+}
+
+.kq-section-title::before,
+.home-section-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.24em;
+  bottom: 0.22em;
+  width: 3px;
+  border-radius: 99px;
+  background: var(--kq-accent);
 }
 
 .kq-section-subtitle,
-.home-section-intro {
-  max-width: 820px;
-  margin: 0.45rem 0 0;
+.home-section-subtitle {
+  max-width: 780px;
+  margin: 0.42rem 0 0 0.82rem;
   color: var(--kq-muted);
-  font-size: 0.82rem;
-  line-height: 1.68;
+  font-size: 0.83rem;
+  line-height: 1.65;
 }
+
 
 /* =========================================================
    About
    ========================================================= */
 
-.kq-about-panel {
-  padding: 1.15rem 1.25rem;
-  border: 1px solid var(--kq-border);
-  border-radius: 18px;
-  background: #ffffff;
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.035);
+.kq-about {
+  position: relative;
+  padding: 1.34rem 1.42rem;
+  border: 1px solid var(--kq-line);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfaf7 100%);
+  box-shadow: 0 12px 26px var(--kq-shadow-soft);
 }
 
-.kq-about-panel p {
-  margin: 0.55rem 0;
-  color: #405168;
-  font-size: 0.84rem;
-  line-height: 1.75;
+.kq-about::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.25rem;
+  bottom: 1.25rem;
+  width: 3px;
+  border-radius: 0 99px 99px 0;
+  background: linear-gradient(180deg, var(--kq-accent), var(--kq-brass));
 }
 
-.kq-about-panel p:first-child {
+.kq-about p {
+  margin: 0.62rem 0;
+  color: var(--kq-text);
+  font-size: 0.875rem;
+  line-height: 1.78;
+}
+
+.kq-about p:first-child {
   margin-top: 0;
 }
 
-.kq-about-panel p:last-child {
+.kq-about p:last-child {
   margin-bottom: 0;
 }
 
+.kq-about strong {
+  color: var(--kq-ink);
+  font-weight: 760;
+}
+
+.kq-about-divider {
+  height: 1px;
+  margin: 1.02rem 0;
+  background: var(--kq-line-soft);
+}
+
+.kq-education {
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  gap: 0.72rem 1.05rem;
+  margin-top: 0.88rem;
+}
+
+.kq-edu-label {
+  color: var(--kq-brass);
+  font-size: 0.7rem;
+  line-height: 1.45;
+  font-weight: 790;
+  letter-spacing: 0.095em;
+  text-transform: uppercase;
+}
+
+.kq-edu-text {
+  color: var(--kq-text);
+  font-size: 0.835rem;
+  line-height: 1.64;
+}
+
+
 /* =========================================================
-   Research Agenda - Original Content, Refined Style
+   Research Agenda
    ========================================================= */
 
-.agenda-manifesto {
-  margin: 1.05rem 0 1rem;
-  padding: 1.1rem 1.25rem;
-  border: 1px solid #cfe0f5;
-  border-radius: 18px;
-  background:
-    radial-gradient(circle at top right, rgba(37, 99, 235, 0.08), transparent 32%),
-    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
-}
-
-.agenda-manifesto-title {
-  margin: 0 0 0.5rem;
-  color: var(--kq-navy);
-  font-size: 0.96rem;
-  line-height: 1.45;
-  font-weight: 820;
-  letter-spacing: -0.015em;
-}
-
-.agenda-manifesto-title span {
-  color: var(--kq-blue);
-}
-
-.agenda-manifesto p {
-  margin: 0;
-  color: #4f6178;
-  font-size: 0.81rem;
-  line-height: 1.72;
-}
-
-.agenda-grid {
+.agenda-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.9rem;
+  gap: 0.82rem;
 }
 
-.agenda-card {
+.agenda-item {
   display: grid;
-  grid-template-columns: 185px minmax(0, 1fr);
-  gap: 1rem;
-  padding: 1.05rem;
-  border: 1px solid var(--kq-border);
-  border-radius: 18px;
-  background: #ffffff;
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.035);
-}
-
-.agenda-index {
-  padding: 0.85rem 0.85rem;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 1.05rem;
+  padding: 1.06rem 1.2rem;
+  border: 1px solid var(--kq-line);
   border-radius: 14px;
-  background: linear-gradient(180deg, #f8fbff 0%, #eff6ff 100%);
-  border: 1px solid #dbeafe;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfaf7 100%);
+  box-shadow: 0 8px 22px var(--kq-shadow-soft);
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.agenda-number {
-  color: var(--kq-blue);
-  font-size: 0.67rem;
-  line-height: 1.3;
-  font-weight: 850;
+.agenda-item:hover {
+  transform: translateY(-1px);
+  border-color: rgba(122, 38, 54, 0.28);
+  box-shadow: 0 12px 26px rgba(23, 22, 21, 0.052);
+}
+
+.agenda-no {
+  padding-top: 0.1rem;
+  color: var(--kq-accent);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  font-weight: 860;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.agenda-theme {
-  margin-top: 0.42rem;
-  color: var(--kq-navy);
-  font-size: 0.88rem;
-  line-height: 1.35;
-  font-weight: 820;
-  letter-spacing: -0.015em;
-}
-
 .agenda-content h3 {
-  margin: 0 0 0.45rem;
-  color: var(--kq-navy);
-  font-size: 0.95rem !important;
-  line-height: 1.38;
+  margin: 0;
+  color: var(--kq-ink);
+  font-size: 0.98rem !important;
+  line-height: 1.4;
   font-weight: 820;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.018em;
 }
 
 .agenda-content p {
-  margin: 0 0 0.65rem;
-  color: #4f6178;
-  font-size: 0.8rem;
-  line-height: 1.68;
-}
-
-.agenda-question {
-  margin: 0.7rem 0 0.75rem;
-  padding: 0.7rem 0.85rem;
-  border-left: 3px solid var(--kq-blue);
-  border-radius: 10px;
-  background: #f8fbff;
-  color: #43546b;
-  font-size: 0.76rem;
+  margin: 0.42rem 0 0.72rem;
+  color: #5b5650;
+  font-size: 0.79rem;
   line-height: 1.62;
-}
-
-.agenda-question strong {
-  color: var(--kq-navy);
-  font-weight: 800;
 }
 
 .agenda-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.32rem;
+  gap: 0.34rem;
 }
 
 .agenda-tags span {
   display: inline-flex;
   align-items: center;
-  padding: 0.17rem 0.45rem;
+  padding: 0.16rem 0.5rem;
+  border: 1px solid #e6ded3;
   border-radius: 999px;
-  background: #f1f5f9;
-  color: #52627a;
-  font-size: 0.61rem;
+  background: rgba(243, 241, 236, 0.82);
+  color: #6a625a;
+  font-size: 0.6rem;
   line-height: 1.35;
-  font-weight: 650;
+  font-weight: 660;
 }
+
 
 /* =========================================================
    Selected News
    ========================================================= */
 
 .kq-news-panel {
-  padding: 1.1rem 1.35rem;
-  border: 1px solid var(--kq-border);
-  border-radius: 18px;
+  border: 1px solid var(--kq-line);
+  border-radius: 14px;
   background: #ffffff;
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.035);
+  box-shadow: 0 12px 26px var(--kq-shadow-soft);
+  overflow: hidden;
 }
 
 .kq-news-group {
-  margin-top: 1.05rem;
-  padding-top: 0.95rem;
-  border-top: 1px solid var(--kq-border-soft);
+  display: grid;
+  grid-template-columns: 165px minmax(0, 1fr);
+  gap: 1.05rem;
+  padding: 1.08rem 1.18rem;
+  border-bottom: 1px solid var(--kq-line-soft);
 }
 
-.kq-news-group:first-child {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: none;
+.kq-news-group:last-child {
+  border-bottom: none;
 }
 
 .kq-news-heading {
-  position: relative;
-  margin: 0 0 0.52rem;
-  padding-left: 1rem;
-  font-size: 0.9rem !important;
-  line-height: 1.35;
-  font-weight: 820;
-  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--kq-accent-dark);
+  font-size: 0.78rem !important;
+  line-height: 1.45;
+  font-weight: 830;
+  letter-spacing: 0.025em;
 }
 
-.kq-news-heading::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.48em;
-  width: 0.42rem;
-  height: 0.42rem;
-  border-radius: 999px;
-}
-
-.kq-news-awards {
-  color: var(--kq-red);
-}
-
-.kq-news-awards::before {
-  background: var(--kq-red);
-}
-
-.kq-news-research {
-  color: var(--kq-purple);
-}
-
-.kq-news-research::before {
-  background: var(--kq-purple);
-}
-
-.kq-news-funding {
-  color: var(--kq-blue);
-}
-
-.kq-news-funding::before {
-  background: var(--kq-blue);
-}
-
-.kq-news-service {
-  color: var(--kq-green);
-}
-
-.kq-news-service::before {
-  background: var(--kq-green);
+.kq-news-heading span {
+  display: inline-block;
+  padding-bottom: 0.26rem;
+  border-bottom: 2px solid rgba(155, 132, 101, 0.35);
 }
 
 .kq-news-list {
@@ -457,82 +409,46 @@ redirect_from:
 }
 
 .kq-news-list li {
-  margin: 0.33rem 0;
-  color: #4f6178;
-  font-size: 0.78rem;
+  margin: 0.29rem 0;
+  color: #514c46;
+  font-size: 0.765rem;
   line-height: 1.62;
 }
 
 .kq-news-list li::marker {
-  color: #9aa9bc;
+  color: var(--kq-brass);
 }
 
 .kq-news-list strong {
-  color: #111827;
-  font-weight: 750;
+  color: var(--kq-ink);
+  font-weight: 745;
 }
 
 .kq-news-list em {
-  color: #374151;
+  color: #332f2c;
 }
 
-/* =========================================================
-   Join / Collaboration
-   ========================================================= */
-
-.kq-join-panel {
-  padding: 1.25rem 1.35rem;
-  border: 1px solid #cfe0f5;
-  border-radius: 18px;
-  background:
-    radial-gradient(circle at top right, rgba(37, 99, 235, 0.09), transparent 35%),
-    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
-}
-
-.kq-join-panel h2 {
-  margin: 0;
-  color: var(--kq-navy);
-  font-size: 1.05rem !important;
-  line-height: 1.35;
-  font-weight: 820;
-  letter-spacing: -0.02em;
-}
-
-.kq-join-panel p {
-  max-width: 820px;
-  margin: 0.55rem 0 0;
-  color: #4f6178;
-  font-size: 0.83rem;
-  line-height: 1.7;
-}
-
-.kq-join-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.95rem;
-}
 
 /* =========================================================
    Visitors
    ========================================================= */
 
 .kq-visitors {
-  margin: 1.7rem 0 0;
+  margin: 2rem 0 0;
   padding-top: 1rem;
-  border-top: 1px solid var(--kq-border-soft);
+  border-top: 1px solid var(--kq-line);
 }
 
 .kq-visitors-title {
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.65rem;
   color: var(--kq-muted);
-  font-size: 0.72rem;
+  font-size: 0.69rem;
   line-height: 1.3;
-  font-weight: 760;
-  letter-spacing: 0.12em;
+  font-weight: 770;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
+
 
 /* =========================================================
    Responsive
@@ -540,94 +456,112 @@ redirect_from:
 
 @media (max-width: 900px) {
   .kq-metrics {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .agenda-card {
+  .kq-metric:nth-child(2) {
+    border-right: none;
+  }
+
+  .kq-metric:nth-child(1),
+  .kq-metric:nth-child(2) {
+    border-bottom: 1px solid var(--kq-line-soft);
+  }
+
+  .kq-news-group {
     grid-template-columns: 1fr;
-  }
-
-  .kq-hero {
-    padding: 1.6rem 1.4rem;
+    gap: 0.55rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .kq-home {
     max-width: 100%;
   }
 
   .kq-hero {
-    border-radius: 18px;
+    padding-top: 1.75rem;
+  }
+
+  .kq-hero::after {
+    width: 120px;
+    height: 120px;
+    opacity: 0.65;
   }
 
   .kq-metrics {
     grid-template-columns: 1fr;
   }
 
-  .kq-section-title,
-  .home-section-header h2 {
-    font-size: 1.06rem !important;
+  .kq-metric {
+    border-right: none !important;
+    border-bottom: 1px solid var(--kq-line-soft);
   }
 
-  .kq-section-subtitle,
-  .home-section-intro {
-    font-size: 0.8rem;
+  .kq-metric:last-child {
+    border-bottom: none;
   }
 
-  .kq-news-panel,
-  .kq-about-panel,
-  .kq-join-panel,
-  .agenda-manifesto {
+  .kq-education {
+    grid-template-columns: 1fr;
+    gap: 0.22rem;
+  }
+
+  .agenda-item {
+    grid-template-columns: 1fr;
+    gap: 0.42rem;
     padding: 1rem;
   }
 
-  .agenda-card {
-    padding: 0.95rem;
+  .agenda-no {
+    color: var(--kq-brass);
   }
 
-  .agenda-content h3,
-  .kq-news-heading {
-    font-size: 0.86rem !important;
+  .kq-section-title,
+  .home-section-title {
+    font-size: 1.22rem !important;
   }
 
-  .agenda-content p,
-  .agenda-question,
+  .kq-section-subtitle,
+  .home-section-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .kq-about p,
+  .agenda-content p {
+    font-size: 0.78rem;
+  }
+
   .kq-news-list li {
-    font-size: 0.75rem;
+    font-size: 0.74rem;
   }
 }
 </style>
 
 
- <!-- ================= Hero ================= -->
+<div class="kq-home">
+
+  <!-- ================= Hero ================= -->
   <section class="kq-hero">
+
     <h1>Kai-Qi Li, Ph.D.</h1>
 
     <p class="kq-position">
       Incoming Professor, School of Water Resources and Hydropower Engineering, Wuhan University
     </p>
 
-    <p class="kq-tagline">
-      Shaping the future of <span>geotechnics</span> through intelligence and uncertainty mastery.
-    </p>
-
     <p class="kq-hero-desc">
-      My research develops mechanics-grounded, data-enabled, and uncertainty-aware methods for
-      understanding, modelling, and managing complex geotechnical systems.
+      I develop <strong>mechanics-grounded</strong>, <strong>data-enabled</strong>, and
+      <strong>uncertainty-aware</strong> methods to reveal, predict, and manage complex
+      geotechnical systems under evolving environmental and engineering conditions.
     </p>
 
-    <div class="kq-actions">
-      <a class="kq-btn kq-btn-primary" href="/join-us/">Join the Group</a>
-      <a class="kq-btn kq-btn-secondary" href="/publications/">Publications</a>
-      <a class="kq-btn kq-btn-secondary" href="/cv/">Curriculum Vitae</a>
-    </div>
   </section>
-
 
 
   <!-- ================= Metrics ================= -->
   <section class="kq-metrics" aria-label="Research metrics">
+
     <div class="kq-metric">
       <span class="kq-metric-number">40+</span>
       <span class="kq-metric-label">Journal papers</span>
@@ -647,16 +581,19 @@ redirect_from:
       <span class="kq-metric-number">5</span>
       <span class="kq-metric-label">ESI Highly Cited Papers</span>
     </div>
+
   </section>
 
 
   <!-- ================= About ================= -->
-  <section class="kq-section">
+  <section class="kq-section" id="about-me">
+
     <div class="kq-section-header">
       <h2 class="kq-section-title">About Me</h2>
     </div>
 
-    <div class="kq-card">
+    <div class="kq-about">
+
       <p>
         I am an <strong>NSFC Excellent Young Scientists Fund Overseas Awardee</strong> and will join the
         <strong>School of Water Resources and Hydropower Engineering, Wuhan University</strong> as an
@@ -668,72 +605,59 @@ redirect_from:
         <a href="https://www.polyu.edu.hk/" target="_blank" rel="noopener">The Hong Kong Polytechnic University</a>,
         working with Prof.
         <a href="https://www.polyu.edu.hk/cee/people/academic-staff/prof-yin-zhenyu/" target="_blank" rel="noopener">Zhen-Yu Yin</a>.
-        I received my Ph.D. in Geotechnical Engineering from Wuhan University under the supervision of
-        Prof. Yong Liu and Prof. Dian-Qing Li, and was a visiting Ph.D. student at the
-        <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener">National University of Singapore</a>,
-        hosted by Prof.
-        <a href="https://cde.nus.edu.sg/cee/staff/fook-hou-lee/" target="_blank" rel="noopener">Fook-Hou Lee</a>.
       </p>
 
-      <p>
-        My work lies at the interface of geotechnical engineering, mechanics, computational modelling,
-        stochastic analysis, and artificial intelligence, with applications in frozen ground, artificial
-        ground freezing, underground construction, hydrate-bearing sediments, and resilient infrastructure.
-      </p>
+      <div class="kq-about-divider"></div>
+
+      <div class="kq-education">
+
+        <div class="kq-edu-label">Education</div>
+        <div class="kq-edu-text">
+          Ph.D. in Geotechnical Engineering, Wuhan University, supervised by Prof. Yong Liu and Prof. Dian-Qing Li.
+        </div>
+
+        <div class="kq-edu-label">Visiting</div>
+        <div class="kq-edu-text">
+          Visiting Ph.D. student at the
+          <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener">National University of Singapore</a>,
+          hosted by Prof.
+          <a href="https://cde.nus.edu.sg/cee/staff/fook-hou-lee/" target="_blank" rel="noopener">Fook-Hou Lee</a>.
+        </div>
+
+        <div class="kq-edu-label">Research</div>
+        <div class="kq-edu-text">
+          Geotechnical engineering, mechanics, computational modelling, stochastic analysis, and artificial intelligence.
+        </div>
+
+      </div>
+
     </div>
-  </section>
 
+  </section>
 
 
   <!-- ================= Research Agenda ================= -->
   <section class="home-section" id="research-agenda">
 
     <div class="home-section-header">
-      <p class="home-section-kicker">Research Agenda</p>
-      <h2>From uncertain ground to intelligent and resilient geotechnical infrastructure</h2>
-      <p class="home-section-intro">
-        My research agenda is organized around a central ambition: to transform geotechnical engineering
-        from experience-driven prediction toward mechanics-informed, data-enhanced, and uncertainty-aware
-        decision-making. Rather than treating mechanics, computation, uncertainty, and artificial intelligence
-        as separate topics, my group will develop integrated frameworks that connect them into a coherent
-        scientific and engineering paradigm.
+      <h2 class="home-section-title">Research Agenda</h2>
+      <p class="home-section-subtitle">
+        Shaping future geotechnics through mechanics-informed intelligence, uncertainty-aware modelling,
+        and resilient infrastructure systems.
       </p>
     </div>
 
-    <div class="agenda-manifesto">
-      <div class="agenda-manifesto-title">
-        A long-term research program for <span>intelligent geotechnics under uncertainty</span>
-      </div>
-      <p>
-        The ground is heterogeneous, history-dependent, multiphysical, and only partially observable.
-        The next generation of geotechnical methods must therefore learn from data without abandoning
-        mechanics, quantify uncertainty rather than ignore it, and support engineering decisions rather
-        than only reproduce observations.
-      </p>
-    </div>
+    <div class="agenda-list">
 
-    <div class="agenda-grid">
-
-      <div class="agenda-card">
-        <div class="agenda-index">
-          <div class="agenda-number">Agenda 01</div>
-          <div class="agenda-theme">Complex ground systems</div>
-        </div>
+      <div class="agenda-item">
+        <div class="agenda-no">Agenda 01</div>
 
         <div class="agenda-content">
-          <h3>Revealing the mechanics of ground in extreme and evolving environments</h3>
+          <h3>Mechanics of ground in extreme and evolving environments</h3>
           <p>
-            I study how geomaterials and ground systems behave when they are governed by coupled thermal,
-            hydraulic, mechanical, chemical, and phase-change processes. This includes frozen soils,
-            artificial ground freezing, hydrate-bearing sediments, and other multiphysical systems where
-            classical assumptions are often insufficient.
+            Coupled thermal, hydraulic, mechanical, chemical, and phase-change processes in frozen soils,
+            artificial ground freezing, and hydrate-bearing sediments.
           </p>
-
-          <div class="agenda-question">
-            <strong>Core question:</strong>
-            How can we describe, model, and predict ground behaviour when temperature, water, stress,
-            microstructure, and environmental loading evolve together?
-          </div>
 
           <div class="agenda-tags">
             <span>Frozen soils</span>
@@ -746,26 +670,15 @@ redirect_from:
       </div>
 
 
-      <div class="agenda-card">
-        <div class="agenda-index">
-          <div class="agenda-number">Agenda 02</div>
-          <div class="agenda-theme">Scientific intelligence</div>
-        </div>
+      <div class="agenda-item">
+        <div class="agenda-no">Agenda 02</div>
 
         <div class="agenda-content">
-          <h3>Building AI that understands mechanics, not merely fits data</h3>
+          <h3>AI that understands mechanics, not merely fits data</h3>
           <p>
-            I develop physics-informed and mechanics-guided computational methods that combine constitutive
-            modelling, numerical simulation, machine learning, neural operators, and graph-based learning.
-            The goal is to create intelligent models that remain interpretable, transferable, and trustworthy
-            when data are sparse, noisy, or biased.
+            Physics-informed and mechanics-guided models combining constitutive modelling, numerical simulation,
+            machine learning, neural operators, and graph-based learning.
           </p>
-
-          <div class="agenda-question">
-            <strong>Core question:</strong>
-            How can artificial intelligence become a scientific engine for geomechanics by embedding physical
-            laws, boundary conditions, material behaviour, and engineering constraints?
-          </div>
 
           <div class="agenda-tags">
             <span>Physics-informed ML</span>
@@ -778,26 +691,15 @@ redirect_from:
       </div>
 
 
-      <div class="agenda-card">
-        <div class="agenda-index">
-          <div class="agenda-number">Agenda 03</div>
-          <div class="agenda-theme">Uncertainty mastery</div>
-        </div>
+      <div class="agenda-item">
+        <div class="agenda-no">Agenda 03</div>
 
         <div class="agenda-content">
-          <h3>Turning uncertainty into actionable knowledge for engineering decisions</h3>
+          <h3>Turning uncertainty into actionable engineering knowledge</h3>
           <p>
-            I work on uncertainty quantification, stochastic analysis, reliability assessment, and risk-informed
-            design for geotechnical systems. My aim is to move beyond deterministic prediction and develop
-            decision-support tools that explicitly account for spatial variability, model uncertainty, monitoring
-            data, and evolving risk.
+            Uncertainty quantification, stochastic analysis, reliability assessment, Bayesian updating,
+            and risk-informed design for geotechnical systems.
           </p>
-
-          <div class="agenda-question">
-            <strong>Core question:</strong>
-            How can we quantify what we do not know, update predictions as evidence accumulates, and make safer
-            decisions for infrastructure built in uncertain ground?
-          </div>
 
           <div class="agenda-tags">
             <span>Uncertainty quantification</span>
@@ -810,26 +712,15 @@ redirect_from:
       </div>
 
 
-      <div class="agenda-card">
-        <div class="agenda-index">
-          <div class="agenda-number">Agenda 04</div>
-          <div class="agenda-theme">Engineering translation</div>
-        </div>
+      <div class="agenda-item">
+        <div class="agenda-no">Agenda 04</div>
 
         <div class="agenda-content">
-          <h3>Translating advanced models into safer underground and climate-resilient infrastructure</h3>
+          <h3>From advanced models to safer infrastructure decisions</h3>
           <p>
-            A major objective of my group is to connect frontier modelling with engineering practice. We aim to
-            develop computational tools, digital workflows, and risk-informed design methods for underground
-            construction, cold-region infrastructure, coastal and marine geotechnics, and large-scale civil
-            infrastructure under environmental change.
+            Translating frontier geomechanics and AI into practical tools for underground construction,
+            cold-region infrastructure, marine geotechnics, and climate-resilient engineering.
           </p>
-
-          <div class="agenda-question">
-            <strong>Core question:</strong>
-            How can advanced geomechanics and AI be transformed into practical tools that improve safety,
-            resilience, sustainability, and engineering confidence?
-          </div>
 
           <div class="agenda-tags">
             <span>Underground construction</span>
@@ -849,18 +740,17 @@ redirect_from:
   <!-- ================= Selected News ================= -->
   <section class="kq-section" id="selected-news">
 
-    <div class="kq-section-head">
-      <div class="kq-kicker">Updates</div>
+    <div class="kq-section-header">
       <h2 class="kq-section-title">Selected News</h2>
       <p class="kq-section-subtitle">
-        A selection of recent highlights in research, funding, awards, and academic service.
+        Recent highlights in research, funding, awards, and academic service.
       </p>
     </div>
 
     <div class="kq-news-panel">
 
       <div class="kq-news-group">
-        <h3 class="kq-news-heading kq-news-awards">Awards &amp; Honors</h3>
+        <h3 class="kq-news-heading"><span>Awards &amp; Honors</span></h3>
         <ul class="kq-news-list">
           <li>[2026] Awarded the <strong>NSFC Excellent Young Scientists Fund Overseas</strong> and will join <strong>Wuhan University</strong> as an incoming professor.</li>
           <li>[2025] Shortlisted for the <strong>JC STEM Early Career Research Fellowship</strong>.</li>
@@ -874,7 +764,7 @@ redirect_from:
       </div>
 
       <div class="kq-news-group">
-        <h3 class="kq-news-heading kq-news-research">Research &amp; Publications</h3>
+        <h3 class="kq-news-heading"><span>Research &amp; Publications</span></h3>
         <ul class="kq-news-list">
           <li>[2026] Published <em>AGFNN</em>, a smart platform for uncertainty-aware prediction of freezing time in artificial ground freezing, in <em>Tunnelling and Underground Space Technology</em>.</li>
           <li>[2026] Published <em>AGF-PINN-HC</em>, a hard-constrained enhanced physics-informed neural network for multi-pipe heat transfer in artificial ground freezing, in <em>Canadian Geotechnical Journal</em>.</li>
@@ -885,7 +775,7 @@ redirect_from:
       </div>
 
       <div class="kq-news-group">
-        <h3 class="kq-news-heading kq-news-funding">Funding</h3>
+        <h3 class="kq-news-heading"><span>Funding</span></h3>
         <ul class="kq-news-list">
           <li>[2025–2026] Awarded <strong>HK$841,040</strong> as PI for a PolyU project on thermo-hydro-mechanical-chemical coupling in hydrate-bearing sediments using physics-informed neural networks.</li>
           <li>[2025–2029] Participating in a <strong>HK$53.821 million</strong> Theme-based Research Scheme project on digital twins for coastal resilience under extreme storm surges in Hong Kong.</li>
@@ -895,7 +785,7 @@ redirect_from:
       </div>
 
       <div class="kq-news-group">
-        <h3 class="kq-news-heading kq-news-service">Academic Service</h3>
+        <h3 class="kq-news-heading"><span>Academic Service</span></h3>
         <ul class="kq-news-list">
           <li>[2025] Serving as Co-chair of Mini-Symposium 9: <em>Multiphysics Modeling of Geo-engineering and Geohazards</em> at <strong>IACMAG 2025</strong>, Hong Kong.</li>
           <li>[2024] Joined the <strong>Early-career Editorial Panel</strong> for the <em>European Journal of Soil Science</em>.</li>
@@ -909,41 +799,11 @@ redirect_from:
   </section>
 
 
-  <!-- ================= Join Us ================= -->
-  <section class="kq-section" id="join-us">
-
-    <div class="kq-join-panel">
-      <h2>Join the group</h2>
-
-      <p>
-        I am looking for motivated students and collaborators who are interested in
-        geomechanics, computational modelling, artificial intelligence, uncertainty
-        quantification, and resilient infrastructure. Students with backgrounds in
-        geotechnical engineering, mechanics, applied mathematics, computer science,
-        data science, or related areas are welcome to contact me.
-      </p>
-
-      <p>
-        If you are curious, rigorous, and excited by interdisciplinary research,
-        please send me your CV, transcripts if applicable, and a brief description
-        of your research interests.
-      </p>
-
-      <div class="kq-join-links">
-        <a class="kq-btn kq-btn-primary" href="/join-us/">Opportunities</a>
-        <a class="kq-btn" href="mailto:kqceeli@163.com">kqceeli@163.com</a>
-        <a class="kq-btn" href="mailto:kqcee.li@polyu.edu.hk">kqcee.li@polyu.edu.hk</a>
-      </div>
-    </div>
-
-  </section>
-
-
   <!-- ================= Visitors ================= -->
   <section class="kq-visitors">
     <div class="kq-visitors-title">Visitors</div>
     <script type="text/javascript" id="clustrmaps"
-      src="//clustrmaps.com/map_v2.js?d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=ffffff&cmo=1a72b0&cmn=ff5353&ct=000000">
+      src="//clustrmaps.com/map_v2.js?d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=faf9f6&cmo=9b8465&cmn=7a2636&ct=3f3c38">
     </script>
   </section>
 
