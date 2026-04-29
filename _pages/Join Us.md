@@ -6,12 +6,12 @@ permalink: /join-us/
 
 <style>
 .join-page {
-  max-width: 1080px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 36px 22px 72px;
-  color: #1f2937;
+  padding: 36px 22px 76px;
+  color: #111827;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 .join-page * {
@@ -21,15 +21,15 @@ permalink: /join-us/
 .join-hero {
   position: relative;
   overflow: hidden;
-  border-radius: 26px;
-  padding: 56px 52px;
-  margin-bottom: 46px;
+  border-radius: 28px;
+  padding: 62px 56px;
+  margin-bottom: 54px;
   color: #ffffff;
   background:
-    radial-gradient(circle at 12% 20%, rgba(96, 165, 250, 0.42), transparent 32%),
-    radial-gradient(circle at 88% 15%, rgba(14, 165, 233, 0.35), transparent 30%),
-    linear-gradient(135deg, #020617 0%, #0f172a 38%, #1e3a8a 72%, #0369a1 100%);
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.22);
+    radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.46), transparent 30%),
+    radial-gradient(circle at 88% 18%, rgba(14, 165, 233, 0.38), transparent 32%),
+    linear-gradient(135deg, #020617 0%, #0f172a 42%, #1e3a8a 76%, #075985 100%);
+  box-shadow: 0 26px 64px rgba(15, 23, 42, 0.24);
 }
 
 .join-hero::after {
@@ -37,35 +37,46 @@ permalink: /join-us/
   position: absolute;
   right: -120px;
   bottom: -120px;
-  width: 320px;
-  height: 320px;
+  width: 340px;
+  height: 340px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
 }
 
 .join-eyebrow {
-  display: inline-block;
-  margin-bottom: 18px;
-  padding: 6px 13px;
-  border: 1px solid rgba(219, 234, 254, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 7px 14px;
+  border: 1px solid rgba(219, 234, 254, 0.36);
   border-radius: 999px;
   color: #dbeafe;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
+.join-eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #38bdf8;
+}
+
 .join-hero h1 {
-  margin: 0 0 18px;
+  max-width: 880px;
+  margin: 0 0 20px;
   color: #ffffff;
-  font-size: 46px;
-  line-height: 1.12;
-  letter-spacing: -0.04em;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
 }
 
 .join-hero .lead {
-  max-width: 850px;
+  max-width: 880px;
   margin: 0;
   color: #e0f2fe;
   font-size: 19px;
@@ -76,32 +87,41 @@ permalink: /join-us/
   color: #ffffff;
 }
 
-.join-hero .tagline {
-  max-width: 820px;
-  margin-top: 24px;
-  padding-top: 22px;
-  border-top: 1px solid rgba(219, 234, 254, 0.22);
-  color: #bfdbfe;
-  font-size: 18px;
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 15px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(219, 234, 254, 0.25);
+  color: #eff6ff;
+  font-size: 14px;
   font-weight: 700;
 }
 
 .join-section {
-  margin-top: 52px;
+  margin-top: 56px;
 }
 
 .join-section-title {
-  margin: 0 0 20px;
+  margin: 0 0 22px;
   color: #0f172a;
-  font-size: 28px;
+  font-size: 29px;
   line-height: 1.25;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
 }
 
 .join-section-title::after {
   content: "";
   display: block;
-  width: 52px;
+  width: 54px;
   height: 4px;
   margin-top: 12px;
   border-radius: 999px;
@@ -109,28 +129,33 @@ permalink: /join-us/
 }
 
 .join-intro {
-  max-width: 920px;
+  max-width: 900px;
   color: #4b5563;
   font-size: 17px;
 }
 
+.join-intro p {
+  margin: 0 0 14px;
+}
+
 .join-quote {
   margin: 28px 0;
-  padding: 24px 28px;
+  padding: 25px 30px;
   border-left: 5px solid #2563eb;
-  border-radius: 0 18px 18px 0;
-  background: #f8fafc;
+  border-radius: 0 20px 20px 0;
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
   color: #0f172a;
-  font-size: 20px;
-  font-weight: 750;
-  line-height: 1.6;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.55;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.045);
 }
 
 .join-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 24px;
+  gap: 20px;
+  margin-top: 26px;
 }
 
 .join-grid.three {
@@ -139,19 +164,19 @@ permalink: /join-us/
 
 .join-card {
   position: relative;
-  height: 100%;
-  padding: 24px 24px 22px;
+  min-height: 100%;
+  padding: 26px 26px 24px;
   border: 1px solid #e5e7eb;
-  border-radius: 20px;
+  border-radius: 22px;
   background: #ffffff;
-  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.055);
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.055);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .join-card:hover {
   transform: translateY(-3px);
   border-color: #bfdbfe;
-  box-shadow: 0 18px 42px rgba(37, 99, 235, 0.11);
+  box-shadow: 0 20px 46px rgba(37, 99, 235, 0.12);
 }
 
 .join-card h3 {
@@ -159,118 +184,253 @@ permalink: /join-us/
   color: #1e3a8a;
   font-size: 18px;
   line-height: 1.35;
+  letter-spacing: -0.01em;
 }
 
 .join-card p {
   margin: 0;
   color: #4b5563;
-  line-height: 1.7;
+  font-size: 15.5px;
+  line-height: 1.65;
 }
 
-.join-number {
+.philosophy-card {
+  padding: 24px 25px;
+}
+
+.philosophy-card p {
+  font-size: 15.5px;
+}
+
+.direction-card {
+  padding: 25px 25px 23px;
+}
+
+.direction-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.direction-number {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: center;
   width: 34px;
   height: 34px;
-  margin-bottom: 14px;
   border-radius: 50%;
   background: #eff6ff;
   color: #1d4ed8;
-  font-weight: 800;
-  font-size: 14px;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.direction-card h3 {
+  margin: 0;
+}
+
+.keyword-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.keyword {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.keyword.blue {
+  background: #eff6ff;
+  color: #1d4ed8;
 }
 
 .join-highlight {
   margin: 30px 0 0;
-  padding: 24px 26px;
+  padding: 24px 27px;
   border: 1px solid #bae6fd;
-  border-radius: 20px;
+  border-radius: 22px;
   background: linear-gradient(135deg, #f0f9ff, #ffffff);
   color: #0f172a;
+  font-size: 16.5px;
+  line-height: 1.7;
 }
 
 .join-highlight strong {
   color: #075985;
 }
 
-.join-list {
-  margin: 18px 0 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.join-list li {
-  position: relative;
-  margin: 10px 0;
-  padding-left: 28px;
-  color: #374151;
-}
-
-.join-list li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #2563eb;
-  font-weight: 900;
-}
-
 .position-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 11px;
   margin-top: 22px;
 }
 
 .position-pills span {
   display: inline-flex;
   align-items: center;
-  padding: 8px 14px;
+  padding: 9px 15px;
   border-radius: 999px;
   background: #eff6ff;
   color: #1e40af;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
-.apply-box {
-  margin-top: 26px;
-  padding: 30px;
-  border-radius: 24px;
+.profile-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.profile-item {
+  padding: 17px 19px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+.profile-item strong {
+  color: #1e3a8a;
+}
+
+.apply-panel {
+  margin-top: 28px;
+  overflow: hidden;
+  border-radius: 26px;
   background: #0f172a;
-  color: #e5e7eb;
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18);
+  box-shadow: 0 24px 58px rgba(15, 23, 42, 0.20);
 }
 
-.apply-box h3 {
-  margin: 0 0 14px;
+.apply-header {
+  padding: 32px 34px 24px;
   color: #ffffff;
-  font-size: 23px;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(59, 130, 246, 0.24), transparent 32%),
+    linear-gradient(135deg, #0f172a, #111827);
 }
 
-.apply-box p {
-  margin: 10px 0;
+.apply-header h3 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+
+.apply-header p {
+  margin: 0;
   color: #cbd5e1;
+  font-size: 16px;
+}
+
+.apply-content {
+  padding: 30px 34px 34px;
+}
+
+.apply-block {
+  margin-bottom: 28px;
+}
+
+.apply-block:last-child {
+  margin-bottom: 0;
+}
+
+.apply-label {
+  margin: 0 0 13px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 850;
 }
 
 .subject-line {
-  margin: 18px 0;
+  margin: 12px 0 0;
   padding: 16px 18px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  background: #1e293b;
   color: #ffffff;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 15px;
+  font-size: 14.5px;
+  font-weight: 700;
   overflow-x: auto;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.apply-note {
+  margin: 12px 0 0;
+  color: #cbd5e1;
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+.material-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.material-card {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 16px 17px;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+.material-check {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.material-card strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #0f172a;
+  font-size: 15.5px;
+}
+
+.material-card span {
+  display: block;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .email-link {
-  display: inline-block;
-  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 8px;
   color: #93c5fd;
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 23px;
+  font-weight: 900;
   text-decoration: none;
 }
 
@@ -280,33 +440,36 @@ permalink: /join-us/
 }
 
 .final-note {
-  margin-top: 44px;
-  padding: 30px;
-  border-radius: 24px;
+  margin-top: 48px;
+  padding: 32px 34px;
+  border-radius: 26px;
   background:
     linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(6, 182, 212, 0.08)),
     #ffffff;
   border: 1px solid #dbeafe;
   color: #1f2937;
   font-size: 18px;
+  line-height: 1.75;
 }
 
 .final-note strong {
   color: #1d4ed8;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .join-grid,
-  .join-grid.three {
+  .join-grid.three,
+  .profile-list,
+  .material-grid {
     grid-template-columns: 1fr;
   }
 
   .join-hero {
-    padding: 40px 30px;
+    padding: 46px 34px;
   }
 
   .join-hero h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .join-hero .lead {
@@ -316,12 +479,12 @@ permalink: /join-us/
 
 @media (max-width: 560px) {
   .join-page {
-    padding: 24px 16px 56px;
+    padding: 24px 16px 58px;
   }
 
   .join-hero {
-    border-radius: 20px;
-    padding: 34px 24px;
+    border-radius: 22px;
+    padding: 36px 25px;
   }
 
   .join-hero h1 {
@@ -329,15 +492,21 @@ permalink: /join-us/
   }
 
   .join-section-title {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .join-card {
-    padding: 21px;
+    padding: 22px;
   }
 
-  .apply-box {
-    padding: 24px;
+  .apply-header,
+  .apply-content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .email-link {
+    font-size: 20px;
   }
 }
 </style>
@@ -346,40 +515,40 @@ permalink: /join-us/
 
   <section class="join-hero">
     <div class="join-eyebrow">Join the Group</div>
+
     <h1>Geomechanics, Computation, and Artificial Intelligence</h1>
+
     <p class="lead">
       I am joining the <strong>School of Water Resources and Hydropower Engineering, Wuhan University</strong>,
       where I am building a new research group at the frontier of
       <strong>geomechanics, computational mechanics, uncertainty quantification, and artificial intelligence</strong>.
     </p>
-    <div class="tagline">
-      We aim to build an internationally leading research group that advances fundamental science and delivers high-impact engineering solutions.
+
+    <div class="hero-actions">
+      <span class="hero-pill">World-class research ambition</span>
+      <span class="hero-pill">Physics-informed AI</span>
+      <span class="hero-pill">Computational geomechanics</span>
+      <span class="hero-pill">Risk and reliability</span>
     </div>
   </section>
 
   <section class="join-section">
-    <h2 class="join-section-title">Why This Group?</h2>
+    <h2 class="join-section-title">Vision</h2>
 
     <div class="join-intro">
       <p>
-        Modern geotechnical and hydraulic engineering is entering a new era.
-        Deep underground construction, climate-driven permafrost degradation, offshore energy infrastructure,
-        aging dams and tunnels, and uncertain geo-hazards all demand methods that go beyond traditional engineering practice.
-      </p>
-
-      <p>
-        Our group is built around a central idea:
+        Our goal is to build an internationally leading research group that advances fundamental geomechanics
+        and develops next-generation computational tools for complex engineering systems.
       </p>
     </div>
 
     <div class="join-quote">
-      The future of geomechanics lies in the integration of physics, computation, data, and intelligence.
+      We integrate physics, computation, uncertainty, and AI to understand, predict, and design safer geo-infrastructure.
     </div>
 
     <div class="join-intro">
       <p>
-        We aim to create models, algorithms, and engineering tools that are mathematically rigorous,
-        computationally powerful, physically interpretable, experimentally grounded, and useful for real-world decision-making.
+        We welcome students and researchers who are curious, disciplined, ambitious, and willing to work across disciplinary boundaries.
       </p>
     </div>
   </section>
@@ -388,35 +557,31 @@ permalink: /join-us/
     <h2 class="join-section-title">Research Philosophy</h2>
 
     <div class="join-grid">
-      <div class="join-card">
+      <div class="join-card philosophy-card">
         <h3>Physics First, Data Smart</h3>
         <p>
-          We develop models that respect the laws of mechanics while learning from experimental, field,
-          and simulation data. The goal is reliability beyond a training dataset.
+          Models should respect mechanics, while learning efficiently from experiments, simulations, and field data.
         </p>
       </div>
 
-      <div class="join-card">
+      <div class="join-card philosophy-card">
         <h3>Uncertainty as Information</h3>
         <p>
-          Geomaterials are heterogeneous, data are sparse, and environments are changing.
-          We quantify uncertainty rigorously and turn it into safer engineering decisions.
+          Geological variability and limited data are not obstacles only; they are central parts of engineering decision-making.
         </p>
       </div>
 
-      <div class="join-card">
+      <div class="join-card philosophy-card">
         <h3>AI for Scientific Discovery</h3>
         <p>
-          We use machine learning not as a black box, but as a tool to discover constitutive laws,
-          multiscale patterns, hidden variables, and failure mechanisms.
+          We use AI to discover patterns, accelerate simulation, infer hidden variables, and support interpretable mechanics.
         </p>
       </div>
 
-      <div class="join-card">
+      <div class="join-card philosophy-card">
         <h3>Theory–Simulation–Experiment Loop</h3>
         <p>
-          Real progress comes from closing the loop between mathematical theory, numerical simulation,
-          laboratory experiments, and field observations.
+          Strong research should connect rigorous theory, numerical modelling, laboratory evidence, and field observations.
         </p>
       </div>
     </div>
@@ -427,71 +592,100 @@ permalink: /join-us/
 
     <div class="join-intro">
       <p>
-        Our work spans several interconnected directions, from fundamental mechanics to large-scale engineering applications.
+        Current and future projects include the following interconnected directions.
       </p>
     </div>
 
     <div class="join-grid">
-      <div class="join-card">
-        <div class="join-number">01</div>
-        <h3>Frozen-Ground and Cold-Region Geomechanics</h3>
-        <p>
-          Constitutive modelling of frozen soils and ice-rich geomaterials; artificial ground freezing for deep excavations and tunnels;
-          permafrost degradation under climate change; frost heave, thaw settlement, and cold-region infrastructure resilience.
-        </p>
+      <div class="join-card direction-card">
+        <div class="direction-top">
+          <div class="direction-number">01</div>
+          <h3>Frozen-Ground and Cold-Region Geomechanics</h3>
+        </div>
+        <div class="keyword-row">
+          <span class="keyword blue">Frozen soils</span>
+          <span class="keyword">Artificial ground freezing</span>
+          <span class="keyword">Permafrost</span>
+          <span class="keyword">Freeze–thaw</span>
+          <span class="keyword">Cold-region infrastructure</span>
+        </div>
       </div>
 
-      <div class="join-card">
-        <div class="join-number">02</div>
-        <h3>Multi-Physics Coupling in Geomaterials</h3>
-        <p>
-          Thermo–hydro–mechanical–chemical processes; phase change and freeze–thaw cycles;
-          unsaturated and reactive porous media; coupled modelling for hydropower dams, energy geostructures,
-          offshore foundations, and underground infrastructure.
-        </p>
+      <div class="join-card direction-card">
+        <div class="direction-top">
+          <div class="direction-number">02</div>
+          <h3>Multi-Physics Coupling in Geomaterials</h3>
+        </div>
+        <div class="keyword-row">
+          <span class="keyword blue">THMC coupling</span>
+          <span class="keyword">Phase change</span>
+          <span class="keyword">Porous media</span>
+          <span class="keyword">Hydropower dams</span>
+          <span class="keyword">Underground infrastructure</span>
+        </div>
       </div>
 
-      <div class="join-card">
-        <div class="join-number">03</div>
-        <h3>Multi-Scale Modelling of Geomaterials</h3>
-        <p>
-          Grain-scale DEM and micromechanics; microstructure-informed constitutive models;
-          FEM–DEM coupling; bridging pore-scale physics, meso-scale deformation, and engineering-scale prediction.
-        </p>
+      <div class="join-card direction-card">
+        <div class="direction-top">
+          <div class="direction-number">03</div>
+          <h3>Multi-Scale Modelling of Geomaterials</h3>
+        </div>
+        <div class="keyword-row">
+          <span class="keyword blue">Micromechanics</span>
+          <span class="keyword">DEM</span>
+          <span class="keyword">FEM–DEM</span>
+          <span class="keyword">Constitutive modelling</span>
+          <span class="keyword">Microstructure</span>
+        </div>
       </div>
 
-      <div class="join-card">
-        <div class="join-number">04</div>
-        <h3>Geotechnical Risk and Reliability Engineering</h3>
-        <p>
-          Spatial variability and random fields; random finite element methods; Bayesian inversion and model updating;
-          reliability analysis of slopes, foundations, tunnels, dams, and major infrastructure under geological and climatic uncertainty.
-        </p>
+      <div class="join-card direction-card">
+        <div class="direction-top">
+          <div class="direction-number">04</div>
+          <h3>Geotechnical Risk and Reliability</h3>
+        </div>
+        <div class="keyword-row">
+          <span class="keyword blue">Spatial variability</span>
+          <span class="keyword">Random fields</span>
+          <span class="keyword">Bayesian updating</span>
+          <span class="keyword">Reliability analysis</span>
+          <span class="keyword">Decision-making</span>
+        </div>
       </div>
 
-      <div class="join-card">
-        <div class="join-number">05</div>
-        <h3>AI-Enabled Computational Mechanics</h3>
-        <p>
-          Physics-informed neural networks; neural operators for PDEs; differentiable simulation;
-          data-driven constitutive discovery; and high-dimensional surrogate modelling for expensive geomechanical systems.
-        </p>
+      <div class="join-card direction-card">
+        <div class="direction-top">
+          <div class="direction-number">05</div>
+          <h3>AI-Enabled Computational Mechanics</h3>
+        </div>
+        <div class="keyword-row">
+          <span class="keyword blue">PINNs</span>
+          <span class="keyword">Neural operators</span>
+          <span class="keyword">Differentiable simulation</span>
+          <span class="keyword">Surrogate modelling</span>
+          <span class="keyword">Scientific ML</span>
+        </div>
       </div>
 
-      <div class="join-card">
-        <div class="join-number">06</div>
-        <h3>Large Language Models for Engineering Science</h3>
-        <p>
-          LLM-powered scientific agents for geotechnical reasoning and design; knowledge extraction from literature, codes,
-          and case histories; automated hypothesis generation, simulation workflows, and AI copilots for engineers.
-        </p>
+      <div class="join-card direction-card">
+        <div class="direction-top">
+          <div class="direction-number">06</div>
+          <h3>Large Language Models for Engineering Science</h3>
+        </div>
+        <div class="keyword-row">
+          <span class="keyword blue">LLM agents</span>
+          <span class="keyword">Engineering reasoning</span>
+          <span class="keyword">Knowledge extraction</span>
+          <span class="keyword">Automated workflows</span>
+          <span class="keyword">AI copilots</span>
+        </div>
       </div>
     </div>
 
     <div class="join-highlight">
       <strong>Student-led ideas are strongly encouraged.</strong>
-      The best projects often begin with a sharp question from a student, followed by rigorous thinking,
-      careful modelling, and persistent exploration.
+      If you have a sharp question, a bold idea, or a technical skill that can open a new direction,
+      I would be very happy to hear from you.
     </div>
   </section>
 
@@ -513,68 +707,75 @@ permalink: /join-us/
       <span>Visiting Scholars</span>
     </div>
 
-    <div class="join-grid four" style="margin-top: 28px;">
-      <div class="join-card">
-        <h3>Engineering</h3>
-        <p>
-          Civil engineering, geotechnical engineering, hydraulic engineering, offshore engineering,
-          underground engineering, and environmental engineering.
-        </p>
+    <div class="profile-list">
+      <div class="profile-item">
+        <strong>Engineering:</strong> civil, geotechnical, hydraulic, offshore, underground, and environmental engineering.
       </div>
 
-      <div class="join-card">
-        <h3>Mechanics and Mathematics</h3>
-        <p>
-          Solid mechanics, computational mechanics, applied mathematics, numerical analysis,
-          statistics, probability, and uncertainty quantification.
-        </p>
+      <div class="profile-item">
+        <strong>Mechanics and Mathematics:</strong> solid mechanics, computational mechanics, numerical methods, statistics, and uncertainty quantification.
       </div>
 
-      <div class="join-card">
-        <h3>Physical and Earth Sciences</h3>
-        <p>
-          Physics, geophysics, geology, materials science, porous media, cryosphere science,
-          and climate-related geosystems.
-        </p>
+      <div class="profile-item">
+        <strong>Earth and Physical Sciences:</strong> geology, geophysics, physics, materials science, porous media, and cryosphere science.
       </div>
 
-      <div class="join-card">
-        <h3>Computing and AI</h3>
-        <p>
-          Computer science, machine learning, scientific computing, data science,
-          large language models, AI agents, and scientific foundation models.
-        </p>
+      <div class="profile-item">
+        <strong>Computing and AI:</strong> scientific computing, machine learning, data science, LLMs, AI agents, and foundation models.
       </div>
     </div>
 
     <div class="join-highlight">
-      Applications are welcome regardless of gender, nationality, institution, or prior research field.
-      What matters most is the potential to grow into an independent, rigorous, and creative researcher.
+      Applications are welcome regardless of nationality, institution, gender, or previous research field.
+      What matters most is curiosity, rigor, motivation, and the potential to grow.
     </div>
   </section>
 
   <section class="join-section">
     <h2 class="join-section-title">What I Look For</h2>
 
-    <div class="join-intro">
-      <p>
-        You do not need to match every item below. I especially value:
-      </p>
-    </div>
+    <div class="join-grid three">
+      <div class="join-card">
+        <h3>Curiosity</h3>
+        <p>
+          You ask deep questions and want to understand how complex systems really work.
+        </p>
+      </div>
 
-    <ul class="join-list">
-      <li>Deep curiosity about scientific and engineering problems</li>
-      <li>Strong self-motivation and the ability to work independently</li>
-      <li>Rigor in mechanics, mathematics, computation, experiments, or data analysis</li>
-      <li>Intellectual honesty and respect for evidence</li>
-      <li>Willingness to learn across disciplines</li>
-      <li>Clear communication in writing, coding, presentation, or discussion</li>
-      <li>Kindness, reliability, and responsibility as a collaborator</li>
-    </ul>
+      <div class="join-card">
+        <h3>Rigor</h3>
+        <p>
+          You care about evidence, logic, mathematics, mechanics, computation, or experimental quality.
+        </p>
+      </div>
 
-    <div class="join-highlight">
-      If you are not yet an expert but are serious, disciplined, and excited to learn,
-      you are strongly encouraged to reach out.
+      <div class="join-card">
+        <h3>Independence</h3>
+        <p>
+          You are willing to think, learn, code, test, write, and improve with persistence.
+        </p>
+      </div>
+
+      <div class="join-card">
+        <h3>Ambition</h3>
+        <p>
+          You want to produce high-quality work with international visibility and long-term value.
+        </p>
+      </div>
+
+      <div class="join-card">
+        <h3>Openness</h3>
+        <p>
+          You are excited to learn across mechanics, computation, data, and engineering applications.
+        </p>
+      </div>
+
+      <div class="join-card">
+        <h3>Integrity</h3>
+        <p>
+          You value honesty, responsibility, kindness, and respect as part of serious research.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -583,48 +784,44 @@ permalink: /join-us/
 
     <div class="join-grid three">
       <div class="join-card">
-        <h3>Ambitious Science</h3>
+        <h3>High Standards</h3>
         <p>
-          We pursue important questions, publish high-quality work, and aim for international impact.
+          We aim for rigorous, creative, and internationally competitive research.
         </p>
       </div>
 
       <div class="join-card">
         <h3>Serious Mentorship</h3>
         <p>
-          Students and researchers will receive regular discussions, technical guidance,
-          writing feedback, and long-term career support.
+          Students will receive regular research discussions, technical guidance, and writing feedback.
         </p>
       </div>
 
       <div class="join-card">
-        <h3>Independence and Ownership</h3>
+        <h3>Global Perspective</h3>
         <p>
-          You will be encouraged to develop your own ideas, define your research identity,
-          and take ownership of your scientific direction.
+          We support international collaborations, conference presentations, and academic exchanges.
         </p>
       </div>
 
       <div class="join-card">
-        <h3>International Visibility</h3>
+        <h3>Ownership</h3>
         <p>
-          The group will actively support international collaborations, conference presentations,
-          research visits, and academic exchanges.
+          You will be encouraged to develop your own ideas and build your research identity.
         </p>
       </div>
 
       <div class="join-card">
-        <h3>Open and Respectful Environment</h3>
+        <h3>Respect</h3>
         <p>
-          We value clarity, honesty, kindness, and mutual respect. Students are collaborators, not labor.
+          We value clear communication, intellectual honesty, and a supportive group environment.
         </p>
       </div>
 
       <div class="join-card">
         <h3>Sustainable Excellence</h3>
         <p>
-          High ambition and personal well-being are not contradictory.
-          We aim for long-term, healthy, and meaningful academic growth.
+          We pursue ambitious research while supporting long-term, healthy academic growth.
         </p>
       </div>
     </div>
@@ -633,45 +830,81 @@ permalink: /join-us/
   <section class="join-section">
     <h2 class="join-section-title">How to Apply</h2>
 
-    <div class="apply-box">
-      <h3>Email Subject</h3>
-      <p>Please send an email with the following subject line:</p>
+    <div class="apply-panel">
+      <div class="apply-header">
+        <h3>Application Instructions</h3>
+        <p>
+          Please send a concise email with your background, interests, and the position you are applying for.
+        </p>
+      </div>
 
-      <div class="subject-line">[Join Us] Your Name – Institution – Position</div>
+      <div class="apply-content">
+        <div class="apply-block">
+          <div class="apply-label">Email Subject</div>
 
-      <p>Example:</p>
+          <div class="subject-line">[Join Us] Your Name – Institution – Position</div>
 
-      <div class="subject-line">[Join Us] Jane Doe – Wuhan University – PhD</div>
+          <p class="apply-note">Example:</p>
 
-      <h3 style="margin-top: 28px;">Application Materials</h3>
+          <div class="subject-line">[Join Us] Jane Doe – Wuhan University – PhD</div>
+        </div>
 
-      <ul class="join-list">
-        <li>Curriculum Vitae</li>
-        <li>Representative publications or research works, if available</li>
-        <li>Contact information for three referees</li>
-        <li>A brief introduction or research statement</li>
-      </ul>
+        <div class="apply-block">
+          <div class="apply-label">Application Materials</div>
 
-      <p>
-        If you do not yet have publications, you may include course projects, thesis work,
-        code repositories, technical reports, or other evidence of research potential.
-      </p>
+          <div class="material-grid">
+            <div class="material-card">
+              <div class="material-check">✓</div>
+              <div>
+                <strong>Curriculum Vitae</strong>
+                <span>Your education, experience, skills, and publications if available.</span>
+              </div>
+            </div>
 
-      <p>
-        Your brief introduction may include your academic background, research interests,
-        technical strengths, why you are interested in this group, and what kind of research question you would like to explore.
-      </p>
+            <div class="material-card">
+              <div class="material-check">✓</div>
+              <div>
+                <strong>Research Works</strong>
+                <span>Publications, thesis, reports, code, projects, or other representative work.</span>
+              </div>
+            </div>
 
-      <h3 style="margin-top: 28px;">Contact</h3>
+            <div class="material-card">
+              <div class="material-check">✓</div>
+              <div>
+                <strong>Three Referees</strong>
+                <span>Names and contact information of three academic or professional referees.</span>
+              </div>
+            </div>
 
-      <p>Please send your application to:</p>
+            <div class="material-card">
+              <div class="material-check">✓</div>
+              <div>
+                <strong>Brief Statement</strong>
+                <span>Your interests, strengths, motivation, and possible research questions.</span>
+              </div>
+            </div>
+          </div>
 
-      <a class="email-link" href="mailto:kqceeli@163.com">kqceeli@163.com</a>
+          <p class="apply-note">
+            Publications are not required for early-stage students. Strong course projects, coding experience,
+            experimental skills, or original research ideas are also valuable.
+          </p>
+        </div>
 
-      <p style="margin-top: 20px;">
-        I read every email personally. If you are curious, ambitious, and excited by interdisciplinary research,
-        I would be very happy to hear from you.
-      </p>
+        <div class="apply-block">
+          <div class="apply-label">Contact</div>
+
+          <p class="apply-note">Please send your application to:</p>
+
+          <a class="email-link" href="mailto:kqceeli@163.com">kqceeli@163.com</a>
+
+          <p class="apply-note" style="margin-top: 18px;">
+            I read every email personally. If you are curious, ambitious, and excited by interdisciplinary research,
+            I would be very happy to hear from you.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
