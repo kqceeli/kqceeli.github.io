@@ -107,7 +107,7 @@ redirect_from:
   align-items: center;
   padding: 0.35rem 0.85rem;     /* padding: 0.28rem 0.72rem; */
   border-radius: 999px;
-  font-size: 0.9rem;   /* ← 改这里，建议改为 0.85rem 或 0.9rem */
+  font-size: 0.8rem;   /* ← 改这里，建议改为 0.85rem 或 0.9rem */
   font-weight: 720;
   letter-spacing: 0.015em;
   border: 1px solid;
