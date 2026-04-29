@@ -113,17 +113,18 @@ redirect_from:
 .kq-hero h1 {
   margin: 0;
   color: var(--kq-ink);
-  font-size: clamp(2.1rem, 4vw, 3.1rem);
-  line-height: 1.05;
-  font-weight: 880;
-  letter-spacing: -0.05em;
+  font-size: clamp(1.85rem, 3.2vw, 2.55rem);
+  line-height: 1.12;
+  font-weight: 850;
+  letter-spacing: -0.035em;
 }
 
 .kq-position {
-  margin: 0.72rem 0 0;
+  margin: 0.9rem 0 0;
+  max-width: 760px;
   color: #374151;
-  font-size: 1rem;
-  line-height: 1.55;
+  font-size: 0.96rem;
+  line-height: 1.65;
   font-weight: 650;
 }
 
