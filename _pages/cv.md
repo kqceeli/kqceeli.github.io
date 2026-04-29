@@ -350,7 +350,7 @@ redirect_from:
       <span class="cv-tag">Geotechnical Engineering</span>
       <span class="cv-tag">Computational Geomechanics</span>
       <span class="cv-tag">Uncertainty Quantification</span>
-      <span class="cv-tag">PIML & LLM for geotechnical engineering</span>
+      <span class="cv-tag">PIML & LLM</span>
       <span class="cv-tag">Infrastructure Resilience</span>
     </div>
   </section>
