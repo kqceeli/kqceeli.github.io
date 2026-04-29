@@ -63,14 +63,16 @@ redirect_from:
 
 .kq-hero {
   position: relative;
-  margin: 0.4rem 0 1.5rem;
-  padding: 2.4rem 2.45rem;
-  border-radius: 26px;
-  border: 1px solid var(--kq-line);
+  margin: 0.5rem 0 1.6rem;
+  padding: 2.15rem 2.35rem 2.25rem;
+  border-radius: 24px;
+  border: 1px solid rgba(15, 118, 110, 0.14);
   background:
-    linear-gradient(135deg, rgba(15, 118, 110, 0.075), rgba(161, 98, 7, 0.055)),
-    var(--kq-warm);
+    radial-gradient(circle at 92% 0%, rgba(15, 118, 110, 0.11), transparent 30%),
+    linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(180, 83, 9, 0.055)),
+    #fbfaf6;
   overflow: hidden;
+  box-shadow: 0 14px 36px rgba(17, 24, 39, 0.055);
 }
 
 .kq-hero::after {
