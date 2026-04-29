@@ -734,7 +734,7 @@ redirect_from:
 
   </section>
 
-  <p class="kq-metrics-note">Source: Google Scholar · Last updated: April 2024</p>
+  <p class="kq-metrics-note">Source: Google Scholar · Last updated: April 2026</p>
 
 
   <!-- ================= About ================= -->
