@@ -550,19 +550,19 @@ redirect_from:
         Multi-physics coupling mechanism of deep-sea pipeline and soft marine organic deposits
         interaction considering time and temperature effects
       </h3>
-
+    
       <div class="cv-funding-grid">
         <div class="cv-label">Period</div>
         <div class="cv-value">01/2021 – 12/2024</div>
-
+    
         <div class="cv-label">Amount</div>
-        <div class="cv-value">HK$ 1,154,954</div>
-
+        <div class="cv-value">HK$ 1,154,954 &nbsp;(~USD$ 147,700)</div>
+    
         <div class="cv-label">Funded by</div>
         <div class="cv-value">
           Research Grants Council of Hong Kong, NSFC/RGC Joint Research Scheme
         </div>
-
+    
         <div class="cv-label">Role</div>
         <div class="cv-value">
           <span class="cv-role role-main">Main Participant</span>
