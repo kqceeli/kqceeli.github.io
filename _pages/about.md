@@ -955,32 +955,56 @@ redirect_from:
 
   </section>
 
+/* =========================================================
+   Visitors & Globe Section Styling
+   ========================================================= */
+.kq-visitors-section {
+  margin: 50px auto 30px auto;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
 
- <!-- ================= Visitors & Analytics ================= -->
-  <section class="kq-visitors-section">
-    <div class="kq-visitors-title">Visitors &amp; Analytics</div>
+/* 标题：小字重、宽间距 */
+.kq-visitors-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #888;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
 
-    <!-- Map Widget -->
-    <div class="kq-visitors-map-container">
-      <script type='text/javascript' id='mapmyvisitors' 
-        src='https://mapmyvisitors.com/map.js?cl=1f2328&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=faf9f6&cmo=465f7a&cmn=b6424b&ct=1f2328'>
-      </script>
-    </div>
+/* 限制 3D 地球的大小，使其精致 */
+.kq-visitors-map-container {
+  max-width: 250px; /* 限制地球宽度，防止过大 */
+  margin: 0 auto;
+  display: block;
+}
 
-    <!-- Text Statistics (Busuanzi translated to English) -->
-    <div class="kq-visitors-stats">
-      <span id="busuanzi_container_site_pv" style="display:none;">
-        Pageviews: <span id="busuanzi_value_site_pv" class="kq-stat-number kq-stat-pv">--</span>
-      </span>
-      <span class="kq-stat-divider">|</span>
-      <span id="busuanzi_container_site_uv" style="display:none;">
-        Unique Visitors: <span id="busuanzi_value_site_uv" class="kq-stat-number kq-stat-uv">--</span>
-      </span>
-    </div>
-  </section>
+/* 隐藏地图下方自带的丑陋链接 */
+.kq-visitors-map-container a {
+  display: none !important;
+}
 
-  <!-- Busuanzi Script -->
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+/* 统计数据：极简学术风 */
+.kq-visitors-stats {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #999;
+  margin-top: 15px;
+}
 
-  
-</div>
+.kq-stat-divider {
+  margin: 0 5px;
+  color: #ccc;
+}
+
+/* 用你的主题红点亮数字 */
+.kq-stat-number {
+  font-weight: 600;
+  color: #b6424b; 
+}
+
+ 
+ </div>
