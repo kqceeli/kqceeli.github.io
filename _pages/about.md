@@ -956,68 +956,31 @@ redirect_from:
   </section>
 
 
-<style>
-  /* =========================================================
-     Sophisticated Global Reach & Stats
-     ========================================================= */
-  .kq-footer-analytics {
-    margin: 60px auto 40px auto;
-    text-align: center;
-    font-family: "Inter", -apple-system, sans-serif;
-    border-top: 1px solid #f0f0f0; /* 增加一条极淡的分割线，增加仪式感 */
-    padding-top: 40px;
-  }
+ <!-- ================= Visitors & Analytics ================= -->
+  <section class="kq-visitors-section">
+    <div class="kq-visitors-title">Visitors &amp; Analytics</div>
 
-  /* 地图容器：控制大小和滤镜 */
-  .kq-map-wrapper {
-    max-width: 320px;
-    margin: 0 auto;
-    opacity: 0.9;
-    transition: opacity 0.3s;
-  }
-  .kq-map-wrapper:hover {
-    opacity: 1;
-  }
+    <!-- Map Widget -->
+    <div class="kq-visitors-map-container">
+      <script type='text/javascript' id='mapmyvisitors' 
+        src='https://mapmyvisitors.com/map.js?cl=1f2328&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=faf9f6&cmo=465f7a&cmn=b6424b&ct=1f2328'>
+      </script>
+    </div>
 
-  /* 统计数字：极简、大写、宽间距 */
-  .kq-stats-minimal {
-    margin-top: 20px;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #999; /* 浅灰色，不抢戏 */
-  }
+    <!-- Text Statistics (Busuanzi translated to English) -->
+    <div class="kq-visitors-stats">
+      <span id="busuanzi_container_site_pv" style="display:none;">
+        Pageviews: <span id="busuanzi_value_site_pv" class="kq-stat-number kq-stat-pv">--</span>
+      </span>
+      <span class="kq-stat-divider">|</span>
+      <span id="busuanzi_container_site_uv" style="display:none;">
+        Unique Visitors: <span id="busuanzi_value_site_uv" class="kq-stat-number kq-stat-uv">--</span>
+      </span>
+    </div>
+  </section>
 
-  .kq-stats-number {
-    color: #b6424b; /* 使用你的主题红，点亮数据 */
-    font-weight: 600;
-    margin: 0 4px;
-  }
-
-  /* 隐藏地图自带的丑陋链接 */
-  #mapmyvisitors a {
-    display: none !important;
-  }
-</style>
-
-<div class="kq-footer-analytics">
-  <!-- 地图部分 -->
-  <div class="kq-map-wrapper">
-    <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=e0e0e0&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=ffffff&cmo=b6424b&cmn=465f7a&ct=ffffff'></script>
-  </div>
-
-  <!-- 统计部分：只保留一个最核心的数字 -->
-  <div class="kq-stats-minimal">
-    Global Reach <span class="kq-stats-divider">/</span> 
-    <span id="busuanzi_container_site_pv">
-      <span id="busuanzi_value_site_pv" class="kq-stats-number">--</span> Total Visits
-    </span>
-  </div>
-</div>
-
-<!-- 引入不蒜子统计脚本 -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+  <!-- Busuanzi Script -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
 </div>
