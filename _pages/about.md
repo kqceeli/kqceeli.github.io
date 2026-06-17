@@ -1013,7 +1013,7 @@ redirect_from:
   </section>
 
 
-<!-- ================= Visitors & Analytics ================= -->
+<!-- ================= Visitors ================= -->
 <section class="kq-visitors-section">
   <div class="kq-visitors-title">Visitors &amp; Analytics</div>
 
