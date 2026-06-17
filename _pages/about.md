@@ -955,30 +955,30 @@ redirect_from:
 
   </section>
 
+<!-- ================= Visitors & Analytics ================= -->
+  <section class="kq-visitors-section">
+    <div class="kq-visitors-title">Visitors &amp; Analytics</div>
 
-<!-- ================= Visitors ================= -->
-<section class="kq-visitors" style="text-align: center; padding: 20px;">
-  <div class="kq-visitors-title" style="margin-bottom:10px; font-weight:bold;">Visitors</div>
+    <!-- Map Widget -->
+    <div class="kq-visitors-map-container">
+      <script type='text/javascript' id='mapmyvisitors' 
+        src='https://mapmyvisitors.com/map.js?cl=1f2328&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=faf9f6&cmo=465f7a&cmn=b6424b&ct=1f2328'>
+      </script>
+    </div>
 
-  <!-- 优化后的配色：背景换成浅灰白(faf9f6)，点位换成深蓝和砖红 -->
-  <script type='text/javascript' id='mapmyvisitors' 
-    src='https://mapmyvisitors.com/map.js?cl=1f2328&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=faf9f6&cmo=465f7a&cmn=b6424b&ct=1f2328'>
-  </script>
-</section>
+    <!-- Text Statistics (Busuanzi translated to English) -->
+    <div class="kq-visitors-stats">
+      <span id="busuanzi_container_site_pv" style="display:none;">
+        Pageviews: <span id="busuanzi_value_site_pv" class="kq-stat-number kq-stat-pv">--</span>
+      </span>
+      <span class="kq-stat-divider">|</span>
+      <span id="busuanzi_container_site_uv" style="display:none;">
+        Unique Visitors: <span id="busuanzi_value_site_uv" class="kq-stat-number kq-stat-uv">--</span>
+      </span>
+    </div>
+  </section>
 
-
-<!-- 引入不蒜子脚本 -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-<!-- 显示统计文字 -->
-<div class="kq-visitors" style="text-align: center; font-size: 14px; color: #666; margin-top: 20px;">
-  <span id="busuanzi_container_site_pv">
-    本站总访问量 <span id="busuanzi_value_site_pv" style="font-weight: bold; color: #465f7a;">--</span> 次
-  </span>
-  <span style="margin: 0 10px;">|</span>
-  <span id="busuanzi_container_site_uv">
-    访客数 <span id="busuanzi_value_site_uv" style="font-weight: bold; color: #b6424b;">--</span> 人
-  </span>
-</div>
-
+  <!-- Busuanzi Script -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
 </div>
