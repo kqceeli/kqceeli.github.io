@@ -955,14 +955,13 @@ redirect_from:
 
   </section>
 
-
   <!-- ================= Visitors ================= -->
   <section class="kq-visitors">
     <div class="kq-visitors-title">Visitors</div>
-
-    <script type="text/javascript" id="clustrmaps"
-    src="//clustrmaps.com/map_v2.js?d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=faf9f6&cmo=465f7a&cmn=b6424b&ct=1f2328">
-    </script>
+  
+    <!-- 新的 MapMyVisitors 地图脚本 -->
+    <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=89aad8&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=f3f7c5&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
   </section>
+
 
 </div>
