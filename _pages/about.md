@@ -956,16 +956,14 @@ redirect_from:
   </section>
 
 
-  <!-- ================= Visitors ================= -->
-<section class="kq-visitors">
-  <div class="kq-visitors-title">Visitors</div>
+<!-- ================= Visitors ================= -->
+<section class="kq-visitors" style="text-align: center; padding: 20px;">
+  <div class="kq-visitors-title" style="margin-bottom:10px; font-weight:bold;">Visitors</div>
 
-  <!-- 恢复原来的 ClustrMaps（已补全 https: 确保显示，保留了你的历史数据和好看的配色） -->
-  <script type="text/javascript" id="clustrmaps"
-    src="https://clustrmaps.com/map_v2.js?d=_xxky0Tv5mD5ZfcCUgylwlpQi4eAT7sya9k5lvdB0dU&co=faf9f6&cmo=465f7a&cmn=b6424b&ct=1f2328">
+  <!-- 优化后的配色：背景换成浅灰白(faf9f6)，点位换成深蓝和砖红 -->
+  <script type='text/javascript' id='mapmyvisitors' 
+    src='https://mapmyvisitors.com/map.js?cl=1f2328&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=faf9f6&cmo=465f7a&cmn=b6424b&ct=1f2328'>
   </script>
 </section>
-
-
 
 </div>
