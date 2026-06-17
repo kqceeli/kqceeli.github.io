@@ -178,53 +178,57 @@ redirect_from:
   border-bottom-color: rgba(143, 48, 56, 0.4) !important;
 }
 
-  /* =========================================================
-   把新代码粘贴在这里 (Visitors & Globe Section Styling)
+/* =========================================================
+   Visitors & Globe Section Styling
    ========================================================= */
 .kq-visitors-section {
-  margin: 50px auto 30px auto;
+  margin: 2.35rem auto 1rem auto;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--kq-border-soft);
 }
 
 .kq-visitors-title {
-  font-size: 11px;
+  margin: 0 0 0.85rem;
+  color: var(--kq-muted);
+  font-size: 0.72rem;
+  line-height: 1.3;
+  font-weight: 760;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #888;
-  margin-bottom: 20px;
-  font-weight: 600;
 }
 
+/* 限制地球大小的关键：限制宽度并居中 */
 .kq-visitors-map-container {
-  max-width: 250px; /* 限制地球大小 */
+  max-width: 180px; /* 如果觉得太小，可以改成 200px 或 220px */
   margin: 0 auto;
   display: block;
 }
 
-/* 隐藏地图下方自带的文字链接，让页面更干净 */
+/* 隐藏地图下方自带的丑陋链接 */
 .kq-visitors-map-container a {
   display: none !important;
 }
 
+/* 统计数据：极简学术风 */
 .kq-visitors-stats {
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #999;
-  margin-top: 15px;
+  letter-spacing: 0.1em;
+  color: var(--kq-muted);
+  margin-top: 10px;
 }
 
 .kq-stat-divider {
-  margin: 0 5px;
-  color: #ccc;
+  margin: 0 6px;
+  color: var(--kq-border);
 }
 
+/* 用你的主题红点亮数字 */
 .kq-stat-number {
-  font-weight: 600;
-  color: #b6424b; 
+  font-weight: 700;
+  color: var(--kq-nature-red); 
 }
-</style>
 
 
 /* =========================================================
