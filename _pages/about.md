@@ -955,64 +955,69 @@ redirect_from:
 
   </section>
 
+
 <style>
   /* =========================================================
-     Sophisticated Global Reach Section
+     Sophisticated Global Reach & Stats
      ========================================================= */
-  .kq-map-section {
-    margin: 60px auto 20px auto;
+  .kq-footer-analytics {
+    margin: 60px auto 40px auto;
     text-align: center;
-    border-top: 1px solid #eee; /* 增加一条极淡的分割线，增加仪式感 */
+    font-family: "Inter", -apple-system, sans-serif;
+    border-top: 1px solid #f0f0f0; /* 增加一条极淡的分割线，增加仪式感 */
     padding-top: 40px;
   }
 
-  /* Title: Minimalist & Academic */
-  .kq-map-label {
-    font-family: "Inter", -apple-system, sans-serif;
-    font-size: 11px;
+  /* 地图容器：控制大小和滤镜 */
+  .kq-map-wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+  }
+  .kq-map-wrapper:hover {
+    opacity: 1;
+  }
+
+  /* 统计数字：极简、大写、宽间距 */
+  .kq-stats-minimal {
+    margin-top: 20px;
+    font-size: 10px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #999;
-    margin-bottom: 20px;
-    font-weight: 300;
+    color: #999; /* 浅灰色，不抢戏 */
   }
 
-  /* Map Container: Integrated & Subtle */
-  .kq-map-container {
-    max-width: 320px; /* 稍微加大一点，但保持精致 */
-    margin: 0 auto;
-    /* 核心高级感：让地图半透明，并带有一点灰度，使其不突兀 */
-    opacity: 0.7;
-    filter: grayscale(0.3);
-    transition: all 0.5s ease;
+  .kq-stats-number {
+    color: #b6424b; /* 使用你的主题红，点亮数据 */
+    font-weight: 600;
+    margin: 0 4px;
   }
 
-  .kq-map-container:hover {
-    opacity: 1;
-    filter: grayscale(0); /* 鼠标悬停时恢复色彩 */
-  }
-
-  /* 隐藏地图自带的边框或多余文字（如果有的化） */
-  .kq-map-container img {
-    border-radius: 4px;
+  /* 隐藏地图自带的丑陋链接 */
+  #mapmyvisitors a {
+    display: none !important;
   }
 </style>
 
-<div class="kq-map-section">
-  <!-- 极简标题，不再显示数字 -->
-  <div class="kq-map-label">Global Reach</div>
-  
-  <div class="kq-map-container">
-    <!-- 
-      优化后的地图参数说明：
-      - co=ffffff: 背景纯白，不再是屎黄色
-      - cmo=b6424b: 已有访客点使用你的主题红
-      - cmn=1a5f7a: 新访客点使用学术蓝
-      - ct=ffffff: 让地图自带的文字颜色变白（变相隐藏它）
-    -->
-    <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=ffffff&cmo=b6424b&cmn=1a5f7a&ct=ffffff'></script>
+<div class="kq-footer-analytics">
+  <!-- 地图部分 -->
+  <div class="kq-map-wrapper">
+    <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=e0e0e0&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=ffffff&cmo=b6424b&cmn=465f7a&ct=ffffff'></script>
+  </div>
+
+  <!-- 统计部分：只保留一个最核心的数字 -->
+  <div class="kq-stats-minimal">
+    Global Reach <span class="kq-stats-divider">/</span> 
+    <span id="busuanzi_container_site_pv">
+      <span id="busuanzi_value_site_pv" class="kq-stats-number">--</span> Total Visits
+    </span>
   </div>
 </div>
+
+<!-- 引入不蒜子统计脚本 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 
   
 </div>
