@@ -955,30 +955,64 @@ redirect_from:
 
   </section>
 
-<!-- ================= Visitors & Analytics ================= -->
-  <section class="kq-visitors-section">
-    <div class="kq-visitors-title">Visitors &amp; Analytics</div>
+<style>
+  /* =========================================================
+     Sophisticated Global Reach Section
+     ========================================================= */
+  .kq-map-section {
+    margin: 60px auto 20px auto;
+    text-align: center;
+    border-top: 1px solid #eee; /* 增加一条极淡的分割线，增加仪式感 */
+    padding-top: 40px;
+  }
 
-    <!-- Map Widget -->
-    <div class="kq-visitors-map-container">
-      <script type='text/javascript' id='mapmyvisitors' 
-        src='https://mapmyvisitors.com/map.js?cl=1f2328&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=faf9f6&cmo=465f7a&cmn=b6424b&ct=1f2328'>
-      </script>
-    </div>
+  /* Title: Minimalist & Academic */
+  .kq-map-label {
+    font-family: "Inter", -apple-system, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
 
-    <!-- Text Statistics (Busuanzi translated to English) -->
-    <div class="kq-visitors-stats">
-      <span id="busuanzi_container_site_pv" style="display:none;">
-        Pageviews: <span id="busuanzi_value_site_pv" class="kq-stat-number kq-stat-pv">--</span>
-      </span>
-      <span class="kq-stat-divider">|</span>
-      <span id="busuanzi_container_site_uv" style="display:none;">
-        Unique Visitors: <span id="busuanzi_value_site_uv" class="kq-stat-number kq-stat-uv">--</span>
-      </span>
-    </div>
-  </section>
+  /* Map Container: Integrated & Subtle */
+  .kq-map-container {
+    max-width: 320px; /* 稍微加大一点，但保持精致 */
+    margin: 0 auto;
+    /* 核心高级感：让地图半透明，并带有一点灰度，使其不突兀 */
+    opacity: 0.7;
+    filter: grayscale(0.3);
+    transition: all 0.5s ease;
+  }
 
-  <!-- Busuanzi Script -->
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  .kq-map-container:hover {
+    opacity: 1;
+    filter: grayscale(0); /* 鼠标悬停时恢复色彩 */
+  }
+
+  /* 隐藏地图自带的边框或多余文字（如果有的化） */
+  .kq-map-container img {
+    border-radius: 4px;
+  }
+</style>
+
+<div class="kq-map-section">
+  <!-- 极简标题，不再显示数字 -->
+  <div class="kq-map-label">Global Reach</div>
+  
+  <div class="kq-map-container">
+    <!-- 
+      优化后的地图参数说明：
+      - co=ffffff: 背景纯白，不再是屎黄色
+      - cmo=b6424b: 已有访客点使用你的主题红
+      - cmn=1a5f7a: 新访客点使用学术蓝
+      - ct=ffffff: 让地图自带的文字颜色变白（变相隐藏它）
+    -->
+    <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=n&d=AC-nqkd9ckn3p36OK1rXH7peHkOSVJ17WaFSM5n9xgM&co=ffffff&cmo=b6424b&cmn=1a5f7a&ct=ffffff'></script>
+  </div>
+</div>
+
   
 </div>
