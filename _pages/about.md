@@ -188,27 +188,32 @@ redirect_from:
   border-top: 1px solid var(--kq-border-soft);
 }
 
-.kq-visitors-title {
-  margin: 0 0 0.85rem;
-  color: var(--kq-muted);
-  font-size: 0.72rem;
-  line-height: 1.3;
-  font-weight: 760;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
 
-/* 限制地球大小的关键：限制宽度并居中 */
+  /* 限制地球大小并居中 */
 .kq-visitors-map-container {
-  max-width: 180px; /* 如果觉得太小，可以改成 200px 或 220px */
+  max-width: 280px; /* 3D地球建议稍微大一点点，280px比较合适 */
   margin: 0 auto;
   display: block;
+  min-height: 150px; /* 预留高度，防止加载时跳动 */
 }
 
-/* 隐藏地图下方自带的丑陋链接 */
+/* 关键：不要隐藏 a 标签，而是让它里面的文字透明，保留地球图片 */
 .kq-visitors-map-container a {
-  display: none !important;
+  text-decoration: none !important;
+  color: transparent !important; /* 隐藏文字 */
+  font-size: 0 !important;       /* 消除文字占位 */
+  border: none !important;
 }
+
+/* 确保地球图片（或Canvas）显示 */
+.kq-visitors-map-container img, 
+.kq-visitors-map-container canvas {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}
+  
 
 /* 统计数据：极简学术风 */
 .kq-visitors-stats {
@@ -1007,22 +1012,23 @@ redirect_from:
 
   </section>
 
-<!-- ================= 网页最后放 HTML 部分 ================= -->
+<!-- ================= Visitors & Analytics ================= -->
 <section class="kq-visitors-section">
   <div class="kq-visitors-title">Visitors &amp; Analytics</div>
 
+  <!-- Map Widget -->
   <div class="kq-visitors-map-container">
     <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=Rc1_gpEt5h95gscg3IA0j7EqaHgIGfYCknOJNLu9KbE"></script>
   </div>
 
+  <!-- Stats -->
   <div class="kq-visitors-stats">
-    <span id="busuanzi_container_site_uv" style="display:none;">
-      Global Reach <span class="kq-stat-divider">/</span> <span id="busuanzi_value_site_uv" class="kq-stat-number">--</span> Visitors
-    </span>
+    GLOBAL REACH <span class="kq-stat-divider">/</span> 
+    <span id="busuanzi_value_site_uv" class="kq-stat-number">--</span> VISITORS
   </div>
 </section>
 
-<!-- 统计脚本 -->
+<!-- Busuanzi Script -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
