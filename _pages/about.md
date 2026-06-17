@@ -1015,7 +1015,7 @@ redirect_from:
 
 <!-- ================= Visitors ================= -->
 <section class="kq-visitors-section">
-  <div class="kq-visitors-title">Visitors &amp; Analytics</div>
+  <div class="kq-visitors-title">Visitors</div>
 
   <!-- Globe Widget (New 3D Globe) -->
   <div class="kq-visitors-map-container">
