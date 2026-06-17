@@ -1012,25 +1012,25 @@ redirect_from:
 
   </section>
 
+
 <!-- ================= Visitors & Analytics ================= -->
 <section class="kq-visitors-section">
   <div class="kq-visitors-title">Visitors &amp; Analytics</div>
 
-  <!-- Map Widget -->
+  <!-- Globe Widget (New 3D Globe) -->
   <div class="kq-visitors-map-container">
-    <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=Rc1_gpEt5h95gscg3IA0j7EqaHgIGfYCknOJNLu9KbE"></script>
+    <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=n&d=80aE3RlRqh5aIY0tkbSdBZNBnG2GHEN4ZiMIH5Iu_WA&co=b6d9f2'></script>
   </div>
 
-  <!-- Stats -->
+  <!-- Elegant Minimalist Statistics -->
   <div class="kq-visitors-stats">
-    GLOBAL REACH <span class="kq-stat-divider">/</span> 
-    <span id="busuanzi_value_site_uv" class="kq-stat-number">--</span> VISITORS
+    <span id="busuanzi_container_site_uv" style="display:none;">
+      Global Reach <span class="kq-stat-divider">/</span> <span id="busuanzi_value_site_uv" class="kq-stat-number">--</span> Visitors
+    </span>
   </div>
 </section>
 
 <!-- Busuanzi Script -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
  
  </div>
