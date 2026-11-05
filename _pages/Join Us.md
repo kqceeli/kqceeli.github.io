@@ -380,8 +380,9 @@ permalink: /join-us/
       <h1>Geomechanics, Computation, and AI</h1>
 
       <p>
-        I am joining the <strong>School of Water Resources and Hydropower Engineering,
-        Wuhan University</strong>, where I am building a new research group at the
+        I will join the <strong>School of Water Resources and Hydropower Engineering,
+        Wuhan University</strong> in <strong>January 2027</strong>, where I will build a new
+        research group at the
         intersection of <strong>geomechanics, computational mechanics, uncertainty
         quantification, and artificial intelligence</strong>.
       </p>

@@ -12,7 +12,7 @@ locale                   : "en-US"
 title                    : "Kai-Qi Li Research Group"
 title_separator          : "-"
 name                     : &name "Kai-Qi Li"
-description              : &description "Professor at Wuhan University | Geomechanics, Computational Mechanics, Uncertainty Quantification, and Artificial Intelligence"
+description              : &description "Postdoctoral Fellow at The Hong Kong Polytechnic University | Incoming Professor at Wuhan University from January 2027 | Geomechanics, Computational Mechanics, Uncertainty Quantification, and Artificial Intelligence"
 url                      : "https://kqceeli.github.io"
 baseurl                  : ""
 repository               : "kqceeli/kqceeli.github.io"
@@ -21,9 +21,9 @@ author:
   avatar           : "kq_photo3.jpg"
   name             : "Kai-Qi Li"
   pronouns         :
-  bio              : "Professor"
-  location         : "Wuhan, China"
-  employer         : "Wuhan University"
+  bio              : "Postdoctoral Fellow"
+  location         : "Hong Kong"
+  employer         : "The Hong Kong Polytechnic University"
   uri              :
   email            : "kqceeli@163.com"
   

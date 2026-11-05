@@ -317,7 +317,7 @@ redirect_from:
     <h1>Curriculum Vitae</h1>
 
     <p class="cv-subtitle">
-      Kai-Qi Li · Incoming Professor, Wuhan University
+      Kai-Qi Li · Postdoctoral Fellow, The Hong Kong Polytechnic University · Joining Wuhan University in January 2027
     </p>
 
     <p class="cv-summary">
@@ -344,7 +344,7 @@ redirect_from:
 
       <div class="cv-timeline-item">
         <div class="cv-card">
-          <span class="cv-meta">Incoming</span>
+          <span class="cv-meta">From January 2027</span>
           <h3>Professor</h3>
           <p>School of Water Resources and Hydropower Engineering, Wuhan University</p>
         </div>
@@ -426,6 +426,8 @@ redirect_from:
 
     <div class="cv-card">
       <ul class="cv-award-list">
+        <li><span class="cv-award-year">2026</span>ISSMGE Bright Spark Lecture Award, International Society for Soil Mechanics and Geotechnical Engineering</li>
+        <li><span class="cv-award-year">2026</span>Invited participant, Rising Stars Women in Engineering Workshop, HKUST</li>
         <li><span class="cv-award-year">10/2024</span>PolyU Distinguished Postdoctoral Fellowship, The Hong Kong Polytechnic University</li>
         <li><span class="cv-award-year">03/2024</span>Hubei Provincial Science and Technology Progress Award, Hubei Provincial People's Government, China</li>
         <li><span class="cv-award-year">12/2023</span>Academic Innovation Award, Wuhan University</li>

@@ -744,7 +744,8 @@ redirect_from:
     <h1>Kai-Qi Li, Ph.D.</h1>
 
     <p class="kq-position">
-      Incoming Professor, School of Water Resources and Hydropower Engineering, Wuhan University
+      Postdoctoral Fellow, Department of Civil and Environmental Engineering, The Hong Kong Polytechnic University
+      · Joining the School of Water Resources and Hydropower Engineering, Wuhan University, in January 2027
     </p>
 
     <p class="kq-hero-desc">
@@ -775,12 +776,12 @@ redirect_from:
     </div>
 
     <div class="kq-metric">
-      <span class="kq-metric-number">1,600+</span>
+      <span class="kq-metric-number">2,022</span>
       <span class="kq-metric-label">Citations</span>
     </div>
 
     <div class="kq-metric">
-      <span class="kq-metric-number">24</span>
+      <span class="kq-metric-number">26</span>
       <span class="kq-metric-label">H-Index</span>
     </div>
 
@@ -791,7 +792,7 @@ redirect_from:
 
   </section>
 
-  <p class="kq-metrics-note">Source: Google Scholar · Last updated: April 2026</p>
+  <p class="kq-metrics-note">Source: Google Scholar · Last updated: November 2026</p>
 
 
   <!-- ================= About ================= -->
@@ -804,9 +805,10 @@ redirect_from:
     <div class="kq-card">
 
       <p>
-        I am an <strong>NSFC Excellent Young Scientists Fund Overseas Awardee</strong> and will join the
-        <strong>School of Water Resources and Hydropower Engineering, Wuhan University</strong> as an
-        Incoming Professor.
+        I am currently a Postdoctoral Fellow at
+        <a href="https://www.polyu.edu.hk/" target="_blank" rel="noopener">The Hong Kong Polytechnic University</a>
+        and am scheduled to join the <strong>School of Water Resources and Hydropower Engineering, Wuhan University</strong>
+        in January 2027.
       </p>
 
       <p>
@@ -966,7 +968,8 @@ redirect_from:
       <div class="kq-news-group">
         <h3 class="kq-news-heading kq-news-awards">Awards &amp; Honors</h3>
         <ul class="kq-news-list">
-          <li><span class="kq-news-year">2026</span>Awarded the <strong>NSFC Excellent Young Scientists Fund Overseas</strong> and will join <strong>Wuhan University</strong> as an incoming professor.</li>
+          <li><span class="kq-news-year">2026</span>Invited to participate in the <strong>Asian Deans’ Forum 2026 – Rising Stars Women in Engineering Workshop</strong>, an international programme jointly organized by leading engineering universities across the Asia-Pacific region.</li>
+          <li><span class="kq-news-year">2026</span>Received the <strong>Bright Spark Lecture Award</strong> from the <strong>International Society for Soil Mechanics and Geotechnical Engineering (ISSMGE)</strong> at the 5th International Symposium on Machine Learning and Big Data in Geoscience (5ISMLG), recognizing emerging contributions to intelligent geotechnics.</li>
           <li><span class="kq-news-year">2025</span>Shortlisted for the <strong>JC STEM Early Career Research Fellowship</strong>.</li>
           <li><span class="kq-news-year">2024</span>Awarded the <strong>PolyU Distinguished Postdoctoral Fellowship</strong>.</li>
           <li><span class="kq-news-year">2024</span>Received the <strong>2023 Hubei Province Science &amp; Technology Progress Award</strong> for the project <em>Risk Prevention and Control of Artificial Ground Freezing Technique in Water-Rich Stratum</em>.</li>
@@ -980,6 +983,8 @@ redirect_from:
       <div class="kq-news-group">
         <h3 class="kq-news-heading kq-news-research">Research &amp; Publications</h3>
         <ul class="kq-news-list">
+          <li><span class="kq-news-year">2026</span>Published <em>FB-PINN</em>, a Fischer–Burmeister-enhanced physics-informed neural network for phreatic line prediction, in the <em>Canadian Geotechnical Journal</em>.</li>
+          <li><span class="kq-news-year">2026</span>Published a mixed-form physics-informed neural network and transfer-learning framework for resilient groundwater flow modelling in <em>Reliability Engineering &amp; System Safety</em>.</li>
           <li><span class="kq-news-year">2026</span>Published <em>AGFNN</em>, a smart platform for uncertainty-aware prediction of freezing time in artificial ground freezing, in <em>Tunnelling and Underground Space Technology</em>.</li>
           <li><span class="kq-news-year">2026</span>Published <em>AGF-PINN-HC</em>, a hard-constrained enhanced physics-informed neural network for multi-pipe heat transfer in artificial ground freezing, in <em>Canadian Geotechnical Journal</em>.</li>
           <li><span class="kq-news-year">2025</span>Published <em>Relative ice saturation and unified elastoplastic modeling of frozen soils</em> in the <em>Journal of Geotechnical and Geoenvironmental Engineering</em>.</li>
@@ -1001,6 +1006,7 @@ redirect_from:
       <div class="kq-news-group">
         <h3 class="kq-news-heading kq-news-service">Academic Service</h3>
         <ul class="kq-news-list">
+          <li><span class="kq-news-year">2026</span>Delivered the lecture <em>Towards Intelligent Geomechanics: Bridging Physics, Data, and Uncertainty</em> at 5ISMLG, presenting the GeoPUDding framework.</li>
           <li><span class="kq-news-year">2025</span>Serving as Co-chair of Mini-Symposium 9: <em>Multiphysics Modeling of Geo-engineering and Geohazards</em> at <strong>IACMAG 2025</strong>, Hong Kong.</li>
           <li><span class="kq-news-year">2024</span>Joined the <strong>Early-career Editorial Panel</strong> for the <em>European Journal of Soil Science</em>.</li>
           <li><span class="kq-news-year">2024</span>Served as Session Chair at the <strong>12th National Conference on Engineering Geology</strong>, Shenzhen.</li>
